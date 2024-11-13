@@ -173,7 +173,7 @@ function page() {
                 Usage Data is collected automatically when using the Service.
                 <br />
                 <br />
-                Usage Data may include information such as Your Device's
+                Usage Data may include information such as Your Device&#39;s
                 Internet Protocol address (e.g. IP address), browser type,
                 browser version, the pages of our Service that You visit, the
                 time and date of Your visit, the time spent on those pages,

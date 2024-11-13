@@ -180,8 +180,8 @@ function page() {
                 not function properly.
                 <br />
                 <br />
-                If You'd like to delete Cookies or instruct your web browser to
-                delete or refuse Cookies, please visit the help pages of your
+                If You&#39;d like to delete Cookies or instruct your web browser
+                to delete or refuse Cookies, please visit the help pages of your
                 web browser.
               </p>
               <ul className={classes.points}>
@@ -234,7 +234,7 @@ function page() {
                 </li>
               </ul>
               <p className={classes.text}>
-                For any other web browser, please visit your web browser's
+                For any other web browser, please visit your web browser&#39;s
                 official web pages.
               </p>
             </div>
