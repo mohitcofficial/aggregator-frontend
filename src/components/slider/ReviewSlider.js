@@ -50,7 +50,7 @@ function ReviewSlider() {
             Client Testimonials
           </span>
           <span className={classes.subHeading}>
-            Here's what our clients have to say about us.
+            Here&#39;s what our clients have to say about us.
           </span>
           <div className={classes.buttons}>
             <div

@@ -13,10 +13,10 @@ function VirtualOfficeText() {
             Embracing the Evolution of Virtual Offices Across India
           </p>
           <p className={classes.text}>
-            Establish your company's footprint in India with a virtual office.
-            Benefit from a prestigious business address in key locations,
-            comprehensive mail handling, professional call answering, and
-            on-demand access to meeting rooms and desks. Leverage our global
+            Establish your company&#39;s footprint in India with a virtual
+            office. Benefit from a prestigious business address in key
+            locations, comprehensive mail handling, professional call answering,
+            and on-demand access to meeting rooms and desks. Leverage our global
             network for seamless business operations and enhanced credibility in
             the market.
           </p>

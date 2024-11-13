@@ -79,15 +79,15 @@ function page() {
                 <li className={classes.text}>
                   <span className={classes.bold}>Affiliate</span>
                   means an entity that controls, is controlled by or is under
-                  common control with a party, where "control" means ownership
-                  of 50% or more of the shares, equity interest or other
-                  securities entitled to vote for election of directors or other
-                  managing authority.
+                  common control with a party, where control means ownership of
+                  50% or more of the shares, equity interest or other securities
+                  entitled to vote for election of directors or other managing
+                  authority.
                 </li>
                 <li className={classes.text}>
                   <span className={classes.bold}>Company</span>
-                  (referred to as either "the Company", "We", "Us" or "Our" in
-                  this Agreement) refers to Virtualxcel.
+                  (referred to as either the Company, We, Us or Our in this
+                  Agreement) refers to Virtualxcel.
                 </li>
                 <li className={classes.text}>
                   <span className={classes.bold}>Cookies</span>
@@ -230,17 +230,16 @@ function page() {
                 </li>
               </ul>
               <p className={classes.text}>
-                Cookies can be "Persistent" or "Session" Cookies. Persistent
-                Cookies remain on Your personal computer or mobile device when
-                You go offline, while Session Cookies are deleted as soon as You
-                close Your web browser. You can learn more about cookies on{" "}
+                Cookies can be Persistent or Session Cookies. Persistent Cookies
+                remain on Your personal computer or mobile device when You go
+                offline, while Session Cookies are deleted as soon as You close
+                Your web browser. You can learn more about cookies on
                 <a
                   className={classes.link}
                   href="https://www.termsfeed.com/blog/cookies/#What_Are_Cookies"
                 >
-                  TermsFeed website{"  "}
+                  TermsFeed website
                 </a>
-                {"  "}
                 article.
               </p>
               <p className={classes.text}>
@@ -338,7 +337,7 @@ function page() {
                   <span className={classes.bold}>To contact You:</span>
                   To contact You by email, telephone calls, SMS, or other
                   equivalent forms of electronic communication, such as a mobile
-                  application's push notifications regarding updates or
+                  applications push notifications regarding updates or
                   informative communications related to the functionalities,
                   products or contracted services, including the security
                   updates, when necessary or reasonable for their
@@ -450,7 +449,7 @@ function page() {
               <p className={classes.heading2}>Transfer of Your Personal Data</p>
               <p className={classes.text}>
                 Your information, including Personal Data, is processed at the
-                Company's operating offices and in any other places where the
+                Companys operating offices and in any other places where the
                 parties involved in the processing are located. It means that
                 this information may be transferred to — and maintained on —
                 computers located outside of Your state, province, country or
@@ -592,7 +591,7 @@ function page() {
                   </a>
                 </li>
               </ul>
-              <p className={classes.heading2}>Children's Privacy</p>
+              <p className={classes.heading2}>Childrens Privacy</p>
               <p className={classes.text}>
                 Our Service does not address anyone under the age of 13. We do
                 not knowingly collect personally identifiable information from
@@ -606,7 +605,7 @@ function page() {
               <p className={classes.text}>
                 If We need to rely on consent as a legal basis for processing
                 Your information and Your country requires consent from a
-                parent, We may require Your parent's consent before We collect
+                parent, We may require Your parents consent before We collect
                 and use that information.
               </p>
             </div>
@@ -617,7 +616,7 @@ function page() {
               <p className={classes.text}>
                 Our Service may contain links to other websites that are not
                 operated by Us. If You click on a third party link, You will be
-                directed to that third party's site. We strongly advise You to
+                directed to that third partys site. We strongly advise You to
                 review the Privacy Policy of every site You visit. We have no
                 control over and assume no responsibility for the content,
                 privacy policies or practices of any third party sites or
@@ -638,7 +637,7 @@ function page() {
               <p className={classes.text}>
                 We will let You know via email and/or a prominent notice on Our
                 Service, prior to the change becoming effective and update the
-                "Last updated" date at the top of this Privacy Policy.
+                Last updated date at the top of this Privacy Policy.
               </p>
               <p className={classes.text}>
                 You are advised to review this Privacy Policy periodically for

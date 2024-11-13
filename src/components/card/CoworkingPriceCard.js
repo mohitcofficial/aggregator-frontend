@@ -132,8 +132,8 @@ function CoworkingPriceCard({ id }) {
       </div>
       <div className={classes.offeringsContainer}>
         <p className={classes.text}>Offerings: </p>
-        {data[id].offerings.map((offer) => (
-          <p className={classes.offer}>
+        {data[id].offerings.map((offer, index) => (
+          <p key={index} className={classes.offer}>
             <DoneIcon
               sx={{
                 color: "rgb(0, 156, 0)",

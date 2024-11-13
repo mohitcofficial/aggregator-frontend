@@ -1,7 +1,9 @@
 import classes from "./page.module.css";
 
 import CustomLayout from "@/components/CustomLayout";
+import WavyBackground2 from "@/components/background/WavyBackground2";
 import CommonBanner from "@/components/banner/CommonBanner";
+import CoworkingPriceCard from "@/components/card/CoworkingPriceCard";
 import dynamic from "next/dynamic";
 const ReviewSlider = dynamic(
   () => import("../../components/slider/ReviewSlider"),

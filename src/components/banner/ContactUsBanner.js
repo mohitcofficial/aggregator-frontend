@@ -10,7 +10,7 @@ function ContactUsBanner() {
         <div className={classes.text}>
           <div className={classes.heading}>Get in touch</div>
           <div className={classes.subHeading}>
-            Want to get in touch ? We'd love to hear from you.
+            Want to get in touch ? We&#39;d love to hear from you.
           </div>
         </div>
       </div>

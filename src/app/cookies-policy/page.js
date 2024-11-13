@@ -80,10 +80,10 @@ function page() {
               <ul className={classes.points}>
                 <li className={classes.text}>
                   <span className={classes.bold}>Company</span>
-                  (referred to as either "the Company", "We", "Us" or "Our" in
-                  this Cookies Policy) refers to My Company LLC, Lower Ground
-                  Floor, Saket Salcon Rasvilas, Saket District Centre, Sector 6,
-                  Pushp Vihar, Next to Select City Walk Mall, Delhi 110017.
+                  (referred to as either the Company, We, Us or Our in this
+                  Cookies Policy) refers to My Company LLC, Lower Ground Floor,
+                  Saket Salcon Rasvilas, Saket District Centre, Sector 6, Pushp
+                  Vihar, Next to Select City Walk Mall, Delhi 110017.
                 </li>
                 <li className={classes.text}>
                   <span className={classes.bold}>Cookies</span>
@@ -117,10 +117,10 @@ function page() {
               <p className={classes.heading1}>The use of the Cookies</p>
               <p className={classes.heading2}>Type of Cookies We Use</p>
               <p className={classes.text}>
-                Cookies can be "Persistent" or "Session" Cookies. Persistent
-                Cookies remain on your personal computer or mobile device when
-                You go offline, while Session Cookies are deleted as soon as You
-                close your web browser.
+                Cookies can be Persistent or Session Cookies. Persistent Cookies
+                remain on your personal computer or mobile device when You go
+                offline, while Session Cookies are deleted as soon as You close
+                your web browser.
                 <br />
                 <br />
                 We use both session and persistent Cookies for the purposes set

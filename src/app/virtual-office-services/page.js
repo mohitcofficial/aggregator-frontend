@@ -130,7 +130,7 @@ function page() {
                 Embracing the Evolution of Virtual Offices Across India
               </p>
               <p className={classes.text}>
-                Establish your company's footprint in India with a virtual
+                Establish your companys footprint in India with a virtual
                 office. Benefit from a prestigious business address in key
                 locations, comprehensive mail handling, professional call
                 answering, and on-demand access to meeting rooms and desks.

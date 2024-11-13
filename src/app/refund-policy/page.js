@@ -79,8 +79,8 @@ function page() {
                   verification or other KYC requirements are not met.exclamation
                 </li>
                 <li className={classes.text}>
-                  Google Search didn't find relevant content If your business
-                  entity is not approved by Virtualxcel's legal team, you will
+                  Google Search didnt find relevant content If your business
+                  entity is not approved by Virtualxcels legal team, you will
                   receive a full refund minus an admin fee of INR
                   5,000+GST.exclamation
                 </li>

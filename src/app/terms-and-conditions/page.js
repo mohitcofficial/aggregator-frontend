@@ -65,10 +65,10 @@ function page() {
                 <li className={classes.text}>
                   <span className={classes.bold}>Affiliate</span>
                   means an entity that controls, is controlled by or is under
-                  common control with a party, where "control" means ownership
-                  of 50% or more of the shares, equity interest or other
-                  securities entitled to vote for election of directors or other
-                  managing authority.
+                  common control with a party, where control means ownership of
+                  50% or more of the shares, equity interest or other securities
+                  entitled to vote for election of directors or other managing
+                  authority.
                 </li>
                 <li className={classes.text}>
                   <span className={classes.bold}>Country</span>
@@ -76,10 +76,10 @@ function page() {
                 </li>
                 <li className={classes.text}>
                   <span className={classes.bold}>Company</span>
-                  (referred to as either "the Company", "We", "Us" or "Our" in
-                  this Agreement) refers to My Company LLC, Lower Ground Floor,
-                  Saket Salcon Rasvilas, Saket District Centre, Sector 6, Pushp
-                  Vihar, Next to Select City Walk Mall, Delhi 110017.
+                  (referred to as either the Company, We, Us or Our in this
+                  Agreement) refers to My Company LLC, Lower Ground Floor, Saket
+                  Salcon Rasvilas, Saket District Centre, Sector 6, Pushp Vihar,
+                  Next to Select City Walk Mall, Delhi 110017.
                 </li>
                 <li className={classes.text}>
                   <span className={classes.bold}>Device</span>
@@ -92,8 +92,8 @@ function page() {
                 </li>
                 <li className={classes.text}>
                   <span className={classes.bold}>Terms and Conditions</span>
-                  (also referred as "Terms") mean these Terms and Conditions
-                  that form the entire agreement between You and the Company
+                  (also referred as Terms) mean these Terms and Conditions that
+                  form the entire agreement between You and the Company
                   regarding the use of the Service. This Terms and Conditions
                   agreement has been created with the help of the.
                   <a
@@ -120,7 +120,7 @@ function page() {
                     className={classes.link}
                     href={WebsiteURLs.home}
                   >
-                    {WebsiteURLs.home}{" "}
+                    {WebsiteURLs.home}
                   </a>
                 </li>
                 <li className={classes.text}>
@@ -219,7 +219,7 @@ function page() {
                 liability of the Company and any of its suppliers under any
                 provision of this Terms and Your exclusive remedy for all of the
                 foregoing shall be limited to the amount actually paid by You
-                through the Service or 100 USD if You haven't purchased anything
+                through the Service or 100 USD if You havent purchased anything
                 through the Service.
                 <br />
                 <br />
@@ -240,7 +240,7 @@ function page() {
                 Some states do not allow the exclusion of implied warranties or
                 limitation of liability for incidental or consequential damages,
                 which means that some of the above limitations may not apply. In
-                these states, each party's liability will be limited to the
+                these states, each partys liability will be limited to the
                 greatest extent permitted by law.
               </p>
             </div>
@@ -250,11 +250,11 @@ function page() {
           >
             <div className={classes.block}>
               <h2 className={classes.heading2}>
-                "AS IS" and "AS AVAILABLE" Disclaimer
+                AS IS and AS AVAILABLE Disclaimer
               </h2>
               <p className={classes.text}>
-                The Service is provided to You "AS IS" and "AS AVAILABLE" and
-                with all faults and defects without warranty of any kind. To the
+                The Service is provided to You AS IS and AS AVAILABLE and with
+                all faults and defects without warranty of any kind. To the
                 maximum extent permitted under applicable law, the Company, on
                 its own behalf and on behalf of its Affiliates and its and their
                 respective licensors and service providers, expressly disclaims
@@ -274,7 +274,7 @@ function page() {
                 <br />
                 <br />
                 Without limiting the foregoing, neither the Company nor any of
-                the company's provider makes any representation or warranty of
+                the companys provider makes any representation or warranty of
                 any kind, express or implied: (i) as to the operation or
                 availability of the Service, or the information, content, and
                 materials or products included thereon; (ii) that the Service
@@ -341,8 +341,8 @@ function page() {
                 You represent and warrant that (i) You are not located in a
                 country that is subject to the United States government embargo,
                 or that has been designated by the United States government as a
-                "terrorist supporting" country, and (ii) You are not listed on
-                any United States government list of prohibited or restricted
+                terrorist supporting country, and (ii) You are not listed on any
+                United States government list of prohibited or restricted
                 parties.
               </p>
             </div>
@@ -378,7 +378,7 @@ function page() {
               <p className={classes.text}>
                 Except as provided herein, the failure to exercise a right or to
                 require performance of an obligation under these Terms shall not
-                affect a party's ability to exercise such right or require such
+                affect a partys ability to exercise such right or require such
                 performance at any time thereafter nor shall the waiver of a
                 breach constitute a waiver of any subsequent breach.
               </p>
@@ -404,7 +404,7 @@ function page() {
               <p className={classes.text}>
                 We reserve the right, at Our sole discretion, to modify or
                 replace these Terms at any time. If a revision is material We
-                will make reasonable efforts to provide at least 30 days' notice
+                will make reasonable efforts to provide at least 30 days notice
                 prior to any new terms taking effect. What constitutes a
                 material change will be determined at Our sole discretion.
                 <br />
