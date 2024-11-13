@@ -1,0 +1,32 @@
+.button {
+  display: flex;
+  align-items: center;
+  padding: 10px 24px;
+  background-color: var(--white-color);
+  color: #000;
+  border-radius: 24px;
+  cursor: pointer;
+  font-size: 16px;
+  gap: 6px;
+  margin: 24px;
+  transition: background-color 200ms ease-in-out;
+}
+
+.button:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+@media (max-width: 1000px) and (min-width: 601px) {
+  .button {
+    padding: 8px 28px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .button {
+    font-size: 13px;
+    padding: 8px 28px;
+  }
+}

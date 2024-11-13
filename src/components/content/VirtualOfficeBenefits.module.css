@@ -1,0 +1,136 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 56px;
+  width: 100%;
+}
+
+.contentContainer {
+  width: 90%;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.mapImage {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  min-height: 450px;
+  opacity: 0.6;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../../../public/images/IndiaMap.png");
+}
+
+.heading0 {
+  margin: 24px 0;
+  font-size: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font-weight: 400;
+}
+.heading0 > span {
+  font-weight: 600;
+}
+
+.cardContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container2 {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  width: 80%;
+  min-width: 250px;
+  margin: 32px 0;
+}
+
+.contentContainer2 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.container.right {
+  justify-content: flex-end;
+}
+
+.heading {
+  font-weight: 500;
+  font-size: 20px;
+  margin: 12px 0;
+}
+.text {
+  font-size: 14px;
+  color: #333333;
+}
+
+.text.right,
+.heading.right {
+  text-align: right;
+}
+
+@media (max-width: 1200px) {
+  .heading0 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+  .heading0 {
+    width: 95%;
+    font-size: 24px;
+    text-align: center;
+    justify-content: center;
+  }
+  .text {
+    font-size: 13px;
+  }
+  .heading {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container2 {
+    width: 100%;
+  }
+  .heading {
+    font-size: 15px;
+  }
+  .mapImage {
+    width: 350px;
+    min-height: 350px;
+  }
+  .container2 {
+    margin: 12px 0;
+  }
+  .heading {
+    margin: 8px 0;
+  }
+}
+@media (max-width: 400px) {
+  .heading {
+    font-size: 15px;
+  }
+  .text {
+    font-size: 12px;
+  }
+  .mapImage {
+    width: 300px;
+    min-height: 300px;
+  }
+}

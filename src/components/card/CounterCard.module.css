@@ -1,0 +1,28 @@
+.counterCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.count {
+  color: var(--primary-color);
+  color: #ec7754;
+  /* color: #e4656b; */
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.text {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+  .count {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 576px) {
+}

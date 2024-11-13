@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+:root {
+  --primary-color: #fcab14;
+  --primary-color-dark: #0e4053;
+  --primary-color-light: #1f6f8ccc;
+  --secondary-color: #1e90ff;
+  --accent-color: #ff6347;
+  --text-color: #333333;
+  --text-color-light: #484848;
+  --background-color: #f4f4f4;
+  --modal-background-color: #ededed;
+  --white-color: #fff;
+  --red-color: #f3493c;
+  --red-dull-color: #d53c31;
+}
+
+.slick-list,
+.slick-track {
+  gap: 10px;
+}
+
+.slick-slide {
+  box-sizing: border-box;
+  padding: 0 12px;
+}
+
+.slick-prev {
+  width: 40px;
+  height: 40px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: yellow;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: var(--primary-color) !important;
+  font-size: 24px !important;
+}
+
+::placeholder {
+  color: rgb(205, 205, 205);
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder {
+  /* Edge 12 -18 */
+  color: rgb(205, 205, 205);
+}
+
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+}
+
+@media (max-width: 576px) {
+}

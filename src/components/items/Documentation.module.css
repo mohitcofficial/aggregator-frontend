@@ -1,0 +1,164 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 44px 0 28px 0;
+}
+
+.container2 {
+  width: 90%;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  gap: 8px;
+  margin: 18px 0;
+}
+
+.heading1 {
+  font-weight: 600;
+}
+.option {
+  display: flex;
+  width: 90%;
+}
+
+.options {
+  cursor: pointer;
+  padding: 10px 4px;
+  text-align: center;
+  width: 33.3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  color: rgb(68, 68, 68);
+  font-size: 17px;
+  transition: all 150ms ease-in-out;
+}
+
+.options.active {
+  font-size: 20px;
+  color: #000;
+  font-weight: 600;
+  border-bottom: 4px solid var(--primary-color);
+}
+
+.contentContainer {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.imageContainer {
+  position: relative;
+  height: 200px;
+  width: 30%;
+}
+
+.image {
+  object-fit: contain;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 280px;
+  row-gap: 10px;
+  margin: 12px 0;
+  width: 50%;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 12px;
+  color: rgb(50, 50, 50);
+  font-size: 15px;
+}
+
+@media (max-width: 1275px) and (min-width: 1001px) {
+  .container2 {
+    width: 96%;
+  }
+
+  .heading {
+    font-size: 28px;
+    margin: 12px 0;
+  }
+  .options {
+    font-size: 15px;
+    padding: 8px 4px;
+  }
+  .listItem {
+    font-size: 15px;
+    margin: 10px 0;
+  }
+  .options {
+    font-size: 16px;
+    padding: 8px 4px;
+  }
+  .options.active {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 600px) {
+  .options {
+    font-size: 15px;
+    padding: 8px 4px;
+  }
+  .options.active {
+    font-size: 17px;
+  }
+  .listItem {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contentContainer {
+    flex-direction: column;
+  }
+  .list {
+    width: 90%;
+    margin: 0;
+  }
+  .option {
+    width: 100%;
+  }
+
+  .imageContainer {
+    width: 50%;
+  }
+  .heading {
+    font-size: 28px;
+    margin: 12px 0;
+    flex-wrap: wrap;
+  }
+  .option {
+    width: 100%;
+  }
+  .options {
+    font-size: 14px;
+    padding: 8px 4px;
+  }
+  .options.active {
+    font-size: 16px;
+  }
+  .listItem {
+    font-size: 13px;
+    margin: 10px 0;
+  }
+}

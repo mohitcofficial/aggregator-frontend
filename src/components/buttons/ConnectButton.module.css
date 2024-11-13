@@ -1,0 +1,32 @@
+.connectButton {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 16px 32px;
+  color: white;
+  border-radius: 28px;
+  cursor: pointer;
+  background-color: rgba(233, 157, 24, 1);
+  transition: background-color 0.4s ease;
+  margin: 12px 0;
+  font-size: 17px;
+}
+
+.connectButton:hover {
+  background: linear-gradient(
+    to right,
+    rgba(233, 157, 24, 1) 50%,
+    white 50%
+  ); /* Reverse gradient */
+  background-size: 200% 100%;
+  transition: background-position 0.4s;
+  background-position: -100% 0;
+  color: black;
+}
+
+@media (max-width: 600px) {
+  .connectButton {
+    padding: 8px 24px;
+    font-size: 15px;
+  }
+}

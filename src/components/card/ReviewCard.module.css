@@ -1,0 +1,54 @@
+.container {
+  height: auto;
+  max-width: 450px;
+  box-sizing: border-box;
+  padding: 18px;
+  box-shadow: 0 0 10px rgb(204, 204, 204);
+  margin: 12px;
+}
+
+.text {
+  margin: 12px 0;
+  color: rgb(104, 104, 104);
+  font-size: 14px;
+}
+
+.infoContainer {
+  display: flex;
+  align-items: center;
+  margin: 12px 0;
+}
+
+.initials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(173, 52, 16);
+  color: white;
+  font-weight: 600;
+  font-size: 18;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.box {
+  margin-left: 12px;
+}
+
+.name {
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+    min-width: 300px;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    width: 95%;
+    min-width: 250px;
+  }
+}

@@ -1,0 +1,165 @@
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  box-shadow: 0 0 5px rgb(212, 212, 212);
+  box-sizing: border-box;
+  padding: 12px;
+  gap: 18px;
+  position: relative;
+}
+
+.trendingRibbon {
+  position: absolute;
+  left: -6px;
+  top: 16px;
+  font-size: 13px;
+  z-index: 1;
+  padding: 1px 10px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.imageContainer {
+  position: relative;
+  width: 280px;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.cardInfo {
+  flex: 1;
+  min-width: 180px;
+}
+
+.heading {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.priceItem {
+  display: flex;
+  font-size: 13px;
+  justify-content: space-between;
+  margin: 4px 0;
+}
+.prices {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+  padding: 8px;
+}
+
+.item {
+  font-weight: 600;
+}
+
+.buttonContainer {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+.quotationButton {
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  border-radius: 24px;
+  padding: 8px 24px;
+  background-color: var(--white-color);
+  color: #34455c;
+  border: 1px solid #34455c;
+  cursor: pointer;
+  margin-top: 10px;
+  gap: 6px;
+}
+
+.quotationButton:hover {
+  background: linear-gradient(
+    to right,
+    var(--primary-color) 50%,
+    black 50%
+  ); /* Reverse gradient */
+  background-size: 200% 100%;
+  transition: background-position 0.4s;
+  background-position: -100% 0;
+  color: white;
+  border: 1px solid var(--white-color);
+}
+.browseButton {
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  border-radius: 24px;
+  padding: 8px 24px;
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  color: var(--white-color);
+  cursor: pointer;
+  margin-top: 10px;
+  gap: 6px;
+}
+
+.browseButton:hover {
+  background: linear-gradient(
+    to right,
+    var(--primary-color) 50%,
+    black 50%
+  ); /* Reverse gradient */
+  background-size: 200% 100%;
+  transition: background-position 0.4s;
+  background-position: -100% 0;
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
+}
+
+@media (max-width: 1450px) and (min-width: 1200px) {
+  .priceItem {
+    font-size: 13px;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+  }
+  .imageContainer {
+    height: 250px;
+    width: 100%;
+  }
+  .cardInfo {
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+}
+
+@media (max-width: 576px) {
+  .imageContainer {
+    height: 200px;
+    width: 100%;
+  }
+  .cardInfo {
+    width: 100%;
+  }
+  .buttonContainer {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .quotationButton {
+    width: 100%;
+  }
+  .browseButton {
+    width: 100%;
+  }
+}

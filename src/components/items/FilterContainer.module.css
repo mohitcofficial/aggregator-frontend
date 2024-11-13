@@ -1,0 +1,216 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 1280px;
+  margin: 44px 0;
+}
+.heading2 {
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 6px;
+  font-weight: 400;
+  margin: 12px 0;
+  flex-wrap: wrap;
+}
+.boldText {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.contentContainer {
+  display: flex;
+  position: relative;
+  width: 100%;
+  column-gap: 24px;
+  margin: 32px 0;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  flex: 5;
+}
+
+.stickyContainer {
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  top: 80px;
+  align-self: flex-start;
+  gap: 24px;
+}
+
+.offerContainer {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  color: var(--white-color);
+  box-sizing: border-box;
+  padding: 12px;
+}
+
+.offerTextContainer {
+  position: absolute;
+  z-index: 1;
+  padding: 4px 10px;
+  background-color: rgb(0, 0, 0, 0.5);
+  font-size: 14px;
+}
+.offerText {
+  font-weight: 400;
+  font-size: 22px;
+}
+.offerText > span {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.image {
+  object-fit: cover;
+  border-radius: 12px;
+  filter: brightness(100%);
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-shadow: 0 0 10px rgb(194, 194, 194);
+  box-sizing: border-box;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.heading {
+  font-size: 16px;
+  color: var(--text-color);
+}
+.subHeading {
+  font-size: 14px;
+  color: var(--text-color-light);
+}
+
+.personContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.personIcon {
+  border-radius: 50%;
+  color: #34455c;
+  background-color: #f0f0f0;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.personName {
+  font-size: 15px;
+  color: var(--text-color);
+}
+.personEmail {
+  font-size: 12px;
+  color: var(--text-color-light);
+}
+
+.callButton {
+  color: var(--white-color);
+  background-color: #34455c;
+  padding: 8px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+}
+.warningText {
+  text-align: center;
+  word-break: break-all;
+  width: 100%;
+  margin: 24px 0 44px 0;
+  color: rgb(75, 75, 75);
+}
+
+.mapContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 56px 0 18px 0;
+}
+
+.iFrameIcon {
+  width: 650px;
+  height: 400px;
+}
+
+.bouncy {
+  animation: bounce 0.3s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1250px) {
+  .offerContainer {
+    height: 150px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+  .contentContainer {
+    flex-direction: column;
+    row-gap: 32px;
+  }
+  .stickyContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .offerText {
+    font-size: 18px;
+  }
+  .offerText > span {
+    font-weight: 600;
+    font-size: 22px;
+  }
+  .heading {
+    font-size: 15px;
+  }
+  .subHeading {
+    font-size: 13px;
+  }
+  .personName {
+    font-size: 13px;
+  }
+}

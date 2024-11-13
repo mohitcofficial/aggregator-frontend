@@ -1,0 +1,241 @@
+.form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 45%;
+  max-width: 45%;
+  background-color: #f7f7f7;
+  border-radius: 30px;
+}
+
+.label {
+  /* width: 80%; */
+  font-size: 34px;
+  width: 85%;
+  color: #212529;
+  margin-top: 24px;
+  border-bottom: 4px solid #f4f4f4;
+}
+
+.label > span {
+  font-weight: 600;
+}
+
+.subHeading {
+  color: #4f4f4f;
+  margin-bottom: 10px;
+  font-size: 14px;
+  width: 85%;
+}
+
+.input {
+  width: 85%;
+  max-width: 85%;
+  font-size: 15px;
+  box-sizing: border-box;
+  outline: none;
+  border-radius: 28px;
+  border: none;
+  padding: 12px 18px;
+  margin: 8px 0;
+  font-family: inherit;
+  color: #757575;
+}
+
+.input2 {
+  width: 85%;
+  max-width: 85%;
+  font-size: 15px;
+  box-sizing: border-box;
+  outline: none;
+  border-radius: 28px;
+  border: none;
+  padding: 12px 18px;
+  font-family: inherit;
+  color: #757575;
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  width: 85%;
+  border-radius: 28px;
+  background-color: #fff;
+  max-width: 85%;
+}
+
+.text2 {
+  font-size: 13px;
+  color: #979797;
+  margin-left: 12px;
+  letter-spacing: 1px;
+}
+
+.input::placeholder,
+.textArea::placeholder {
+  color: #4f4f4f;
+}
+.textArea {
+  color: #757575;
+  font-family: inherit;
+  width: 85%;
+  max-width: 85%;
+  font-size: 15px;
+  padding: 12px 18px;
+  box-sizing: border-box;
+  resize: none;
+  outline: none;
+  border-radius: 28px;
+  border: none;
+  margin: 8px 0;
+  height: 100px;
+}
+
+.button {
+  display: flex;
+  color: white;
+  background-color: rgb(254, 173, 22);
+  border-radius: 28px;
+  cursor: pointer;
+  padding: 14px 0;
+  font-size: 16px;
+  margin: 12px 0;
+  outline: none;
+  border: none;
+  width: 60%;
+  margin-bottom: 32px;
+  justify-content: center;
+  transition: background-color 200ms ease-in-out;
+}
+
+.button.loading {
+  padding: 2px 0;
+}
+
+.button:hover {
+  background-color: black;
+}
+
+.imageContainer {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+.image {
+  height: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(35%);
+}
+
+@media (max-width: 1275px) and (min-width: 1001px) {
+  .form {
+    width: 100%;
+  }
+  .label {
+    font-size: 28px;
+    margin-top: 18px;
+  }
+  .subHeading {
+    font-size: 13px;
+  }
+  .input,
+  .textArea {
+    font-size: 14px;
+    padding: 10px 16px;
+    margin: 12px 0;
+  }
+  .button {
+    font-size: 16px;
+    margin: 12px 0 18px 0;
+    padding: 12px 0;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 801px) {
+  .form {
+    width: 90%;
+    min-width: 90%;
+  }
+  .label {
+    font-size: 24px;
+    margin-top: 14px;
+  }
+  .subHeading {
+    font-size: 13px;
+  }
+  .input,
+  .textArea {
+    font-size: 12px;
+    padding: 10px 16px;
+    margin: 8px 0;
+  }
+  .button {
+    font-size: 16px;
+    margin: 10px 0 14px 0;
+    padding: 12px 0;
+  }
+}
+
+@media (max-width: 800px) and (min-width: 601px) {
+  .form {
+    width: 85%;
+    min-width: 85%;
+  }
+  .subHeading {
+    font-size: 13px;
+  }
+  .label {
+    font-size: 24px;
+    margin-top: 14px;
+  }
+  .input,
+  .textArea {
+    font-size: 12px;
+    padding: 12px 16px;
+    margin: 8px 0;
+  }
+  .button {
+    font-size: 15px;
+    margin: 12px 0 24px 0;
+    padding: 10px 0;
+  }
+}
+
+.errorMessage {
+  width: 80%;
+  color: red;
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  .form {
+    width: 100%;
+    min-width: 100%;
+    border-radius: 0;
+  }
+  .label {
+    font-size: 24px;
+    margin-top: 12px;
+  }
+  .subHeading {
+    font-size: 12px;
+  }
+  .input,
+  .textArea {
+    font-size: 12px;
+    padding: 12px 16px;
+    margin: 8px 0;
+  }
+  .button {
+    font-size: 15px;
+    margin: 12px 0 24px 0;
+    padding: 10px 0;
+  }
+  .errorMessage {
+    font-size: 12px;
+  }
+}

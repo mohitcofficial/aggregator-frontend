@@ -1,0 +1,151 @@
+.container {
+  width: 90%;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.closeButton {
+  background-color: inherit;
+  color: var(--white-color);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.closeButton:hover {
+  color: rgb(227, 227, 227);
+}
+
+.searchBox {
+  width: 1000px;
+  color: rgb(205, 205, 205);
+  position: relative;
+}
+.searchField {
+  display: flex;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 2px solid rgb(205, 205, 205);
+}
+
+.searchLabel {
+  width: 50px;
+  height: 50px;
+  color: var(--white-color);
+}
+
+.input {
+  outline: none;
+  border: none;
+  background-color: inherit;
+  color: rgb(205, 205, 205);
+  font-family: inherit;
+  padding: 6px 12px;
+  font-size: 22px;
+  flex: 1;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 40px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 12px;
+  margin: 12px 0;
+  width: calc(100% - 40px);
+  max-height: 400px;
+  overflow: auto;
+}
+
+.location {
+  color: rgb(180, 180, 180);
+  margin: 2px 0;
+  padding: 6px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 200ms ease-in-out;
+}
+
+.location:hover {
+  transform: scale(1.005);
+  color: rgb(205, 205, 205);
+}
+
+.notFoundText {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: var(--red-color);
+  margin: 12px 0;
+}
+
+@media (max-width: 1200px) {
+  .searchBox {
+    width: 800px;
+  }
+  .input {
+    font-size: 20px;
+  }
+}
+@media (max-width: 992px) {
+  .searchBox {
+    width: 600px;
+  }
+  .input {
+    font-size: 18px;
+  }
+  .location {
+    padding: 4px 0;
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .searchBox {
+    width: 500px;
+  }
+  .input {
+    font-size: 17px;
+  }
+  .location {
+    padding: 4px 0;
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .searchBox {
+    width: 400px;
+  }
+  .input {
+    font-size: 15px;
+  }
+  .location {
+    padding: 4px 0;
+    font-size: 13px;
+  }
+  .dropdown {
+    padding: 0;
+  }
+}
+@media (max-width: 450px) {
+  .searchBox {
+    width: 325px;
+  }
+  .input {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,234 @@
+.form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: #fff;
+}
+
+.heading {
+  font-size: 24px;
+  width: 85%;
+  max-width: 85%;
+}
+.points {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  width: 85%;
+  max-width: 85%;
+  margin: 10px 0 4px 0;
+}
+
+.point {
+  display: flex;
+  column-gap: 4px;
+}
+
+.text {
+  font-size: 11px;
+  color: #3d3d3d;
+}
+
+.label {
+  font-size: 32px;
+  color: #f4f4f4;
+  font-weight: 600;
+  margin: 16px 4px;
+  border-bottom: 3px solid #f4f4f4;
+}
+
+.input {
+  width: 85%;
+  max-width: 85%;
+  font-size: 13px;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid rgb(231, 231, 231);
+  padding: 10px 14px;
+  margin: 8px 0;
+  font-family: inherit;
+  color: #979797;
+}
+.inputContainer {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  width: 85%;
+  max-width: 85%;
+  border: 1px solid rgb(231, 231, 231);
+}
+.input2 {
+  width: 85%;
+  max-width: 85%;
+  font-size: 13px;
+  box-sizing: border-box;
+  outline: none;
+  padding: 10px 14px;
+  font-family: inherit;
+  color: #979797;
+  border: none;
+}
+.text2 {
+  font-size: 13px;
+  color: #979797;
+  margin-left: 8px;
+  letter-spacing: 1px;
+}
+.textArea {
+  width: 85%;
+  max-width: 85%;
+  font-size: 13px;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid rgb(231, 231, 231);
+  padding: 10px 14px;
+  margin: 8px 0;
+  font-family: inherit;
+  color: #979797;
+  resize: none;
+}
+
+.errorMessage {
+  width: 80%;
+  color: red;
+  font-size: 12px;
+}
+
+.input::placeholder,
+.textArea::placeholder {
+  color: #7b7b7b;
+}
+
+.button {
+  display: flex;
+  color: white;
+  background-color: #6d7da8;
+  cursor: pointer;
+  padding: 12px 0;
+  font-size: 14px;
+  outline: none;
+  border: none;
+  width: 85%;
+  justify-content: center;
+  margin-top: 14px;
+  letter-spacing: 1px;
+  transition: background-color 200ms ease-in-out;
+}
+
+.button:hover {
+  background-color: #525e7f;
+}
+
+.modalInnerContainer {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1275px) and (min-width: 1001px) {
+  .heading {
+    font-size: 22px;
+  }
+  .label {
+    margin: 16px 0;
+  }
+  .button {
+    margin-top: 12px;
+    padding: 12px 0;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 801px) {
+  .form {
+    padding: 18px 0;
+    width: 90%;
+    min-width: 80%;
+  }
+  .input,
+  .textArea {
+    font-size: 13px;
+    padding: 8px 14px;
+    margin: 8px 0;
+  }
+  .button {
+    margin-top: 12px;
+    font-size: 15px;
+    padding: 10px 0;
+    margin-top: 8px;
+  }
+  .modalInnerContainer {
+    width: 50%;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 801px) and (min-width: 601px) {
+  .form {
+    width: 95%;
+    padding: 20px 0;
+    min-width: 85%;
+  }
+  .label {
+    font-size: 24px;
+    margin: 12px 0 28px 0;
+  }
+  .input,
+  .textArea {
+    font-size: 12px;
+    padding: 12px 16px;
+    margin: 8px 0;
+  }
+  .button {
+    margin-top: 12px;
+    font-size: 14px;
+    padding: 10px 0;
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  .form {
+    width: 100%;
+    min-width: 100%;
+    padding: 18px 0;
+  }
+  .label {
+    font-size: 24px;
+    margin: 12px 0 28px 0;
+  }
+  .input,
+  .textArea {
+    font-size: 12px;
+    padding: 12px 16px;
+    margin: 8px 0;
+  }
+  .textArea {
+    max-height: 80px;
+  }
+  .button {
+    font-size: 12px;
+    margin-top: 6px;
+    padding: 10px 0;
+  }
+  .errorMessage {
+    font-size: 12px;
+  }
+
+  .form {
+    box-sizing: border-box;
+    max-width: 90%;
+    width: 90%;
+  }
+  .modalInnerContainer {
+    width: 80%;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .modalInnerContainer {
+    width: 94%;
+    padding: 12px 0;
+  }
+}

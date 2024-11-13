@@ -1,0 +1,243 @@
+.container {
+  width: 100%;
+  margin: 64px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.heading {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  /* align-items: center; */
+}
+.heading1 {
+  font-size: 15px;
+  text-align: center;
+  color: rgb(62, 62, 62);
+}
+
+.heading2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  color: rgb(40, 40, 40);
+}
+
+.container1 {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24px 0;
+}
+
+.box1 {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 5px rgb(205, 205, 205);
+  border-radius: 12px;
+  height: 500px;
+}
+
+.box2 {
+  width: 36%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid rgb(203, 203, 203);
+  box-shadow: 0 0 10px rgb(205, 205, 205);
+  border-radius: 12px;
+  height: 600px;
+}
+
+.marginBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+
+.boxHeading {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 18px;
+}
+
+.boxHeading1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.leftBox {
+  color: rgb(90, 90, 90);
+}
+
+.priceText {
+  color: black;
+  font-weight: 600;
+  font-size: 32px;
+  margin-right: 4px;
+}
+.rightBox {
+  display: flex;
+  align-items: center;
+}
+
+.rightBoxText {
+  padding: 8px 18px;
+  background-color: rgb(254, 173, 22);
+  color: white;
+  border-radius: 20px;
+}
+
+.boxHeading2 {
+  font-weight: 600;
+  font-size: 20px;
+  margin: 0 0 12px 8px;
+}
+
+.content {
+  border-top: 1px solid rgb(208, 208, 208);
+  border-bottom: 1px solid rgb(208, 208, 208);
+  width: 100%;
+  padding: 6px 0;
+}
+
+.point {
+  display: flex;
+  width: 100%;
+  color: rgb(90, 90, 90);
+  gap: 8px;
+  font-size: 17px;
+  margin: 18px 0;
+}
+
+.image {
+  margin-top: 4px;
+}
+
+.button {
+  display: flex;
+  color: white;
+  background-color: rgb(254, 173, 22);
+  border-radius: 28px;
+  cursor: pointer;
+  padding: 12px 34px;
+  font-size: 17px;
+  margin: 18px 0;
+  transition: background-color 200ms ease-in-out;
+}
+
+.button:hover {
+  background-color: black;
+}
+
+@media (max-width: 1450px) and (min-width: 1001px) {
+  .container1 {
+    width: 95%;
+  }
+  .box1 {
+    height: 550px;
+  }
+  .box2 {
+    height: 750px;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 600px) {
+  .container1 {
+    flex-direction: column;
+  }
+  .box1 {
+    width: 70%;
+    height: auto;
+  }
+  .box2 {
+    width: 80%;
+    height: auto;
+    margin: 32px 0;
+  }
+  .heading1 {
+    font-size: 14px;
+  }
+  .heading2 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 44px;
+  }
+  .container1 {
+    flex-direction: column;
+    width: 95%;
+  }
+  .box1 {
+    width: 85%;
+    height: auto;
+  }
+  .box2 {
+    border: 1px solid rgb(203, 203, 203);
+    width: 95%;
+    margin: 32px 0;
+    height: auto;
+  }
+  .marginBox {
+    width: 94%;
+  }
+  .heading1 {
+    font-size: 12px;
+    text-align: center;
+  }
+  .heading2 {
+    text-align: center;
+    font-size: 26px;
+  }
+  .priceText {
+    font-size: 28px;
+  }
+  .rightBoxText {
+    padding: 6px 14px;
+    font-size: 14px;
+  }
+  .boxHeading2 {
+    font-size: 18px;
+  }
+  .point {
+    font-size: 15px;
+    margin: 16px 0;
+  }
+  .image {
+    width: 16px;
+    height: 16px;
+    margin-top: 4px;
+  }
+  .button {
+    padding: 10px 24px;
+    font-size: 15px;
+    margin: 16px 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .contentContainer {
+    max-width: 1420px;
+  }
+}

@@ -1,0 +1,27 @@
+const BaseURL = "https://virtualxcel.in";
+
+export const WebsiteURLs = {
+  home: `/`,
+  virtualOffice: `/virtual-office`,
+  coworkingSpace: `/coworking-space`,
+  partnership: `/partnership`,
+  contactus: `/contact-us`,
+  businessRegistration: `/business-registration`,
+  gstRegistration: `/gst-registration`,
+  mailingAddress: `/mailing-address`,
+  desk: `/desk`,
+  cabin: `/cabin`,
+  dayPass: `/day-pass`,
+  aboutUs: `/about-us`,
+  privacyPolicy: `/privacy-policy`,
+  refundPolicy: `/refund-policy`,
+  cookiesPolicy: `/cookies-policy`,
+  termsAndConditions: `/terms-and-conditions`,
+  blog: `https://blog.virtualxcel.in`,
+  tel: "Tel:09871001079",
+  mailTo: "Mailto:sales@virtualxcel.in",
+  facebook: "https://www.facebook.com/profile.php?id=61562676830223",
+  instagram: "https://www.instagram.com/virtualxcel?igsh=MThmaWdyZHI1emtvOA==",
+  twitter: "https://x.com/virtualxcel",
+  linkedin: "https://www.linkedin.com/company/virtualxcel-solutions",
+};

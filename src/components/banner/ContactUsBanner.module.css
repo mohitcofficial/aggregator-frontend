@@ -1,0 +1,113 @@
+.bannerContainer {
+  display: flex;
+  height: 400px;
+  width: 100%;
+  background-color: #edf3f4;
+}
+
+.leftContent {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.heading {
+  font-size: 44px;
+  font-weight: 600;
+  color: rgb(63, 63, 63);
+}
+
+.subHeading {
+  font-size: 20px;
+  color: rgb(63, 63, 63);
+}
+.rightContent {
+  width: 55%;
+  height: 100%;
+}
+
+.imageContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+@media (max-width: 1000px) {
+  .bannerContainer {
+    height: 325px;
+  }
+  .heading {
+    font-size: 40px;
+  }
+
+  .subHeading {
+    font-size: 18px;
+  }
+}
+@media (max-width: 800px) {
+  .bannerContainer {
+    height: 275px;
+  }
+  .heading {
+    font-size: 34px;
+  }
+
+  .subHeading {
+    font-size: 15px;
+  }
+}
+@media (max-width: 625px) {
+  .bannerContainer {
+    height: 225px;
+  }
+  .heading {
+    font-size: 30px;
+  }
+
+  .subHeading {
+    font-size: 14px;
+  }
+}
+@media (max-width: 550px) {
+  .bannerContainer {
+    background: url("/images/Contact.jpg");
+  }
+  .rightContent {
+    display: none;
+  }
+  .leftContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    justify-content: flex-start;
+    padding: 0 0 12px 12px;
+  }
+  .leftContent::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background: url("/images/Contact.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(40%);
+  }
+  .text {
+    margin-left: 12px;
+    width: 60%;
+  }
+  .heading,
+  .subHeading {
+    color: var(--white-color);
+  }
+}

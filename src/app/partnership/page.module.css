@@ -1,0 +1,111 @@
+.container {
+  width: 100%;
+  height: calc(100vh - 70px);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  object-fit: cover;
+  filter: brightness(30%);
+  z-index: -1;
+}
+
+.content {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-items: center;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 54px;
+  font-weight: 700;
+  margin: 12px 0;
+}
+
+.heading1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.subHeading {
+  font-size: 24px;
+  text-align: center;
+}
+
+.text {
+  text-align: center;
+  width: 90%;
+  margin: 12px 0;
+  font-size: 16px;
+}
+
+.gradientText {
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@media (max-width: 1250px) {
+  .content {
+    width: 80%;
+  }
+  .heading {
+    font-size: 48px;
+  }
+  .subHeading {
+    font-size: 22px;
+  }
+  .text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 800px) {
+  .content {
+    width: 80%;
+  }
+  .heading {
+    font-size: 44px;
+  }
+  .subHeading {
+    font-size: 20px;
+  }
+  .text {
+    font-size: 14px;
+    margin: 16px 0;
+  }
+}
+@media (max-width: 600px) {
+  .content {
+    width: 90%;
+  }
+  .heading {
+    font-size: 36px;
+  }
+  .subHeading {
+    font-size: 18px;
+  }
+  .text {
+    font-size: 12px;
+    margin: 16px 0;
+  }
+  .connectButton {
+    padding: 12px 24px;
+    font-size: 15px;
+  }
+}

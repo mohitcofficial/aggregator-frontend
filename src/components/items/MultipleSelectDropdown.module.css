@@ -1,0 +1,120 @@
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 24px 0;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: row;
+  min-width: 200px;
+  width: 600px;
+}
+
+.marginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.buttonContainer {
+  display: flex;
+  column-gap: 24px;
+  height: 100%;
+  align-items: center;
+}
+
+.resetButton {
+  outline: none;
+  border: none;
+  height: 42px;
+  width: 150px;
+  font-size: 16px;
+  border: 1px solid rgb(0, 160, 208);
+  background-color: rgb(0, 160, 208);
+  color: white;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.resetButton:hover {
+  background-color: white;
+  color: rgb(0, 160, 208);
+}
+.filterButton {
+  outline: none;
+  border: none;
+  height: 42px;
+  width: 150px;
+  font-size: 16px;
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+  color: white;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.filterButton:hover {
+  /* background-color: white;
+    color: #fcab14; */
+  color: white;
+  background-color: #cc8707;
+  border-color: #cc8707;
+}
+
+.bouncyButton {
+  transition: transform 0.2s;
+}
+
+.bouncy {
+  animation: bounce 0.3s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1000px) {
+  .marginContainer {
+    flex-direction: column;
+  }
+
+  .filterButton,
+  .resetButton {
+    height: 42px;
+  }
+}
+@media (max-width: 600px) {
+  .marginContainer {
+    flex-direction: column;
+  }
+
+  .filterButton,
+  .resetButton {
+    height: 42px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 400px) {
+  .filterButton,
+  .resetButton {
+    height: 38px;
+    font-size: 14px;
+  }
+}

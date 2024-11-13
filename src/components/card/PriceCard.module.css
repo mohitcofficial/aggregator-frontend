@@ -1,0 +1,244 @@
+.box1 {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 8px rgb(187, 187, 187);
+  min-height: 500px;
+  height: 500px;
+  transition: transform 250ms ease-in-out;
+  background-color: #fff;
+}
+
+.box2 {
+  min-height: 575px;
+  width: 36%;
+  border: 2px solid rgb(203, 203, 203);
+  box-shadow: 0 0 10px var(--primary-color);
+  transition: transform 250ms ease-in-out;
+  animation: glow 1.8s infinite;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px var(--primary-color);
+  }
+  50% {
+    box-shadow: 0 0 14px var(--primary-color), 0 0 16px var(--primary-color);
+  }
+  100% {
+    box-shadow: 0 0 10px var(--primary-color);
+  }
+}
+
+.box1:hover {
+  transform: scale(1.015);
+}
+.box2:hover {
+  transform: scale(1.015);
+}
+
+.marginBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+  min-height: 100%;
+}
+
+.boxHeading {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 18px;
+}
+
+.boxHeading1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.leftBox {
+  color: var(--text-color);
+}
+
+.priceText {
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 30px;
+  margin-right: 4px;
+}
+.rightBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rightBoxText {
+  color: rgb(254, 173, 22);
+  border-radius: 18px;
+  font-weight: 600;
+  margin-left: 6px;
+}
+
+.gradientText {
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1),
+    rgba(253, 29, 29, 1),
+    rgba(252, 176, 69, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.boxHeading2 {
+  font-weight: 600;
+  margin-top: 8px;
+  font-size: 20px;
+  color: var(--text-color);
+}
+
+.subHeading {
+  font-size: 13px;
+  color: var(--text-color-light);
+  margin: 8px 0;
+}
+
+.content {
+  width: 100%;
+}
+
+.heading01 {
+  font-size: 15px;
+}
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.point {
+  display: flex;
+  width: 100%;
+  color: var(--text-color-light);
+  gap: 8px;
+  font-size: 13px;
+  margin: 4px 0;
+}
+
+.image {
+  margin-top: 4px;
+}
+@media (max-width: 1375px) and (min-width: 1000px) {
+  .box1 {
+    min-height: 625px;
+    height: 625px;
+  }
+  .box2 {
+    min-height: 625px;
+    height: 625px;
+  }
+}
+@media (max-width: 1275px) and (min-width: 1000px) {
+  .box1 {
+    min-height: 645px;
+    height: 645px;
+  }
+  .box2 {
+    min-height: 645px;
+    height: 645px;
+  }
+  .point {
+    font-size: 13px;
+  }
+  .priceBox {
+    font-size: 15px;
+  }
+}
+@media (max-width: 800px) and (min-width: 600px) {
+  .box1 {
+    min-height: 550px;
+    height: 550px;
+  }
+  .box2 {
+    min-height: 550px;
+    height: 550px;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 601px) {
+  .box1 {
+    width: 70%;
+  }
+  .box2 {
+    width: 80%;
+    margin: 32px 0;
+  }
+  .point {
+    font-size: 13px;
+  }
+  .priceBox {
+    font-size: 14px;
+  }
+  .rightBoxText {
+    padding: 4px 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .box1 {
+    min-height: 550px;
+    height: 550px;
+    width: 85%;
+  }
+  .box2 {
+    min-height: 550px;
+    height: 550px;
+    border: 1px solid rgb(203, 203, 203);
+    width: 95%;
+    margin: 32px 0;
+  }
+  .marginBox {
+    width: 94%;
+  }
+  .heading2 {
+    font-size: 28px;
+  }
+  .priceBox {
+    font-size: 13px;
+  }
+  .priceText {
+    font-size: 26px;
+  }
+  .rightBoxText {
+    padding: 2px 14px;
+    font-size: 14px;
+  }
+  .boxHeading2 {
+    font-size: 18px;
+  }
+  .point {
+    font-size: 12px;
+    margin: 8px 0;
+  }
+  .image {
+    width: 16px;
+    height: 16px;
+    margin-top: 4px;
+  }
+}
+
+@media (max-width: 400px) {
+  .box1 {
+    min-height: 625px;
+    height: 625px;
+  }
+  .box2 {
+    min-height: 625px;
+    height: 625px;
+  }
+}

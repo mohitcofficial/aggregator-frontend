@@ -1,0 +1,248 @@
+.form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  max-width: 90%;
+  background-color: #fff;
+  z-index: 10;
+  padding: 28px 0 36px 0;
+}
+
+.heading {
+  font-size: 22px;
+  width: 85%;
+  max-width: 85%;
+}
+.points {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  width: 85%;
+  max-width: 85%;
+  margin: 10px 0 4px 0;
+}
+
+.point {
+  display: flex;
+  column-gap: 4px;
+}
+
+.text {
+  font-size: 11px;
+  color: #3d3d3d;
+}
+
+.label {
+  font-size: 32px;
+  color: #f4f4f4;
+  font-weight: 600;
+  margin: 16px 4px;
+  border-bottom: 3px solid #f4f4f4;
+}
+
+.input {
+  width: 85%;
+  max-width: 85%;
+  font-size: 13px;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid rgb(231, 231, 231);
+  padding: 10px 14px;
+  margin: 10px 0 2px 0;
+  font-family: inherit;
+  color: #979797;
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(231, 231, 231);
+  margin: 10px 0 2px 0;
+  width: 85%;
+  max-width: 85%;
+}
+
+.text2 {
+  font-size: 13px;
+  color: #979797;
+  margin-left: 8px;
+  letter-spacing: 1px;
+}
+
+.input2 {
+  width: 85%;
+  max-width: 85%;
+  font-size: 13px;
+  box-sizing: border-box;
+  outline: none;
+  padding: 10px 14px;
+  font-family: inherit;
+  color: #979797;
+  border: none;
+}
+
+.textArea {
+  width: 85%;
+  max-width: 85%;
+  font-size: 13px;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid rgb(231, 231, 231);
+  padding: 10px 14px;
+  margin: 8px 0;
+  font-family: inherit;
+  color: #979797;
+  resize: none;
+}
+
+.errorMessage {
+  width: 80%;
+  color: red;
+  font-size: 12px;
+}
+
+.imageContainer {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+.image {
+  height: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(35%);
+}
+
+.input::placeholder,
+.textArea::placeholder {
+  color: #7b7b7b;
+}
+
+.button {
+  display: flex;
+  color: #fff;
+  /* background-color: #000; */
+  background-color: #fcab14;
+  cursor: pointer;
+  padding: 13px 0;
+  font-size: 14px;
+  outline: none;
+  border: none;
+  width: 85%;
+  justify-content: center;
+  margin-top: 14px;
+  letter-spacing: 1.5px;
+  transition: background-color 150ms ease-in-out;
+}
+.button.loading {
+  padding: 2px 0;
+}
+
+.button:hover {
+  color: white;
+  /* background-color: #fcab14; */
+  /* background: rgb(189, 37, 37);
+  background: linear-gradient(
+    18deg,
+    rgba(189, 37, 37, 1) 0%,
+    rgba(239, 157, 89, 1) 64%,
+    rgba(241, 200, 33, 1) 100%
+  ); */
+  background: rgb(15, 37, 75);
+  background: linear-gradient(
+    45deg,
+    rgba(15, 37, 75, 1) 0%,
+    rgba(86, 118, 139, 1) 43%,
+    rgba(147, 174, 194, 1) 100%
+  );
+}
+
+@media (max-width: 1275px) and (min-width: 1001px) {
+  .heading {
+    font-size: 22px;
+  }
+  .label {
+    margin: 16px 0;
+  }
+  .button {
+    margin-top: 12px;
+    padding: 12px 0;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 801px) {
+  .form {
+    padding: 18px 0;
+    width: 80%;
+    min-width: 80%;
+  }
+  .input,
+  .textArea {
+    font-size: 13px;
+    padding: 8px 14px;
+    margin: 8px 0;
+  }
+  .button {
+    margin-top: 12px;
+    font-size: 15px;
+    padding: 10px 0;
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 801px) and (min-width: 601px) {
+  .form {
+    width: 85%;
+    padding: 20px 0;
+    min-width: 85%;
+  }
+  .label {
+    font-size: 24px;
+    margin: 12px 0 28px 0;
+  }
+  .input,
+  .textArea {
+    font-size: 12px;
+    padding: 12px 16px;
+    margin: 8px 0;
+  }
+  .button {
+    margin-top: 12px;
+    font-size: 14px;
+    padding: 10px 0;
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  .form {
+    width: 100%;
+    min-width: 100%;
+    padding: 18px 0;
+  }
+  .label {
+    font-size: 24px;
+    margin: 12px 0 28px 0;
+  }
+  .input,
+  .textArea {
+    font-size: 12px;
+    padding: 12px 16px;
+    margin: 8px 0;
+  }
+  .textArea {
+    max-height: 80px;
+  }
+  .button {
+    font-size: 12px;
+    margin-top: 6px;
+    padding: 10px 0;
+  }
+  .errorMessage {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,92 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  max-width: 500px;
+  box-sizing: border-box;
+  padding: 24px;
+  background-color: var(--white-color);
+  box-shadow: 0 0 8px rgb(187, 187, 187);
+  transition: transform 250ms ease-in-out;
+}
+
+.container:hover {
+  transform: scale(1.015);
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 12px;
+  flex: 1;
+}
+
+.heading1 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.heading2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.subHeading {
+  font-size: 18px;
+  font-weight: 500;
+}
+.price {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.gradientText {
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1),
+    rgba(253, 29, 29, 1),
+    rgba(252, 176, 69, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.offeringsContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 12px 0;
+  gap: 4px;
+  width: 100%;
+  color: var(--text-color);
+}
+
+.text {
+  font-weight: 500;
+  font-size: 15px;
+  padding-left: 6px;
+}
+
+.offer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--text-color-light);
+  font-size: 13px;
+}
+
+.callButton {
+  background-color: var(--primary-color);
+  font-size: 15px;
+  outline: none;
+  border: none;
+  margin-top: 16px;
+  padding: 10px 24px;
+  color: var(--white-color);
+  transition: background-color 200ms ease-in-out;
+}
+
+.callButton:hover {
+  background-color: #000;
+}
