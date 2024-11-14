@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import classes from "./CountContainer.module.css";
 import CounterCard from "./card/CounterCard";
@@ -41,6 +40,7 @@ function CountContainer() {
             end={item.end}
             suffix={item.suffix}
             text={item.text}
+            delay={1}
           />
         ))}
       </div>
