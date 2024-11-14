@@ -54,7 +54,6 @@ export default function LPModal({ children }) {
       name: formState.user_name,
       email: formState.user_email,
       phoneNumber: formState.user_mobile,
-      location: "",
       requirement: formState.user_message,
     };
     setLoading(true);
