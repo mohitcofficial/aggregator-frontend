@@ -49,10 +49,7 @@ function LPCitiesSlider() {
           <div className={classes.rightBox}>
             <Slider {...sliderSettings} key={cities.length}>
               {cities.map((city, index) => (
-                <Link
-                  key={index}
-                  href={`/virtual-office/${city?.stateId?.slug}/${city?.slug}`}
-                >
+                <LPModal>
                   <div className={classes.imageContainer}>
                     <Image
                       className={classes.image}
@@ -71,7 +68,7 @@ function LPCitiesSlider() {
                       </p>
                     </div>
                   </div>
-                </Link>
+                </LPModal>
               ))}
             </Slider>
           </div>

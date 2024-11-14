@@ -30,8 +30,13 @@ function ContactForm() {
   const sendMail = async (mailBody) => {
     const body = {
       to: "sales@virtualxcel.in",
-      subject: "Enquiry-Landing Page",
+      subject: "Enquiry",
       text: mailBody,
+      name: formState.user_name,
+      email: formState.user_email,
+      phoneNumber: formState.user_mobile,
+      location: formState.user_location,
+      requirement: formState.user_message,
     };
     setLoading(true);
     try {

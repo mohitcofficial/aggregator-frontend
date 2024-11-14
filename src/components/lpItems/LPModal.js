@@ -51,6 +51,11 @@ export default function LPModal({ children }) {
       to: "testing@virtualxcel.in",
       subject: "Enquiry-Landing Page",
       text: mailBody,
+      name: formState.user_name,
+      email: formState.user_email,
+      phoneNumber: formState.user_mobile,
+      location: "",
+      requirement: formState.user_message,
     };
     setLoading(true);
     try {

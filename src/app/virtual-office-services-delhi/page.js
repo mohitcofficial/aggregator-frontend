@@ -7,7 +7,7 @@ import ImagesBox from "@/components/lpItems/delhi/ImagesBox";
 import LPPriceItem from "@/components/lpItems/LPPriceItem";
 import dynamic from "next/dynamic";
 import LPBanner from "@/components/lpItems/LPBanner";
-import LPSlider from "@/components/items/LPSlider";
+import LPSlider from "@/components/lpItems/LPSlider";
 
 const ReviewSlider = dynamic(
   () => import("../../components/slider/ReviewSlider"),

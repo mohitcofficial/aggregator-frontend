@@ -2,7 +2,7 @@ import Image from "next/image";
 import LP from "../../../public/images/VirtualOfficeBanner.jpg";
 import LP1 from "../../../public/images/Delhi/DelhiHD.jpg";
 import classes from "./LPBanner.module.css";
-import LPContactForm from "../items/LPContactForm";
+import LPContactForm from "./LPContactForm";
 
 function LPBanner({ name = "lp" }) {
   return (

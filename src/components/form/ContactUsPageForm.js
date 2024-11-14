@@ -10,6 +10,7 @@ function ContactUsPageForm() {
     user_email: "",
     user_message: "",
     user_mobile: "",
+    user_location: "",
   };
 
   const formRef = useRef();
@@ -26,6 +27,11 @@ function ContactUsPageForm() {
       to: "sales@virtualxcel.in",
       subject: "Enquiry",
       text: mailBody,
+      name: formState.user_name,
+      email: formState.user_email,
+      phoneNumber: formState.user_mobile,
+      location: formState.user_location,
+      requirement: formState.user_mobile,
     };
     setLoading(true);
     try {
@@ -57,6 +63,7 @@ function ContactUsPageForm() {
                         <h3>Name: </h3> <p>${formState.user_name}</p>
                         <h3>Email: </h3> <p>${formState.user_email}</p>
                         <h3>Phone No: </h3> <p>${formState.user_mobile}</p>
+                        <h3>Requirement: </h3>  <p>${formState.user_location}</p>
                         <h3>Requirement: </h3>  <p>${formState.user_message}</p>
                         <br>
                         Have a good day!`;
@@ -84,6 +91,9 @@ function ContactUsPageForm() {
     }
     if (formState.user_mobile.trim() === "") {
       errors.user_mobile = "Phone Number is Required! ";
+    }
+    if (formState.user_location.trim() === "") {
+      errors.user_location = "Location is Required! ";
     }
     if (formState.user_message.trim() === "") {
       errors.user_message = "Message is Required! ";
@@ -141,6 +151,17 @@ function ContactUsPageForm() {
       </div>
 
       <p className={classes.errorMessage}>{formErrors.user_mobile}</p>
+
+      <input
+        placeholder="Location"
+        className={classes.input}
+        type="text"
+        onChange={inputChangeHandler}
+        name="user_location"
+        value={formState.user_location}
+      />
+
+      <p className={classes.errorMessage}>{formErrors.user_location}</p>
 
       <textarea
         placeholder="Requirement"

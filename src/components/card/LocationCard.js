@@ -7,6 +7,7 @@ import GetQuoteButton from "../buttons/GetQuoteButton";
 import StarIcon from "@mui/icons-material/Star";
 import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
 import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
+import LPModal from "../lpItems/LPModal";
 // import dynamic from "next/dynamic";
 // const LocationSlider = dynamic(
 //   () => import("../../components/slider/LocationSlider"),
@@ -68,7 +69,11 @@ function LocationCard({ location }) {
           </div>
         </div>
         <div className={classes.buttonContainer}>
-          <GetQuoteButton />
+          <div style={{ width: "48%" }}>
+            <LPModal>
+              <GetQuoteButton />
+            </LPModal>
+          </div>
           <BookButton url={`/contact-us`} />
         </div>
       </div>

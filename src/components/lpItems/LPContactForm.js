@@ -32,29 +32,21 @@ function LPContactForm() {
       to: "sales@virtualxcel.in",
       subject: "Enquiry-Landing Page",
       text: mailBody,
+      name: formState.user_name,
+      email: formState.user_email,
+      phoneNumber: formState.user_mobile,
+      location: formState.user_location,
+      requirement: formState.user_message,
     };
     setLoading(true);
     try {
       const resp = await UserApis.sendMail(body);
-      // if (typeof window !== "undefined" && window.gtag) {
-      //   window.gtag("event", "submit", {
-      //     event_category: "form",
-      //     event_label: "Landing Page Contact Form",
-      //     event_action: "submit",
-      //   });
-      // }
       sendGTMEvent({ event: "formSubmit", value: "Landing Page" });
       setLoading(false);
       toast.success("Thank You For Contacting Us !");
       setFormState(initialInputValue);
-      // swal(
-      //   "Form Submitted Successfully !",
-      //   "Our team will contact you as soon as possible",
-      //   "success"
-      // ).then(() => router.push("/"));
       router.push("/thank-you");
     } catch (error) {
-      // console.log(error);
       toast.error("Something Went Wrong ! Try Again Later");
 
       setLoading(false);
@@ -107,8 +99,6 @@ function LPContactForm() {
     }
     return errors;
   };
-
-  const fontSize = { xs: 14, sm: 15, md: 16, lg: 16 };
 
   return (
     <form

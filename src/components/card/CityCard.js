@@ -4,6 +4,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import LPModal from "../lpItems/LPModal";
 
 function CityCard({ city }) {
   const fontSize = { xs: 14, sm: 16, md: 18, lg: 18 };
@@ -48,10 +49,14 @@ function CityCard({ city }) {
           </div>
         </div>
         <div className={classes.buttonContainer}>
-          <button className={classes.quotationButton}>
-            Get Quotation
-            <ArrowForwardIcon sx={{ fontSize: fontSize }} />
-          </button>
+          <div>
+            <LPModal>
+              <button className={classes.quotationButton}>
+                Get Quotation
+                <ArrowForwardIcon sx={{ fontSize: fontSize }} />
+              </button>
+            </LPModal>
+          </div>
           <Link
             href={`${pathname}/${city?.slug}`}
             className={classes.browseButton}
