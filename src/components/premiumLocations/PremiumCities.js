@@ -16,7 +16,7 @@ function PremiumCities() {
       name: "Gurgaon",
       price: "799",
       image: GurgaonImage,
-      url: "/virtual-office/haryana-gurgaon",
+      url: "/virtual-office/haryana/gurgaon",
     },
     {
       name: "Bangalore",
