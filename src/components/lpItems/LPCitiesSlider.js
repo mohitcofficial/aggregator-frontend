@@ -49,7 +49,7 @@ function LPCitiesSlider() {
           <div className={classes.rightBox}>
             <Slider {...sliderSettings} key={cities.length}>
               {cities.map((city, index) => (
-                <LPModal>
+                <LPModal key={index}>
                   <div className={classes.imageContainer}>
                     <Image
                       className={classes.image}
