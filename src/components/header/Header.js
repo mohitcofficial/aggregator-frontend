@@ -25,19 +25,15 @@ function Header() {
   const [dropDownActive2, setDropDownActive2] = useState(false);
   const [boxShadow, setBoxShadow] = useState("none");
 
-  const handleScroll = () => {
-    if (window?.scrollY > lastScrollY && window?.scrollY > 64)
-      setIsVisible(false);
-    else setIsVisible(true);
-    setLastScrollY(window?.scrollY);
-  };
-
   const handleDropDownClick = (event) => {
     event.stopPropagation();
   };
 
   useEffect(() => {
     const handleScroll = () => {
+      if (window?.scrollY > lastScrollY && window?.scrollY > 64)
+        setIsVisible(false);
+      else setIsVisible(true);
       setBoxShadow(
         window.scrollY === 0 ? "none" : "0px 4px 10px rgba(0, 0, 0, 0.1)"
       );
