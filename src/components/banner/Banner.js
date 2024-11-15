@@ -120,7 +120,7 @@ function Banner() {
         <div className={classes.textContent}>
           <div className={classes.heading1}>
             <div>Unlock Your</div>
-            <div>Productivity</div>
+            <div className={classes.gradientText}>Productivity</div>
             <div>Potential</div>
             with Us
           </div>
