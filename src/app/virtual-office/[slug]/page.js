@@ -55,8 +55,8 @@ export async function generateMetadata({ params }) {
   const pageData = await fetchPageData(slug);
 
   return {
-    title: pageData?.state?.metaData?.metaTitle || "Testing",
-    description: pageData?.state?.metaData.metaDescription || "Testing",
-    keywords: pageData?.state?.metaData.metaKeyword || "Testing",
+    title: pageData?.state?.metaData?.metaTitle || "Virtualxcel",
+    description: pageData?.state?.metaData.metaDescription || "Virtualxcel",
+    keywords: pageData?.state?.metaData.metaKeyword || "Virtualxcel",
   };
 }
