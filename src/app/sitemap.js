@@ -10,6 +10,13 @@ export default async function sitemap() {
       priority,
     }));
   };
+  const generateUrlEntries2 = (data, pathPrefix, priority) => {
+    if (!data || !data.length) return [];
+    return data.map((item) => ({
+      url: `${BASE_URL}${pathPrefix}/${item?.stateId?.slug}/${item.slug}`,
+      priority,
+    }));
+  };
 
   const staticUrls = [
     { url: `${BASE_URL}`, priority: 1 },
@@ -41,7 +48,7 @@ export default async function sitemap() {
       "/virtual-office",
       0.95
     );
-    const cityEntries = generateUrlEntries(
+    const cityEntries = generateUrlEntries2(
       citiesData?.cities,
       "/virtual-office",
       0.94
