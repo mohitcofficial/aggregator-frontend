@@ -6,6 +6,7 @@ import BookButton from "../buttons/BookButton";
 import GetQuoteButton from "../buttons/GetQuoteButton";
 import StarIcon from "@mui/icons-material/Star";
 import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
+import ArrowCircleUpIcon from "@mui/icons-material/ArrowCircleUp";
 import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
 import LPModal from "../lpItems/LPModal";
 // import dynamic from "next/dynamic";
@@ -30,13 +31,19 @@ function LocationCard({ location }) {
             <span>{location?.rating}</span>
             <StarIcon sx={{ fontSize: fontSize }} />
           </div>
-          {location?.rating >= 4.5 && (
-            <div className={classes.topRatedContainer}>
-              <span>Top Rated</span>
+          {location?.businessRegistrationPrice >= 15000 && (
+            <div className={classes.premiumTagContainer}>
+              <span>Premium</span>
               <WorkspacePremiumIcon sx={{ fontSize: fontSize }} />
             </div>
           )}
-          {location?.mailingAddressPrice <= 9000 && (
+          {location?.rating >= 4.5 && (
+            <div className={classes.topRatedContainer}>
+              <span>Top Rated</span>
+              <ArrowCircleUpIcon sx={{ fontSize: fontSize }} />
+            </div>
+          )}
+          {location?.mailingAddressPrice <= 10000 && (
             <div className={classes.affordableTagContainer}>
               <span>Affordable</span>
               <CurrencyRupeeIcon sx={{ fontSize: fontSize }} />

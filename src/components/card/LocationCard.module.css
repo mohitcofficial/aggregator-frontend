@@ -63,6 +63,16 @@
   font-weight: 500;
   gap: 4px;
 }
+.premiumTagContainer {
+  display: flex;
+  align-items: center;
+  background-color: #fff5c6;
+  color: #345c3f;
+  font-size: 12px;
+  padding: 2px 6px;
+  font-weight: 500;
+  gap: 4px;
+}
 
 .heading {
   font-weight: 600;
