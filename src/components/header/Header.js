@@ -10,7 +10,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import TransparentLogo from "../../../public/images/TransparentLogo4.png";
+import TransparentLogo from "../../../public/images/TransparentLogo1.png";
 import classes from "./Header.module.css";
 import SearchModal from "../modal/SearchModal";
 

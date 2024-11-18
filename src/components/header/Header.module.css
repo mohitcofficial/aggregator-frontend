@@ -35,7 +35,7 @@
 
 .imageContainer {
   display: flex;
-  width: 140px;
+  width: 150px;
   height: 56px;
 }
 
@@ -297,6 +297,9 @@
 }
 
 @media (max-width: 576px) {
+  .imageContainer {
+    width: 140px;
+  }
   .navContent {
     width: 95%;
   }
