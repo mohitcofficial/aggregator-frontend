@@ -12,6 +12,8 @@ import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import TransparentLogo from "../../../public/images/TransparentLogo1.png";
 import classes from "./Header.module.css";
+import CallIcon from "@mui/icons-material/Call";
+import EmailIcon from "@mui/icons-material/Email";
 import SearchModal from "../modal/SearchModal";
 
 function Header() {
@@ -49,6 +51,35 @@ function Header() {
   }, [lastScrollY]);
   return (
     <div className={classes.navContainer}>
+      <div
+        className={`${classes.topnav} ${
+          isVisible ? classes.show : classes.hide
+        }`}
+      >
+        <div className={classes.topNavContent}>
+          <span>
+            <CallIcon
+              sx={{
+                color: "#000",
+                marginRight: "6px",
+                fontSize: { xs: 14, sm: 16, md: 18, lg: 18 },
+              }}
+            />
+            +91 9871001079
+          </span>
+          |
+          <span>
+            <EmailIcon
+              sx={{
+                color: "#000",
+                marginRight: "6px",
+                fontSize: { xs: 14, sm: 16, md: 18, lg: 18 },
+              }}
+            />
+            sales@virtualxcel.in
+          </span>
+        </div>
+      </div>
       <nav
         style={{ boxShadow }}
         className={`${classes.navbar} ${
