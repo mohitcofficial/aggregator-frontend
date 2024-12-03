@@ -88,7 +88,10 @@ export default function RootLayout({ children }) {
         </Script>
       </head>
       <body className={poppins.className}>
-        <NextTopLoader color="#fcab14" showSpinner={false} />
+        <NextTopLoader
+          // color="#fcab14"
+          showSpinner={false}
+        />
         <Toaster position="bottom-center" reverseOrder={false} />
         {children}
         <TawkToChat />
