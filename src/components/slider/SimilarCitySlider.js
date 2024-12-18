@@ -73,42 +73,41 @@ function SimilarCitySlider({ stateId, cityId }) {
   return (
     <div className={classes.container}>
       {loading && <CustomSkeleton width="300px" height={42} />}
-      {!loading && cities.length > 0 && (
-        <h2 className={classes.heading}>
-          Similar <span>Cities</span> in India
-        </h2>
-      )}
-      {loading ? (
-        <CustomSkeleton height={180} />
-      ) : (
-        <div className={classes.innerContainer}>
-          <div className={classes.rightBox}>
-            <Slider {...sliderSettings} key={cities.length}>
-              {cities.map((city, index) => (
-                <Link key={index} href={`/virtual-office/${city?.slug}`}>
-                  <div className={classes.imageContainer}>
-                    <Image
-                      className={classes.image}
-                      src={city?.bannerImage[0]?.url}
-                      alt="Image"
-                      fill={true}
-                    />
-                    <div className={classes.content}>
-                      <p className={classes.name}>{city.name}</p>
-                      <p className={classes.text}>
-                        Starting at
-                        <span className={classes.price}>
-                          <CurrencyRupeeIcon sx={{ fontSize: fontSize2 }} />
-                          {799}
-                        </span>
-                      </p>
+      {loading && <CustomSkeleton height={180} />}
+      {!loading && cities.length > 1 && (
+        <>
+          <h2 className={classes.heading}>
+            Similar <span>Cities</span> in India
+          </h2>
+          <div className={classes.innerContainer}>
+            <div className={classes.rightBox}>
+              <Slider {...sliderSettings} key={cities.length}>
+                {cities.map((city, index) => (
+                  <Link key={index} href={`/virtual-office/${city?.slug}`}>
+                    <div className={classes.imageContainer}>
+                      <Image
+                        className={classes.image}
+                        src={city?.bannerImage[0]?.url}
+                        alt="Image"
+                        fill={true}
+                      />
+                      <div className={classes.content}>
+                        <p className={classes.name}>{city.name}</p>
+                        <p className={classes.text}>
+                          Starting at
+                          <span className={classes.price}>
+                            <CurrencyRupeeIcon sx={{ fontSize: fontSize2 }} />
+                            {799}
+                          </span>
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                </Link>
-              ))}
-            </Slider>
+                  </Link>
+                ))}
+              </Slider>
+            </div>
           </div>
-        </div>
+        </>
       )}
     </div>
   );
