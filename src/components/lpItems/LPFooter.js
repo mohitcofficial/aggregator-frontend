@@ -9,6 +9,7 @@ import Image from "next/image";
 import toast from "react-hot-toast";
 import TransparentLogo from "../../../public/images/TransparentLogo2.png";
 import classes from "./LPFooter.module.css";
+import { phoneNumber1, phoneNumber2 } from "@/app/data/ContactInformation";
 
 function LPFooter() {
   const handleMaintainance = () => {
@@ -73,7 +74,9 @@ function LPFooter() {
             <CallIcon
               sx={{ color: "rgb(254, 173, 22);", marginRight: "8px" }}
             />
-            <p className={classes.text}>+91 9871001079</p>
+            <p className={classes.text}>
+              +91 {phoneNumber1}, +91 {phoneNumber2}
+            </p>
           </div>
           <div className={classes.option}>
             <EmailIcon

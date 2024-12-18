@@ -8,6 +8,7 @@ import Image from "next/image";
 import EmailIcon from "@mui/icons-material/Email";
 import CallIcon from "@mui/icons-material/Call";
 import TransparentLogo from "../../../public/images/TransparentLogo4.png";
+import { phoneNumber1 } from "@/app/data/ContactInformation";
 
 function LPHeader() {
   const router = useRouter();
@@ -103,7 +104,7 @@ function LPHeader() {
                   fontSize: { xs: 16, sm: 18, md: 20, lg: 22 },
                 }}
               />
-              +91 9871001079
+              +91 {phoneNumber1}
             </a>
           </li>
         </ul>

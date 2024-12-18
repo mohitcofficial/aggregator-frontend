@@ -15,6 +15,7 @@ import classes from "./Header.module.css";
 import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from "@mui/icons-material/Email";
 import SearchModal from "../modal/SearchModal";
+import { phoneNumber1, phoneNumber2 } from "@/app/data/ContactInformation";
 
 function Header() {
   const [isVisible, setIsVisible] = useState(true);
@@ -65,7 +66,8 @@ function Header() {
                 fontSize: { xs: 14, sm: 16, md: 18, lg: 18 },
               }}
             />
-            +91 9871001079
+            <span>+91 {phoneNumber1}</span>
+            <span className={classes.phoneNumber2}>, +91 {phoneNumber2}</span>
           </span>
           |
           <span>

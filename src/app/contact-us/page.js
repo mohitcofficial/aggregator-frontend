@@ -6,6 +6,7 @@ import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from "@mui/icons-material/Email";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import classes from "./page.module.css";
+import { phoneNumber1, phoneNumber2 } from "../data/ContactInformation";
 
 export const metadata = {
   title: "Connect With Us",
@@ -28,7 +29,8 @@ function page() {
                 />
               }
               heading={"Phone"}
-              text={"+91 9871001079"}
+              text={`+91 ${phoneNumber1}`}
+              text2={`+91 ${phoneNumber2}`}
               buttonText={"Call"}
             />
             <ContactPageCard
@@ -38,7 +40,8 @@ function page() {
                 />
               }
               heading={"WhatsApp"}
-              text={"+91 9871001079"}
+              text={`+91 ${phoneNumber1}`}
+              text2={`+91 ${phoneNumber2}`}
               buttonText={"Chat"}
             />
             <ContactPageCard
@@ -62,9 +65,9 @@ function page() {
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.4087973325654!2d77.2177403753315!3d28.52742987572236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce18b0950c389%3A0xebbb242665d51b64!2sSalcon%20Rasvilas!5e0!3m2!1sen!2sin!4v1724412053664!5m2!1sen!2sin"
             className={classes.frame}
             style={{ border: 0 }}
-            allowfullscreen=""
+            allowFullScreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+            referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
       </div>

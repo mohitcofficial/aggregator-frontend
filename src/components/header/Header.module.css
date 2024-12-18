@@ -335,6 +335,9 @@
   .topNavContent {
     gap: 8px;
   }
+  .phoneNumber2 {
+    display: none;
+  }
   .imageContainer {
     width: 140px;
   }
