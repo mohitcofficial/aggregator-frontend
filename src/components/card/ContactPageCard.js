@@ -41,11 +41,8 @@ function ContactPageCard({
         <div className={classes.text}>
           {text}
 
-          {buttonText === "Call" && (
-            <span className={classes.text}>, {text}</span>
-          )}
-          {buttonText === "Chat" && (
-            <span className={classes.text}>, {text}</span>
+          {buttonText !== "E-Mail" && (
+            <span className={classes.text}>, {text2}</span>
           )}
         </div>
 

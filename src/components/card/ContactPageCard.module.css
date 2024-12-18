@@ -29,10 +29,11 @@
 }
 
 .text {
-  color: gray;
+  color: rgb(96, 96, 96);
   width: 100%;
   margin: 12px 0;
   height: 150px;
+  font-size: 15px;
 }
 
 .button {
