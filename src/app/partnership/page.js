@@ -33,8 +33,10 @@ function page() {
             <span> Partner with Us</span>
           </div>
           <div className={classes.subHeading}>
-            Thank you for expressing your interest in partnering with Team
-            CoWork. We’d love to have you onboard with us.
+            Get your space onboarded on our website.
+          </div>
+          <div className={classes.subHeading}>
+            We appreciate your interest for collaborating with us.
           </div>
           <div className={classes.text}>
             At Virtualxcel, we are passionate about fostering meaningful
