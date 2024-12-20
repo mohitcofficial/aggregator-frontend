@@ -37,6 +37,12 @@ function LPCitiesSlider() {
     setSliderSettings(getInitialSettings(cities.length));
   }, [cities]);
 
+  const prices = {
+    "6736e85923b7ed53cd587f9d": 999,
+    "6736e59123b7ed53cd587f01": 999,
+    "6738371623b7ed53cd58cc7e": 899,
+  };
+
   return (
     <div className={classes.container}>
       <h2 className={classes.heading}>
@@ -63,7 +69,7 @@ function LPCitiesSlider() {
                         Starting at
                         <span className={classes.price}>
                           <CurrencyRupeeIcon sx={{ fontSize: fontSize2 }} />
-                          {799}
+                          {prices[city?._id] || 799}
                         </span>
                       </p>
                     </div>

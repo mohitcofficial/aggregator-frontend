@@ -59,19 +59,31 @@ function LocationCard({ location }) {
           <div className={classes.priceItem}>
             <div className={classes.item}>Business Registration</div>
             <div className={classes.item}>
-              &#8377;{location?.businessRegistrationPrice} / year
+              {location?.businessRegistrationPrice === 0 ? (
+                "N/A"
+              ) : (
+                <>{`\u20B9${location?.businessRegistrationPrice}`} / year</>
+              )}
             </div>
           </div>
           <div className={classes.priceItem}>
             <div className={classes.item}>GST Registration</div>
             <div className={classes.item}>
-              &#8377;{location?.gstRegistrationPrice} / year
+              {location?.gstRegistrationPrice === 0 ? (
+                "N/A"
+              ) : (
+                <>{`\u20B9${location?.gstRegistrationPrice}`} / year</>
+              )}
             </div>
           </div>
           <div className={classes.priceItem}>
             <div className={classes.item}>Mailing Address</div>
             <div className={classes.item}>
-              &#8377;{location?.mailingAddressPrice} / year
+              {location?.mailingAddressPrice === 0 ? (
+                "N/A"
+              ) : (
+                <>{`\u20B9${location?.mailingAddressPrice}`} / year</>
+              )}
             </div>
           </div>
         </div>
