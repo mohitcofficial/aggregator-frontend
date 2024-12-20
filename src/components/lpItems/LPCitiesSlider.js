@@ -71,6 +71,9 @@ function LPCitiesSlider() {
                           <CurrencyRupeeIcon sx={{ fontSize: fontSize2 }} />
                           {prices[city?._id] || 799}
                         </span>
+                        <span style={{ fontWeight: "500", fontSize: "11px" }}>
+                          (T&C Applied)
+                        </span>
                       </p>
                     </div>
                   </div>
