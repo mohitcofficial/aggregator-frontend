@@ -7,7 +7,7 @@ import { useEffect } from "react";
 import Image from "next/image";
 import EmailIcon from "@mui/icons-material/Email";
 import CallIcon from "@mui/icons-material/Call";
-import TransparentLogo from "../../../public/images/TransparentLogo4.png";
+import TransparentLogo from "../../../public/images/LPTransparentLogo.png";
 import { phoneNumber1 } from "@/app/data/ContactInformation";
 
 function LPHeader() {

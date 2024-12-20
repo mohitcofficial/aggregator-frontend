@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
 import PartnershipImage from "../../../public/images/Partnership.jpg";
-import Logo from "../../../public/images/TransparentLogo.png";
+import Logo from "../../../public/images/LPTransparentLogo.png";
 import classes from "./page.module.css";
 import { useEffect } from "react";
 

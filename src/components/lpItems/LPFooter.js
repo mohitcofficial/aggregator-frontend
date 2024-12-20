@@ -7,7 +7,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import XIcon from "@mui/icons-material/X";
 import Image from "next/image";
 import toast from "react-hot-toast";
-import TransparentLogo from "../../../public/images/TransparentLogo2.png";
+import TransparentLogo from "../../../public/images/FooterTransparentLogo.png";
 import classes from "./LPFooter.module.css";
 import { phoneNumber1, phoneNumber2 } from "@/app/data/ContactInformation";
 

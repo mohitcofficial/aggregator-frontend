@@ -10,7 +10,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import TransparentLogo from "../../../public/images/TransparentLogo1.png";
+import TransparentLogo from "../../../public/images/NewTransparentLogo4.png";
 import classes from "./Header.module.css";
 import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from "@mui/icons-material/Email";

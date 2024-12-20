@@ -8,7 +8,7 @@ import XIcon from "@mui/icons-material/X";
 import Link from "next/link";
 import classes from "./Footer.module.css";
 import Image from "next/image";
-import TransparentLogo from "../../../public/images/TransparentLogo2.png";
+import TransparentLogo from "../../../public/images/FooterTransparentLogo.png";
 import { WebsiteURLs } from "@/app/data/Links";
 
 function Footer() {
