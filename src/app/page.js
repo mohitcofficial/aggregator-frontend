@@ -8,6 +8,7 @@ import PremiumCities from "@/components/premiumLocations/PremiumCities";
 import dynamic from "next/dynamic";
 import classes from "./page.module.css";
 import FrequentQuestions from "@/components/frequent-questions/FrequentQuestions";
+import NewYearOffer from "@/components/discount/NewYearOffer";
 
 const ReviewSlider = dynamic(
   () => import("../components/slider/ReviewSlider"),
@@ -29,6 +30,7 @@ export default function Home() {
     <CustomLayout>
       <div className={classes.container}>
         <Banner />
+        <NewYearOffer />
         <CountContainer />
         <PriceItem />
         <PremiumCities />

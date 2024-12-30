@@ -11,6 +11,7 @@ import LPModal from "@/components/lpItems/LPModal";
 import dynamic from "next/dynamic";
 import LPPriceItem from "@/components/lpItems/LPPriceItem";
 import LPHeader from "@/components/lpItems/LPHeader";
+import NewYearOffer from "@/components/discount/NewYearOffer";
 const LPCitiesSlider = dynamic(
   () => import("../../components/lpItems/LPCitiesSlider"),
   {
@@ -121,6 +122,7 @@ function page() {
       <LPHeader />
       <div className={classes.container}>
         <LPBanner />
+        <NewYearOffer />
         <LPCitiesSlider />
         <LPPriceItem />
         <div className={classes.container2}>
