@@ -53,3 +53,32 @@
   font-size: 18px;
   font-weight: 500;
 }
+
+@media (max-width: 800px) {
+  .heading1 {
+    font-size: 28px;
+  }
+  .heading2 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 600px) {
+  .heading1 {
+    padding: 0 12px;
+    font-size: 24px;
+  }
+  .heading2 {
+    padding: 0 12px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 350px) {
+  .heading1 {
+    padding: 0 10px;
+    font-size: 20px;
+  }
+  .heading2 {
+    padding: 0 10px;
+    font-size: 12px;
+  }
+}
