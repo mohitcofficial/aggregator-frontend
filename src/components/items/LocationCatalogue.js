@@ -1,25 +1,22 @@
-import React from "react";
-import classes from "./LocationCard.module.css";
+import classes from "./LocationCatalogue.module.css";
 
-import LocationSlider from "../slider/LocationSlider";
-import BookButton from "../buttons/BookButton";
-import GetQuoteButton from "../buttons/GetQuoteButton";
-import StarIcon from "@mui/icons-material/Star";
-import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
 import ArrowCircleUpIcon from "@mui/icons-material/ArrowCircleUp";
 import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
-import LPModal from "../lpItems/LPModal";
-import { usePathname } from "next/navigation";
+import StarIcon from "@mui/icons-material/Star";
+import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
+import BuyButton from "../buttons/BuyButton";
+import LocationSlider2 from "../slider/LocationSlider2";
+import DoneAllIcon from "@mui/icons-material/DoneAll";
 
-function LocationCard({ location }) {
-  const fontSize = { xs: 14, sm: 16, md: 14, lg: 14 };
-  const pathname = usePathname();
+function LocationCatalogue({ location }) {
+  const fontSize = { xs: 14, sm: 14, md: 14, lg: 14 };
+  const fontSize2 = { xs: 14, sm: 16, md: 14, lg: 20 };
   return (
     <div className={classes.container}>
       {location?.rating >= 4.5 && (
         <div className={classes.trendingRibbon}>Trending</div>
       )}
-      <LocationSlider images={location?.images} />
+      <LocationSlider2 images={location?.images} />
       <div className={classes.cardInfo}>
         <div className={classes.tagsContainer}>
           <div className={classes.ratingContainer}>
@@ -82,17 +79,33 @@ function LocationCard({ location }) {
             </div>
           </div>
         </div>
+        <div className={classes.priceItem}>
+          <div className={classes.underline}>Offers & Addons:</div>
+        </div>
+        <ul className={classes.list}>
+          <li className={classes.listItem}>
+            <DoneAllIcon sx={{ color: "#4bb543", fontSize: fontSize2 }} />
+            Upto 10% off on Virtual Offices
+          </li>
+          <li className={classes.listItem}>
+            <DoneAllIcon sx={{ color: "#4bb543", fontSize: fontSize2 }} />
+            Temporary Signage Facility
+          </li>
+          <li className={classes.listItem}>
+            <DoneAllIcon sx={{ color: "#4bb543", fontSize: fontSize2 }} />
+            Mailing Services
+          </li>
+          <li className={classes.listItem}>
+            <DoneAllIcon sx={{ color: "#4bb543", fontSize: fontSize2 }} />
+            Upto 10% of meeting rooms
+          </li>
+        </ul>
         <div className={classes.buttonContainer}>
-          <div style={{ width: "48%" }}>
-            <LPModal>
-              <GetQuoteButton />
-            </LPModal>
-          </div>
-          <BookButton url={`${pathname}/${location?.slug}`} />
+          <BuyButton url={`/virtual-office/buy/${location._id}`} />
         </div>
       </div>
     </div>
   );
 }
 
-export default LocationCard;
+export default LocationCatalogue;

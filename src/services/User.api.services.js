@@ -67,6 +67,15 @@ export default {
     );
     return data;
   },
+  getLocationInfoFromSlug: async function (stateSlug, citySlug, locationSlug) {
+    const { data } = await axios.get(
+      `${USER_URLs.getLocationInfoFromSlug}/${stateSlug}/city/${citySlug}/location/${locationSlug}`,
+      {
+        withCredentials: true,
+      }
+    );
+    return data;
+  },
   getAllStates: async function () {
     const { data } = await axios.get(`${USER_URLs.getAllStates}`, {
       withCredentials: true,
