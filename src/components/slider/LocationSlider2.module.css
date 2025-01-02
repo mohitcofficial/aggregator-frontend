@@ -1,13 +1,13 @@
 .container {
-  width: 550px;
-  height: 385px;
+  width: 100%;
+  height: 400px;
 }
 
 .imageContainer {
   display: flex;
   position: relative;
-  width: 550px;
-  height: 385px;
+  width: 100%;
+  height: 400px;
 }
 
 .image {

@@ -116,7 +116,7 @@ function FilterContainer({ id, type = "city", name }) {
             />
             <div className={classes.offerTextContainer}>
               <p className={classes.offerText}>
-                Get up to <span>10%</span> of on Virtual Offices !
+                Get up to <span>10%</span> off on Virtual Offices !
               </p>
               <p>Terms & Conditions Applied</p>
             </div>

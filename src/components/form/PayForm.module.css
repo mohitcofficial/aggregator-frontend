@@ -1,0 +1,136 @@
+.form {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  justify-content: center;
+  box-shadow: 0 0 4px gray;
+  margin: 24px 0;
+  /* border-radius: 10px; */
+}
+.contentContainer {
+  width: 100%;
+  max-width: 100%;
+  padding: 18px 24px;
+  display: flex;
+  flex-direction: column;
+  color: var(--text-color);
+}
+
+.heading {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.plansContainer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 10px 0;
+}
+
+.plan {
+  font-size: 13px;
+  padding: 6px 8px;
+  background-color: rgb(224, 224, 224);
+  cursor: pointer;
+}
+.plan:hover {
+  box-shadow: 0 0 2px gray;
+}
+
+.active {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.label {
+  font-size: 12px;
+  margin: 4px 0 2px 0;
+}
+
+.input {
+  width: 100%;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-family: inherit;
+  outline: none;
+  border-radius: 6px;
+  color: var(--text-color);
+  border: 1px solid rgb(152, 152, 152);
+}
+
+.label2 {
+  font-size: 12px;
+  padding: 4px 8px;
+  border: 1px solid rgb(152, 152, 152);
+  border-radius: 6px;
+}
+
+.select {
+  border: 1px solid rgb(152, 152, 152);
+  border-radius: 6px;
+  padding: 4px 8px;
+  outline: none;
+  background-color: inherit;
+}
+
+.option {
+  font-size: 12px;
+  outline: none;
+}
+
+.summaryContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 8px auto;
+  align-items: center;
+}
+.summaryContentContainer {
+  display: flex;
+  flex-direction: column;
+  width: 94%;
+  margin: 8px 0;
+  gap: 4px;
+}
+
+.summaryHeading {
+  font-size: 13px;
+  border-bottom: 1px solid var(--text-color);
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.summaryData {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 13px;
+}
+.payButton {
+  width: 100%;
+  font-weight: 500;
+  padding: 10px 0;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  background-color: var(--primary-color);
+  background-color: #000;
+  color: var(--text-color);
+  color: var(--white-color);
+  margin: 12px 0;
+  cursor: pointer;
+}
+
+.errorMessage {
+  width: 80%;
+  color: red;
+  font-size: 12px;
+}
+
+@media (max-width: 576px) {
+  .summaryData {
+    font-size: 12px;
+  }
+}

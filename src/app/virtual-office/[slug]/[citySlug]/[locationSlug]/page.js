@@ -5,6 +5,7 @@ import classes from "./page.module.css";
 import FrequentQuestions from "@/components/frequent-questions/FrequentQuestions";
 import SimilarLocationSlider from "@/components/slider/SimilarLocationSlider";
 import LocationCatalogue from "@/components/items/LocationCatalogue";
+import PriceItem from "@/components/items/PriceItem";
 
 async function fetchPageData(stateSlug, citySlug, locationSlug) {
   try {
@@ -40,6 +41,7 @@ export default async function CityPage({ params }) {
             cityId={data?.location?.cityId?._id}
             locationId={data?.location?._id}
           />
+          <PriceItem />
           <FrequentQuestions />
         </div>
       </CustomLayout>
