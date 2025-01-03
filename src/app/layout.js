@@ -38,6 +38,7 @@ export default function RootLayout({ children }) {
           src="https://www.googletagmanager.com/gtag/js?id=AW-16609409855"
           strategy="afterInteractive"
         />
+        <Script src="https://checkout.razorpay.com/v1/checkout.js" />
         <Script id="google-conversion-gtag" strategy="lazyOnLoad">
           {`
             window.dataLayer = window.dataLayer || [];

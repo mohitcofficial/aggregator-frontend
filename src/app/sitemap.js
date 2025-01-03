@@ -17,6 +17,13 @@ export default async function sitemap() {
       priority,
     }));
   };
+  const generateUrlEntries3 = (data, pathPrefix, priority) => {
+    if (!data || !data.length) return [];
+    return data.map((item) => ({
+      url: `${BASE_URL}${pathPrefix}/${item?.cityId?.stateId?.slug}/${item?.cityId?.slug}/${item.slug}`,
+      priority,
+    }));
+  };
 
   const staticUrls = [
     { url: `${BASE_URL}`, priority: 1 },
@@ -38,9 +45,10 @@ export default async function sitemap() {
   ];
 
   try {
-    const [statesData, citiesData] = await Promise.all([
+    const [statesData, citiesData, locationsData] = await Promise.all([
       UserApiServices.getAllStates(),
       UserApiServices.getAllCities(),
+      UserApiServices.getAllLocations(),
     ]);
 
     const stateEntries = generateUrlEntries(
@@ -53,8 +61,13 @@ export default async function sitemap() {
       "/virtual-office",
       0.94
     );
+    const locationEntries = generateUrlEntries3(
+      locationsData?.locations,
+      "/virtual-office",
+      0.93
+    );
 
-    return [...staticUrls, ...stateEntries, ...cityEntries];
+    return [...staticUrls, ...stateEntries, ...cityEntries, ...locationEntries];
   } catch (error) {
     console.error("Error generating sitemap:", error);
     return staticUrls;

@@ -88,6 +88,12 @@ export default {
     });
     return data;
   },
+  getAllLocations: async function () {
+    const { data } = await axios.get(`${USER_URLs.getAllLocations}`, {
+      withCredentials: true,
+    });
+    return data;
+  },
   getTrendingCities: async function () {
     const { data } = await axios.get(`${USER_URLs.getTrendingCities}`, {
       withCredentials: true,
@@ -96,6 +102,18 @@ export default {
   },
   getTrendingStates: async function () {
     const { data } = await axios.get(`${USER_URLs.getTrendingStates}`, {
+      withCredentials: true,
+    });
+    return data;
+  },
+  getKey: async function () {
+    const { data } = await axios.get(`${USER_URLs.getKey}`, {
+      withCredentials: true,
+    });
+    return data;
+  },
+  checkout: async function (body) {
+    const { data } = await axios.post(`${USER_URLs.checkout}`, body, {
       withCredentials: true,
     });
     return data;

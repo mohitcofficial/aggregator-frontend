@@ -13,6 +13,10 @@ export const USER_URLs = {
   getLocationsWithInACity: `${BASEURL}/api/v1/client/locations`,
   getAllStates: `${BASEURL}/api/v1/client/states`,
   getAllCities: `${BASEURL}/api/v1/client/cities`,
+  getAllLocations: `${BASEURL}/api/v1/client/locations`,
   getTrendingCities: `${BASEURL}/api/v1/client/trending/cities`,
   getTrendingStates: `${BASEURL}/api/v1/client/trending/states`,
+  getKey: `${BASEURL}/api/v1/client/getkey`,
+  checkout: `${BASEURL}/api/v1/client/checkout`,
+  paymentverification: `${BASEURL}/api/v1/client/paymentverification`,
 };

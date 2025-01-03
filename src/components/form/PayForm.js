@@ -1,6 +1,9 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import classes from "./PayForm.module.css";
+import axios from "axios";
+import UserApiServices from "@/services/User.api.services";
+import { USER_URLs } from "@/services/http.services";
 
 function PayForm({ location }) {
   const initialInputValue = {
@@ -17,6 +20,8 @@ function PayForm({ location }) {
   const [formErrors, setFormErrors] = useState({});
   const [formState, setFormState] = useState(initialInputValue);
 
+  const formRef = useRef(null);
+
   useEffect(() => {
     if (plan === 0) setPrice(location?.gstRegistrationPrice);
     else if (plan === 1) setPrice(location?.businessRegistrationPrice);
@@ -24,7 +29,7 @@ function PayForm({ location }) {
   }, [plan]);
 
   useEffect(() => {
-    let currentDiscountedPrice = +(price * tenure).toFixed(2); // Convert to number using +
+    let currentDiscountedPrice = +(price * tenure).toFixed(2);
     if (tenure === 1) {
       setDiscount(0);
       setDiscountedPrice(currentDiscountedPrice);
@@ -77,17 +82,68 @@ function PayForm({ location }) {
     return errors;
   };
 
+  const checkoutHandler = async () => {
+    try {
+      const body = {
+        locationId: location._id,
+        plan,
+        tenure,
+        name: formState.user_name,
+        email: formState.user_email,
+        phone: formState.user_mobile,
+      };
+      const { key } = await UserApiServices.getKey();
+
+      const { order } = await UserApiServices.checkout(body);
+
+      const options = {
+        key,
+        amount: order.amount,
+        currency: "INR",
+        name: "Virtualxcel Solutions",
+        description: "Virtual Office Payment",
+        image:
+          "https://res.cloudinary.com/doqggqsvo/image/upload/v1735890937/Logo_orhakx.png",
+        order_id: order.id,
+        callback_url: USER_URLs.paymentverification,
+        prefill: {
+          name: body.name,
+          email: body.email,
+          contact: body.phone,
+        },
+        notes: {
+          address: "Virtualxcel Office",
+          userName: body.name,
+          userEmail: body.email,
+          userPhone: body.phone,
+          amount: order.amount / 100,
+        },
+        theme: {
+          color: "#000",
+        },
+      };
+      const razor = new window.Razorpay(options);
+      if (razor) razor.open();
+    } catch (error) {
+      console.error("Error during checkout:", error.message);
+
+      alert("Sorry Payment Server is down! Please contact us via call");
+    }
+  };
+
   const paymentHandler = (e) => {
     e.preventDefault();
     let getFormErrors = formValidation();
     setFormErrors(getFormErrors);
     if (Object.keys(getFormErrors).length === 0) {
-      alert("Sorry Payment Server is down! Please contact us via call");
+      checkoutHandler();
+    } else {
+      formRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   return (
-    <form onSubmit={paymentHandler} className={classes.form}>
+    <form onSubmit={paymentHandler} className={classes.form} ref={formRef}>
       <div className={classes.contentContainer}>
         <p className={classes.heading}>Pay Here</p>
         <div className={classes.plansContainer}>
@@ -201,12 +257,14 @@ function PayForm({ location }) {
               </span>
             </div>
             <div className={classes.summaryData}>
-              <span>Total</span>
-              <span>= &#8377;{finalPrice}</span>
+              <span>Final Amount</span>
+              <span>= &#8377;{Math.round(finalPrice)}</span>
             </div>
           </div>
         </div>
-        <button className={classes.payButton}>Pay &#8377;{finalPrice}</button>
+        <button className={classes.payButton}>
+          Pay &#8377;{Math.round(finalPrice)}
+        </button>
       </div>
     </form>
   );
