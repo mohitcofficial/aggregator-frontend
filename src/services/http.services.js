@@ -3,6 +3,7 @@ export const BASEURL = process.env.NEXT_PUBLIC_BACKEND_URL;
 
 export const USER_URLs = {
   sendMail: `${BASEURL}/api/v1/client/send-email`,
+  sendOnboardingMail: `${BASEURL}/api/v1/client/send-onboarding-email`,
   getSimilarCities: `${BASEURL}/api/v1/client/cities/similar`,
   getSimilarLocations: `${BASEURL}/api/v1/client/locations/similar`,
   getStateInfoFromSlug: `${BASEURL}/api/v1/client/state`,

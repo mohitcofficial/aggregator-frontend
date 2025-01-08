@@ -6,6 +6,10 @@ export default {
     const { data } = await axios.post(USER_URLs.sendMail, body);
     return data;
   },
+  sendOnboardingMail: async function (body) {
+    const { data } = await axios.post(USER_URLs.sendOnboardingMail, body);
+    return data;
+  },
   getSimilarStates: async function (id) {
     const { data } = await axios.get(`${USER_URLs.getSimilarStates}/${id}`, {
       withCredentials: true,

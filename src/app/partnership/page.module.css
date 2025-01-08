@@ -1,10 +1,19 @@
 .container {
   width: 100%;
-  height: calc(100vh - 70px);
+  /* height: calc(100vh - 70px); */
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.contentContainer {
+  width: 90%;
+  max-width: 1280px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 44px 0 56px 0;
 }
 
 .image {
@@ -17,7 +26,7 @@
   color: white;
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 56%;
   align-items: center;
 }
 
@@ -25,7 +34,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-size: 54px;
+  font-size: 48px;
   font-weight: 700;
   margin: 12px 0;
 }
@@ -46,7 +55,7 @@
   text-align: center;
   width: 90%;
   margin: 12px 0;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .gradientText {
@@ -60,45 +69,49 @@
   color: transparent;
 }
 
+.formContainer {
+  width: 40%;
+}
+
 @media (max-width: 1250px) {
-  .content {
-    width: 80%;
-  }
-  .heading {
-    font-size: 48px;
-  }
   .subHeading {
-    font-size: 21px;
+    font-size: 20px;
   }
-  .text {
-    font-size: 15px;
+}
+@media (max-width: 1000px) {
+  .contentContainer {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .content {
+    width: 100%;
+  }
+  .formContainer {
+    width: 80%;
   }
 }
 
 @media (max-width: 800px) {
-  .content {
-    width: 80%;
-  }
   .heading {
-    font-size: 44px;
+    font-size: 40px;
   }
   .subHeading {
-    font-size: 20px;
+    font-size: 18px;
   }
   .text {
     font-size: 14px;
     margin: 16px 0;
   }
+  .formContainer {
+    width: 100%;
+  }
 }
 @media (max-width: 600px) {
-  .content {
-    width: 90%;
-  }
   .heading {
     font-size: 36px;
   }
   .subHeading {
-    font-size: 18px;
+    font-size: 17px;
   }
   .text {
     font-size: 12px;
@@ -106,6 +119,11 @@
   }
   .connectButton {
     padding: 12px 24px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 400px) {
+  .subHeading {
     font-size: 15px;
   }
 }

@@ -1,9 +1,8 @@
-import React from "react";
-import classes from "./page.module.css";
+import CustomLayout from "@/components/CustomLayout";
+import OnboardingForm from "@/components/form/OnboardingForm";
 import Image from "next/image";
 import PartnershipImage from "../../../public/images/Partnership.jpg";
-import CustomLayout from "@/components/CustomLayout";
-import ConnectButton from "@/components/buttons/ConnectButton";
+import classes from "./page.module.css";
 
 export const metadata = {
   title: "Partner With Us",
@@ -23,30 +22,32 @@ function page() {
           placeholder="blur"
           className={classes.image}
         />
-        <div className={classes.content}>
-          <div className={classes.heading}>
-            <span className={classes.heading1}>
-              <span>Collaborate with</span>
-              <span className={classes.gradientText}>Virtualxcel</span>
-              <span>:</span>
-            </span>
-            <span> Partner with Us</span>
+        <div className={classes.contentContainer}>
+          <div className={classes.content}>
+            <div className={classes.heading}>
+              <span className={classes.heading1}>
+                <span>Collaborate with</span>
+                <span className={classes.gradientText}>Virtualxcel</span>
+              </span>
+            </div>
+            <div className={classes.subHeading}>
+              Get your space onboarded on our website.
+            </div>
+            <div className={classes.subHeading}>
+              We appreciate your interest for collaborating with us.
+            </div>
+            <div className={classes.text}>
+              At Virtualxcel, we are passionate about fostering meaningful
+              collaborations and expanding horizons. We believe in the power of
+              partnerships to create shared value and drive mutual success. As
+              pioneers in the coworking and virtual office space, we are excited
+              about the prospect of joining forces with innovative organizations
+              like yours.
+            </div>
           </div>
-          <div className={classes.subHeading}>
-            Get your space onboarded on our website.
+          <div className={classes.formContainer}>
+            <OnboardingForm />
           </div>
-          <div className={classes.subHeading}>
-            We appreciate your interest for collaborating with us.
-          </div>
-          <div className={classes.text}>
-            At Virtualxcel, we are passionate about fostering meaningful
-            collaborations and expanding horizons. We believe in the power of
-            partnerships to create shared value and drive mutual success. As
-            pioneers in the coworking and virtual office space, we are excited
-            about the prospect of joining forces with innovative organizations
-            like yours.
-          </div>
-          <ConnectButton />
         </div>
       </div>
     </CustomLayout>
