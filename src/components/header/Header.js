@@ -164,7 +164,7 @@ function Header() {
                       }}
                       href={WebsiteURLs.businessRegistration}
                     >
-                      Business Registration
+                      Business Plan
                     </Link>
                   </li>
                   <hr className={classes.line} />
@@ -189,7 +189,7 @@ function Header() {
                       }}
                       href={WebsiteURLs.gstRegistration}
                     >
-                      GST Registration
+                      GST Plan
                     </Link>
                   </li>
                   <hr className={classes.line} />
@@ -440,7 +440,7 @@ function Header() {
                 style={{ textDecoration: "none", color: "inherit" }}
                 href="/business-registration"
               >
-                <span>Business Registration</span>
+                <span>Business Plan</span>
                 <KeyboardArrowRightIcon
                   sx={{ fontSize: { xs: 20, sm: 22, md: 24, lg: 20 } }}
                 />
@@ -461,7 +461,7 @@ function Header() {
                 style={{ textDecoration: "none", color: "inherit" }}
                 href="/gst-registration"
               >
-                <span>GST Registration</span>
+                <span>GST Plan</span>
                 <KeyboardArrowRightIcon
                   sx={{ fontSize: { xs: 20, sm: 22, md: 24, lg: 20 } }}
                 />

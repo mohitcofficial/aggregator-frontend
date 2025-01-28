@@ -9,15 +9,15 @@ import classes from "./CommonBanner.module.css";
 
 const data = [
   {
-    heading: "Streamline Your Business Registration Process with Virtualxcel",
+    heading: "Streamline Your Business Cerfification Process with Virtualxcel",
     subHeading:
-      "At Virtualxcel, we understand the importance of a seamless business registration experience. Whether you're establishing a new venture or expanding your operations, our comprehensive services simplify the process, allowing you to focus on what matters most – growing your business. Discover our tailored solutions designed to meet your registration needs efficiently and effectively.",
+      "At Virtualxcel, we understand the importance of a seamless business certification experience. Whether you're establishing a new venture or expanding your operations, our comprehensive services simplify the process, allowing you to focus on what matters most – growing your business. Discover our tailored solutions designed to meet your certification needs efficiently and effectively.",
     image: Background1,
   },
   {
-    heading: "Simplify Your GST Registration with Virtualxcel",
+    heading: "Simplify Your GST Cerfication with Virtualxcel",
     subHeading:
-      "Ensure compliance and streamline your tax processes with Virtualxcel's expert GST registration services. We provide a hassle-free experience, so you can concentrate on your business growth while we handle the complexities of GST registration. Explore our customized solutions for a smooth and efficient registration process.",
+      "Ensure compliance and streamline your tax processes with Virtualxcel's expert GST Certification services. We provide a hassle-free experience, so you can concentrate on your business growth while we handle the complexities of GST certification. Explore our customized solutions for a smooth and efficient certification process.",
     image: Background2,
   },
   {

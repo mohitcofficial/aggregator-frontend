@@ -24,12 +24,12 @@ function VirtualOfficeBenefits({ id = 0 }) {
       heading2: "Virtual Office Benefits",
     },
     {
-      heading1: "Benefits of ",
-      heading2: "Business Resitration",
+      heading1: "Benefits of our",
+      heading2: "Business Plan",
     },
     {
-      heading1: "Benefits of ",
-      heading2: "GST Resitration",
+      heading1: "Benefits of our",
+      heading2: "GST Plan",
     },
   ];
   const data = [
@@ -322,7 +322,7 @@ function VirtualOfficeBenefits({ id = 0 }) {
       },
       {
         heading: "Business Expansion Opportunities",
-        text: "Eligibility to participate in government tenders and contracts requiring GST registration.",
+        text: "Eligibility to participate in government tenders and contracts requiring GST.",
         icon: (
           <BusinessIcon
             sx={{

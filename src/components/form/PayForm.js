@@ -152,7 +152,7 @@ function PayForm({ location }) {
               onClick={() => setPlan(0)}
               className={`${classes.plan} ${plan === 0 && classes.active}`}
             >
-              GST Registration
+              GST Certification Plan
             </div>
           )}
           {location?.businessRegistrationPrice !== 0 && (
@@ -160,7 +160,7 @@ function PayForm({ location }) {
               onClick={() => setPlan(1)}
               className={`${classes.plan} ${plan === 1 && classes.active}`}
             >
-              Business Registration
+              Business Certification Plan
             </div>
           )}
           {location?.mailingAddressPrice !== 0 && (

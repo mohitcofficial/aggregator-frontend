@@ -36,11 +36,9 @@ function BlogSection() {
         />
         <BlogCard
           index={3}
-          heading={
-            "Simplifying Business and GST Registration for Entrepreneurs"
-          }
+          heading={"Simplifying Business for Entrepreneurs"}
           content={
-            "Navigating the complexities of business and GST registration can be a daunting task for entrepreneurs. Our platform simplifies this process by providing comprehensive support and guidance, ensuring that your business complies with all legal requirements. "
+            "Navigating the complexities of business and GST can be a daunting task for entrepreneurs. Our platform simplifies this process by providing comprehensive support and guidance, ensuring that your business complies with all legal requirements. "
           }
         />
       </div>

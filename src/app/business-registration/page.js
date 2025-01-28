@@ -20,7 +20,7 @@ const ReviewSlider = dynamic(
 );
 
 export const metadata = {
-  title: "Best Business Registration Services",
+  title: "Best Business Plans for Your Company",
   description:
     "Simplify your business registration process with Virtualxcel's Virtual Office. Our efficient services help you establish or expand your venture seamlessly. Focus on growth while we handle the complexities of registration. Explore our tailored solutions today.",
   keywords:
@@ -37,7 +37,7 @@ function page() {
           <WavyBackground3 />
           <div className={classes.headingContainer}>
             <h2 className={classes.heading1}>
-              Best Plan For <b>Business Registration</b>
+              Best Plan For <b>Business Formation</b>
             </h2>
             <h3 className={classes.heading2}>Starting just at &#8377; 999</h3>
           </div>

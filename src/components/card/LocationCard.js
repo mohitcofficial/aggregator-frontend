@@ -52,7 +52,7 @@ function LocationCard({ location }) {
         </div>
         <div className={classes.prices}>
           <div className={classes.priceItem}>
-            <div className={classes.item}>Business Registration</div>
+            <div className={classes.item}>Business Plan</div>
             <div className={classes.item}>
               {location?.businessRegistrationPrice === 0 ? (
                 "N/A"
@@ -62,7 +62,7 @@ function LocationCard({ location }) {
             </div>
           </div>
           <div className={classes.priceItem}>
-            <div className={classes.item}>GST Registration</div>
+            <div className={classes.item}>GST Plan</div>
             <div className={classes.item}>
               {location?.gstRegistrationPrice === 0 ? (
                 "N/A"

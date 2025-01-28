@@ -77,7 +77,7 @@ function Footer() {
                 style={{ textDecoration: "none", color: "inherit" }}
                 href={WebsiteURLs.gstRegistration}
               >
-                GST Registration
+                GST Plan
               </Link>
             </p>
             <p className={classes.links}>
@@ -85,7 +85,7 @@ function Footer() {
                 style={{ textDecoration: "none", color: "inherit" }}
                 href={WebsiteURLs.businessRegistration}
               >
-                Business Registration
+                Business Plan
               </Link>
             </p>
             <p className={classes.links}>

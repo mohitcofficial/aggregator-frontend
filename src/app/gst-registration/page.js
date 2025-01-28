@@ -20,9 +20,9 @@ const ReviewSlider = dynamic(
 );
 
 export const metadata = {
-  title: "Quick and Easy GST Registration Services | Virtualxcel",
+  title: "Quick and Easy GST Certification | Virtualxcel",
   description:
-    "Get your GST registration done quickly and easily with Virtualxcel. Our expert team ensures hassle-free GST compliance for your business. Focus on growth while we handle the complexities of GST registration. Discover our efficient and tailored GST solutions today.",
+    "Get your GST done quickly and easily with Virtualxcel. Our expert team ensures hassle-free GST compliance for your business. Focus on growth while we handle the complexities of GST registration. Discover our efficient and tailored GST solutions today.",
   keywords:
     "GST registration, GST compliance, quick GST registration, hassle-free GST, business GST services, Virtualxcel GST, GST solutions",
   author: "Virtualxcel",
@@ -37,7 +37,7 @@ function page() {
           <WavyBackground3 />
           <div className={classes.headingContainer}>
             <h2 className={classes.heading1}>
-              Best Plan For <b>GST Registration</b>
+              Best Plan For <b>GST</b>
             </h2>
             <h3 className={classes.heading2}>Starting just at &#8377; 999</h3>
           </div>

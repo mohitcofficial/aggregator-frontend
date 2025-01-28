@@ -37,7 +37,7 @@ function page() {
           <WavyBackground3 />
           <div className={classes.headingContainer}>
             <h2 className={classes.heading1}>
-              Best Plan For <b>GST Registration</b>
+              Best Plan For <b>Mailing Address</b>
             </h2>
             <h3 className={classes.heading2}>Starting just at &#8377; 999</h3>
           </div>
@@ -51,9 +51,9 @@ function page() {
               />
             </div>
             <PriceCard
-              price={BoxData2[1].price}
-              heading={BoxData2[1].heading}
-              points={BoxData2[1].points}
+              price={BoxData2[2].price}
+              heading={BoxData2[2].heading}
+              points={BoxData2[2].points}
               flag={0}
             />
           </div>

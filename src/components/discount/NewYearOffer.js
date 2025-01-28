@@ -7,7 +7,7 @@ function NewYearOffer() {
       <div className={classes.dim}></div>
       <div className={classes.contentContainer}>
         <p className={classes.heading1}>New Year Dhamaka Offer !</p>
-        <p className={classes.heading2}>Flat 10% Off on Virtual Offices</p>
+        <p className={classes.heading2}>Upto 10% Off on Virtual Offices</p>
       </div>
     </div>
   );

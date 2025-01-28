@@ -78,7 +78,7 @@ function WhyUs() {
               <div className={classes.content}>
                 <p className={classes.heading2}>Guaranteed Refund</p>
                 <p className={classes.text}>
-                  Receive a full refund if your GST or company registration is
+                  Receive a full refund if your GST or company certification is
                   declined.
                 </p>
               </div>

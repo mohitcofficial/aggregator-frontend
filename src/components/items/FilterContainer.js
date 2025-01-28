@@ -123,9 +123,7 @@ function FilterContainer({ id, type = "city", name }) {
           </div>
           <div className={classes.contactContainer}>
             <div className={classes.headingContainer}>
-              <p className={classes.heading}>
-                Still Struggling with GST Registration ?
-              </p>
+              <p className={classes.heading}>Still Struggling for GST ?</p>
               <p className={classes.subHeading}>We got you !</p>
             </div>
             <div className={classes.personContainer}>

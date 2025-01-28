@@ -2,7 +2,7 @@ export const virtualOfficesQA = [
   {
     question: "What is a Virtual Office & is it safe in India?",
     answer: [
-      "A virtual office offers a business address, mail handling, phone services, and meeting rooms without needing a physical office space. In India, virtual offices are safe and legally compliant when chosen from reputable providers. Benefits include professional credibility, cost savings, and support for GST/company registration. Ensure security by verifying the provider's legitimacy and checking compliance with government norms.",
+      "A virtual office offers a business address, mail handling, phone services, and meeting rooms without needing a physical office space. In India, virtual offices are safe and legally compliant when chosen from reputable providers. Benefits include professional credibility, cost savings, and support for GST/company. Ensure security by verifying the provider's legitimacy and checking compliance with government norms.",
     ],
   },
   {
@@ -35,8 +35,8 @@ export const virtualOfficesQA = [
     answer: [
       "To set up a virtual office in India, you generally need the following documents",
       "KYC documents of all directors.",
-      "1. Business Registration Proof: Certificate of Incorporation, Partnership Deed, or Proprietorship Certificate.",
-      "2. GST Registration Documents (if applicable): GSTIN Certificate if you plan to register for GST.",
+      "1. Business Plan Proof: Certificate of Incorporation, Partnership Deed, or Proprietorship Certificate.",
+      "2. GST Plan Documents (if applicable): GSTIN Certificate if you plan to register for GST.",
       "3. Identity Proof of Owner/Authorized Signatory: PAN Card, Passport, or Aadhar Card.",
       "4. Address Proof of Owner/Authorized Signatory: Voter ID, Aadhar Card, Passport, or Driver's License.",
       "5. Video KYC.",
@@ -44,9 +44,9 @@ export const virtualOfficesQA = [
     ],
   },
   {
-    question: "Can I virual office address for GST Registration in India?",
+    question: "Can I virual office address for GST in India?",
     answer: [
-      "Yes, you can use a virtual office address for GST registration in India. Many businesses, especially startups and small enterprises, opt for virtual office addresses as their official place of business for GST purposes.",
+      "Yes, you can use a virtual office address for GST in India. Many businesses, especially startups and small enterprises, opt for virtual office addresses as their official place of business for GST purposes.",
     ],
   },
 ];

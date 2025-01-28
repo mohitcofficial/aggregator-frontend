@@ -30,13 +30,13 @@ function CityCard({ city }) {
         </div>
         <div className={classes.prices}>
           <div className={classes.priceItem}>
-            <div className={classes.item}>Business Registration</div>
+            <div className={classes.item}>Business Plan</div>
             <div className={classes.item}>
               &#8377;{city?.businessRegistrationPrice} / year
             </div>
           </div>
           <div className={classes.priceItem}>
-            <div className={classes.item}>GST Registration</div>
+            <div className={classes.item}>GST Plan</div>
             <div className={classes.item}>
               &#8377;{city?.gstRegistrationPrice} / year
             </div>
