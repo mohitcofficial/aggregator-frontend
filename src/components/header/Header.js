@@ -145,12 +145,10 @@ function Header() {
                     onClick={(event) => {
                       handleDropDownClick(event);
                       if (!(event.metaKey || event.ctrlKey))
-                        setActiveNavItem("business-registration");
+                        setActiveNavItem("business-plan");
                     }}
                     className={`${classes.dropListItem} ${
-                      activeNavItem === "business-registration"
-                        ? classes.active
-                        : ""
+                      activeNavItem === "business-plan" ? classes.active : ""
                     }`}
                   >
                     <Link
@@ -172,10 +170,10 @@ function Header() {
                     onClick={(event) => {
                       handleDropDownClick(event);
                       if (!(event.metaKey || event.ctrlKey))
-                        setActiveNavItem("gst-registration");
+                        setActiveNavItem("gst-plan");
                     }}
                     className={`${classes.dropListItem} ${
-                      activeNavItem === "gst-registration" ? classes.active : ""
+                      activeNavItem === "gst-plan" ? classes.active : ""
                     }`}
                   >
                     <Link
@@ -438,7 +436,7 @@ function Header() {
               <Link
                 className={classes.aTag3}
                 style={{ textDecoration: "none", color: "inherit" }}
-                href="/business-registration"
+                href="/business-plan"
               >
                 <span>Business Plan</span>
                 <KeyboardArrowRightIcon
@@ -459,7 +457,7 @@ function Header() {
               <Link
                 className={classes.aTag3}
                 style={{ textDecoration: "none", color: "inherit" }}
-                href="/gst-registration"
+                href="/gst-plan"
               >
                 <span>GST Plan</span>
                 <KeyboardArrowRightIcon

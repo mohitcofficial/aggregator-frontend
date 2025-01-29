@@ -28,8 +28,8 @@ export default async function sitemap() {
   const staticUrls = [
     { url: `${BASE_URL}`, priority: 1 },
     { url: `${BASE_URL}/virtual-office`, priority: 0.99 },
-    { url: `${BASE_URL}/business-registration`, priority: 0.98 },
-    { url: `${BASE_URL}/gst-registration`, priority: 0.97 },
+    { url: `${BASE_URL}/business-plan`, priority: 0.98 },
+    { url: `${BASE_URL}/gst-plan`, priority: 0.97 },
     { url: `${BASE_URL}/mailing-address`, priority: 0.96 },
     { url: `${BASE_URL}/coworking-space`, priority: 0.9 },
     { url: `${BASE_URL}/desk`, priority: 0.89 },
