@@ -13,6 +13,7 @@ import LPPriceItem from "@/components/lpItems/LPPriceItem";
 import LPHeader from "@/components/lpItems/LPHeader";
 import NewYearOffer from "@/components/discount/NewYearOffer";
 import Disclaimer from "@/components/lpItems/Disclaimer";
+import FrequentQuestions from "@/components/frequent-questions/FrequentQuestions";
 const LPCitiesSlider = dynamic(
   () => import("../../components/lpItems/LPCitiesSlider"),
   {
@@ -92,6 +93,7 @@ function page() {
         <WhyUs />
         <VirtualOfficeBenefits />
         <ReviewSlider />
+        <FrequentQuestions />
       </div>
       <LPFooter />
       <Disclaimer />
