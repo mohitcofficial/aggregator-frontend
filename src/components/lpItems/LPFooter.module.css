@@ -111,20 +111,21 @@
 
 .container2 {
   display: flex;
-  color: rgb(147, 162, 176);
+  color: #fff;
   width: 90%;
   justify-content: space-between;
-  border-top: 1px solid rgb(147, 162, 176);
+  border-top: 1px solid var(--white-color);
   padding-top: 6px;
-  margin-bottom: 12px;
+  font-size: 14px;
+  margin-bottom: 18px;
 }
 
 .bottomLeft {
-  width: 60%;
+  width: 50%;
 }
 .bottomRight {
   text-align: right;
-  width: 30%;
+  width: 45%;
 }
 
 @media (max-width: 1500px) {

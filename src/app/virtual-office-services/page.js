@@ -12,6 +12,7 @@ import dynamic from "next/dynamic";
 import LPPriceItem from "@/components/lpItems/LPPriceItem";
 import LPHeader from "@/components/lpItems/LPHeader";
 import NewYearOffer from "@/components/discount/NewYearOffer";
+import Disclaimer from "@/components/lpItems/Disclaimer";
 const LPCitiesSlider = dynamic(
   () => import("../../components/lpItems/LPCitiesSlider"),
   {
@@ -93,6 +94,7 @@ function page() {
         <ReviewSlider />
       </div>
       <LPFooter />
+      <Disclaimer />
     </>
   );
 }

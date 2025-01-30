@@ -10,6 +10,8 @@ import toast from "react-hot-toast";
 import TransparentLogo from "../../../public/images/FooterTransparentLogo.png";
 import classes from "./LPFooter.module.css";
 import { phoneNumber1, phoneNumber2 } from "@/app/data/ContactInformation";
+import Link from "next/link";
+import { WebsiteURLs } from "@/app/data/Links";
 
 function LPFooter() {
   const handleMaintainance = () => {
@@ -68,6 +70,15 @@ function LPFooter() {
           </div>
         </div>
         <div className={`${classes.box2} ${classes.box1}`}>
+          <div className={classes.heading}>Policy</div>
+          <div className={classes.option}>
+            <Link href={WebsiteURLs.privacyPolicy}>Privacy Policy</Link>
+          </div>
+          <div className={classes.option}>
+            <Link href={WebsiteURLs.refundPolicy}>Refund Policy</Link>
+          </div>
+        </div>
+        <div className={`${classes.box2} ${classes.box1}`}>
           <div className={classes.heading}>Connect with us</div>
 
           <div className={classes.option}>
@@ -99,6 +110,12 @@ function LPFooter() {
             </p>
           </div>
         </div>
+      </div>
+      <div className={classes.container2}>
+        <div className={classes.bottomLeft}>
+          Copyright © 2024, Virtualxcel. All Rights Reserved
+        </div>
+        <div className={classes.bottomRight}>Virtualxcel Solutions Pvt Ltd</div>
       </div>
     </div>
   );

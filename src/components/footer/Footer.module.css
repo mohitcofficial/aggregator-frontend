@@ -128,10 +128,10 @@
 
 .container2 {
   display: flex;
-  color: var(--text-color);
+  color: #fff;
   width: 90%;
   justify-content: space-between;
-  border-top: 1px solid var(--text-color-light);
+  border-top: 1px solid var(--white-color);
   padding-top: 6px;
   font-size: 14px;
   margin-bottom: 12px;
