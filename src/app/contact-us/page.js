@@ -10,6 +10,8 @@ import { phoneNumber1, phoneNumber2 } from "../data/ContactInformation";
 
 export const metadata = {
   title: "Connect With Us",
+  keywords:
+    "Virtual Office, Virtual Office Address, Premium Virtual Offce, Virtual Office near me, Virtual Office for Startups",
   description:
     "Get in touch with Virtualxcel today. Whether you have inquiries, feedback, or partnership proposals, our team is here to assist you. Reach out to us easily and start your journey towards a vibrant coworking experience.",
 };

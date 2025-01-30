@@ -318,9 +318,8 @@ function page() {
                   including to monitor the usage of our Service.
                 </li>
                 <li className={classes.text}>
-                  <span className={classes.bold}>To manage Your Account:</span>
-                  to manage Your registration as a user of the Service. The
-                  Personal Data You provide can give You access to different
+                  <span className={classes.bold}>To manage Your Account:</span>{" "}
+                  The Personal Data You provide can give You access to different
                   functionalities of the Service that are available to You as a
                   registered user.
                 </li>

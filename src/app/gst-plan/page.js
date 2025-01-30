@@ -22,9 +22,9 @@ const ReviewSlider = dynamic(
 export const metadata = {
   title: "Quick and Easy GST Certification | Virtualxcel",
   description:
-    "Get your GST done quickly and easily with Virtualxcel. Our expert team ensures hassle-free GST compliance for your business. Focus on growth while we handle the complexities of GST registration. Discover our efficient and tailored GST solutions today.",
+    "Get your GST done quickly and easily with Virtualxcel. Our expert team ensures hassle-free GST compliance for your business. Discover our efficient and tailored GST solutions today.",
   keywords:
-    "GST registration, GST compliance, quick GST registration, hassle-free GST, business GST services, Virtualxcel GST, GST solutions",
+    "Virtual Office, Virtual Office Address, Premium Virtual Offce, Virtual Office near me, Virtual Office for Startups",
   author: "Virtualxcel",
 };
 

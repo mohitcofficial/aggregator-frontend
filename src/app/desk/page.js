@@ -17,7 +17,7 @@ export const metadata = {
   description:
     "Secure a dedicated desk at VirtualXcel, designed for focused and uninterrupted work. Find your perfect workspace with us.",
   keywords:
-    "dedicated desk, coworking space, focused work, VirtualXcel, uninterrupted work, personal workspace, cheap private desk, best private dest, best coworking space, cheapest coworking space",
+    "dedicated desk, dedicated desk plan, dedicated desk near me, coworking space, focused work, VirtualXcel, personal workspace, cheap private desk, best private dest, best coworking space, cheapest coworking space",
   author: "Virtualxcel",
 };
 

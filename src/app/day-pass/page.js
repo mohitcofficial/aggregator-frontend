@@ -16,8 +16,7 @@ export const metadata = {
   title: "Experience Flexibility with Our Day Passes | Virtualxcel",
   description:
     "Enjoy a productive day at VirtualXcel's coworking spaces, tailored to your dynamic work style. Get the flexibility you need with our convenient day passes.",
-  keywords:
-    "day pass, coworking space, flexible workspace, VirtualXcel, productivity, work style",
+  keywords: "day pass, coworking space, flexible workspace, VirtualXcel",
   author: "Virtualxcel",
 };
 

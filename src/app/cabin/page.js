@@ -17,7 +17,7 @@ export const metadata = {
   description:
     "Elevate your workspace with VirtualXcel's exclusive private cabins, perfect for teams and individuals seeking privacy and comfort.",
   keywords:
-    "private cabins, coworking space, premium comfort, VirtualXcel, private workspace, team workspace, cheap cabins new me, cheapest private cabins, best private cabins",
+    "private cabins, premium comfort, VirtualXcel, private workspace, team workspace, cheap cabins near me, cheapest private cabins, best private cabins",
   author: "Virtualxcel",
 };
 

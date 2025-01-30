@@ -16,6 +16,11 @@ export const metadata = {
   description:
     "Discover the flexibility of our virtual offices at Virtualxcel. Gain a prestigious business address, professional support, and remote services tailored to your needs. Elevate your business presence today.",
   keywords: [
+    "Virtual Office",
+    "Virtual Office Address",
+    "Premium Virtual Offce",
+    "Virtual Office near me",
+    "Virtual Office for Startups",
     "virtual office space in delhi",
     "cheap virtual office space in delhi",
     "virtual office space in noida",

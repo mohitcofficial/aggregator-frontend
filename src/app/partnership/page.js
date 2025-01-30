@@ -8,6 +8,8 @@ export const metadata = {
   title: "Partner With Us",
   description:
     "Explore exciting partnership opportunities with Virtualxcel. Join forces with us to create innovative programs, events, and initiatives that empower professionals and businesses. Let's collaborate for mutual success.",
+  keywords:
+    "Virtual Office, Virtual Office Address, Premium Virtual Offce, Virtual Office near me, Virtual Office for Startups",
 };
 
 function page() {
