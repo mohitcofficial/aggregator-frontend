@@ -107,7 +107,7 @@ export default function RootLayout({ children }) {
         />
         <Toaster position="bottom-center" reverseOrder={false} />
         {children}
-        <TawkToChat />
+        {/* <TawkToChat /> */}
       </body>
     </html>
   );
