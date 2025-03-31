@@ -14,7 +14,7 @@ export const BoxData = [
     ],
   },
   {
-    price: "999",
+    price: "899",
     heading: "Get GST Plan",
     points: [
       "Register for GST.",
@@ -29,7 +29,7 @@ export const BoxData = [
     ],
   },
   {
-    price: "799",
+    price: "699",
     heading: "Mailing Address Plan",
     points: [
       "Use the Address as your Mailing Address.",
@@ -60,7 +60,7 @@ export const BoxData2 = [
     ],
   },
   {
-    price: "999",
+    price: "899",
     heading: "Get GST Plan ",
     subHeading:
       "Expand your existing business to new states in the country. GST  for Aditional Place of Business (APOB).",
@@ -76,7 +76,7 @@ export const BoxData2 = [
     ],
   },
   {
-    price: "799",
+    price: "699",
     heading: "Get Mailing Address Plan",
     subHeading:
       "Get a professional business address for your company at prime locations.",

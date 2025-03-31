@@ -31,13 +31,13 @@ export default function Home() {
       <div className={classes.container}>
         <Banner />
         <NewYearOffer />
-        {/* <CountContainer />
+        <CountContainer />
         <PriceItem />
         <PremiumCities />
         <BlogSection />
         <NeedExpertPoster />
         <ReviewSlider />
-        <FrequentQuestions /> */}
+        <FrequentQuestions />
       </div>
     </CustomLayout>
   );

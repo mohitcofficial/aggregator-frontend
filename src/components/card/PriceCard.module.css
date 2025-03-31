@@ -19,6 +19,28 @@
   animation: glow 1.8s infinite;
 }
 
+.relative {
+  position: relative;
+}
+
+.ribbon {
+  font-size: 14px;
+  padding: 8px 48px;
+  color: var(--white-color);
+  /* background-color: #ff0000; */
+  font-weight: 400;
+  position: absolute;
+  left: -8px;
+  top: 25px;
+  background: rgb(162, 0, 0);
+  background: linear-gradient(
+    51deg,
+    rgba(162, 0, 0, 1) 0%,
+    rgba(240, 71, 70, 1) 50%,
+    rgba(162, 0, 0, 1) 100%
+  );
+}
+
 @keyframes glow {
   0% {
     box-shadow: 0 0 10px var(--primary-color);
@@ -230,6 +252,9 @@
     height: 16px;
     margin-top: 4px;
   }
+  .ribbon {
+    padding: 6px 32px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -240,5 +265,9 @@
   .box2 {
     min-height: 625px;
     height: 625px;
+  }
+  .ribbon {
+    padding: 4px 24px;
+    font-size: 13px;
   }
 }

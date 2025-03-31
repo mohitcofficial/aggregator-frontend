@@ -1,0 +1,136 @@
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 1000px;
+  margin: 24px auto;
+  padding: 24px 0;
+}
+
+.heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 400;
+  gap: 8px;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.round {
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  width: 60px;
+  height: 60px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  z-index: -1;
+  transform: translate(0, -50%);
+}
+
+.progressBar {
+  position: relative;
+  width: 80%;
+  height: 8px;
+  background-color: #bcbfc5;
+  border-radius: 9999px;
+  overflow: hidden;
+  margin: 12px 0;
+}
+
+.progress {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: #fcab14;
+  background-color: #000dc6;
+  border-radius: 9999px;
+}
+
+.stepContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.step {
+  width: 25%;
+  max-width: 25%;
+  text-align: center;
+}
+
+.stepCircle {
+  width: 38px;
+  height: 38px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  transition: background-color 0.8s ease-in-out;
+}
+
+.activeStep {
+  background-color: #fcab14;
+  background-color: #000dc6;
+}
+
+.inactiveStep {
+  background-color: #bcbfc5;
+}
+
+.stepLabel {
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+@media (max-width: 1000px) {
+  .heading {
+    font-size: 28px;
+  }
+  .stepLabel {
+    font-size: 14px;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    margin: 32px 0;
+  }
+  .stepLabel {
+    font-size: 13px;
+  }
+}
+@media (max-width: 600px) {
+  .stepCircle {
+    width: 28px;
+    height: 28px;
+    font-size: 13px;
+  }
+  .stepLabel {
+    font-size: 12px;
+  }
+  .round {
+    top: 50%;
+    left: -20px;
+  }
+}
+@media (max-width: 520px) {
+  .round {
+    top: 25%;
+    left: 35px;
+  }
+}

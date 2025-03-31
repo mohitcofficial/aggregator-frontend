@@ -5,7 +5,16 @@ import DoneIcon from "@mui/icons-material/Done";
 
 function PriceCard({ price, heading, subHeading, points, flag }) {
   return (
-    <div className={`${classes.box1} ${flag ? classes.box2 : ""}`}>
+    <div
+      className={`${classes.box1} ${flag ? classes.box2 : ""} ${
+        classes.relative
+      }`}
+    >
+      {flag ? (
+        <div className={classes.ribbon}>Most Popular Plan</div>
+      ) : (
+        <div className={classes.ribbon}>Starting Price</div>
+      )}
       <div className={classes.marginBox}>
         <div>
           <div className={classes.boxHeading}>

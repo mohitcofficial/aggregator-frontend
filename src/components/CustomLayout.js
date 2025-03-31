@@ -6,9 +6,9 @@ import Disclaimer from "./lpItems/Disclaimer";
 function CustomLayout({ children }) {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       {children}
-      {/* <Footer /> */}
+      <Footer />
       <Disclaimer />
       <WhatsappSticker />
     </>

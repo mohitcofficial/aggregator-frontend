@@ -1,0 +1,98 @@
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 80px 0 48px 0;
+  padding: 44px 0;
+  background-color: #f1f6f8;
+}
+
+.contentContainer {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+}
+
+.box1 {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.text {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.heading {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.servicesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 12px 0;
+}
+
+.listItem {
+  list-style: none;
+  display: flex;
+  gap: 6px;
+  text-align: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.callBackButton {
+  outline: none;
+  border: none;
+  padding: 10px 32px;
+  font-size: 15px;
+  color: #fff;
+  background-color: #34455c;
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .contentContainer {
+    flex-direction: column;
+  }
+  .box1 {
+    width: 100%;
+  }
+  .heading {
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+  }
+  .text {
+    text-align: center;
+  }
+  .servicesContainer {
+    margin: 24px 0;
+    justify-content: center;
+  }
+}
+@media (max-width: 600px) {
+  .heading {
+    font-size: 26px;
+  }
+  .text {
+    font-size: 14px;
+  }
+  .servicesContainer {
+    flex-direction: column;
+    padding-left: 24px;
+  }
+  .listItem {
+    font-size: 13px;
+  }
+  .callBackButton {
+    margin: 12px 0;
+    font-size: 13px;
+  }
+}
