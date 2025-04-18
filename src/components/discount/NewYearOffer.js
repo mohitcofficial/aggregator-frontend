@@ -6,7 +6,7 @@ function NewYearOffer() {
     <div className={classes.container}>
       <div className={classes.dim}></div>
       <div className={classes.contentContainer}>
-        <p className={classes.heading1}>New Financial Offer !</p>
+        <p className={classes.heading1}>New Financial Year Offer !</p>
         <p className={classes.heading2}>Upto 15% Off on Virtual Offices</p>
       </div>
     </div>
