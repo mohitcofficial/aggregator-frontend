@@ -31,7 +31,7 @@ export default function Home() {
     <CustomLayout>
       <div className={classes.container}>
         <Banner />
-        <IndependenceDayOffer /> 
+        {/* <IndependenceDayOffer />  */}
         <CountContainer />
         <PriceItem />
         <PremiumCities />
