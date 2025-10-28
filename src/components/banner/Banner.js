@@ -118,12 +118,12 @@ function Banner() {
           <Image className={classes.image} src={Background2} alt="Image" />
         </div>
         <div className={classes.textContent}>
-          <div className={classes.heading1}>
+          <h1 className={classes.heading1}>
             <div>Unlock Your</div>
             <div className={classes.gradientText}>Productivity</div>
             <div>Potential</div>
             with Us
-          </div>
+          </h1>
           <div className={classes.searchField}>
             <div className={classes.locationIcon}>
               <LocationOnIcon

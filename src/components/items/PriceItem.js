@@ -10,9 +10,9 @@ function PriceItem() {
       <WavyBackground3 />
       <div className={classes.contentContainer}>
         <div className={classes.heading}>
-          <div className={classes.heading2}>
+          <h1 className={classes.heading2}>
             Select the Perfect Virtual Office for Your Specific Needs
-          </div>
+          </h1>
           <div className={classes.heading1}>
             Choose the perfect service for your business, and let us take care
             of the details. Sit back and watch your success unfold!
