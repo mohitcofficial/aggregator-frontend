@@ -10,7 +10,7 @@
   width: 90%;
   justify-content: space-between;
   row-gap: 32px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   /* grid-template-columns: repeat(auto-fit, minmax(200px, 300px)); */
 }
 

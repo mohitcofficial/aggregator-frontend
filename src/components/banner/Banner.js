@@ -7,13 +7,42 @@ import toast from "react-hot-toast";
 import Image from "next/image";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { useRouter } from "next/navigation";
-import Background2 from "../../../public/images/Background2.jpeg";
+import Background2 from "../../../public/images/VirtualOfficeBanner3.png";
 import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from "@mui/icons-material/Email";
 import UserApiServices from "@/services/User.api.services";
 import { WebsiteURLs } from "@/app/data/Links";
 import ViewAllModal from "../modal/ViewAllModal";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import Link from "next/link";
 // import LocationsModal from "../LocationsModal";
+
+const bannerButtonData = [
+  {
+    name: "Delhi",
+    url: "/virtual-office/delhi/new-delhi",
+  },
+  {
+    name: "Gurgaon",
+    url: "/virtual-office/haryana/gurgaon",
+  },
+  {
+    name: "Noida",
+    url: "/virtual-office/uttar-pradesh/noida",
+  },
+  {
+    name: "Bangalore",
+    url: "/virtual-office/karnataka/bangalore",
+  },
+  {
+    name: "Mumbai",
+    url: "/virtual-office/maharashtra/mumbai",
+  },
+  {
+    name: "Kolkata",
+    url: "/virtual-office/west-bengal/kolkata",
+  },
+];
 
 function Banner() {
   const router = useRouter();
@@ -92,7 +121,7 @@ function Banner() {
       router.push(`${WebsiteURLs.virtualOffice}/${foundLocation.slug}`);
     else if (foundLocation.type === "city")
       router.push(
-        `${WebsiteURLs.virtualOffice}/${foundLocation.stateSlug}/${foundLocation.slug}`
+        `${WebsiteURLs.virtualOffice}/${foundLocation.stateSlug}/${foundLocation.slug}`,
       );
   };
   const handleSearch2 = (item) => {
@@ -107,28 +136,40 @@ function Banner() {
       router.push(`${WebsiteURLs.virtualOffice}/${item.slug}`);
     else if (item.type === "city")
       router.push(
-        `${WebsiteURLs.virtualOffice}/${item.stateSlug}/${item.slug}`
+        `${WebsiteURLs.virtualOffice}/${item.stateSlug}/${item.slug}`,
       );
   };
 
   return (
     <div className={classes.container}>
-      <div className={classes.banner}>
+      <section className={classes.banner}>
         <div className={classes.backgroundImage}>
-          <Image className={classes.image} src={Background2} alt="Image" />
+          <Image
+            className={classes.image}
+            src={Background2}
+            alt="Virtual Office for GST Registration and Company Registration across India"
+            fill
+            priority
+            quality={85}
+          />
         </div>
         <div className={classes.textContent}>
           <h1 className={classes.heading1}>
-            <div>Unlock Your</div>
-            <div className={classes.gradientText}>Productivity</div>
-            <div>Potential</div>
-            with Us
+            <div>Virtual Address for</div>
+            <div className={classes.gradientText}>
+              GST & Company Registration
+            </div>
+            <div>PAN INDIA</div>
           </h1>
+          {/* <p className={classes.subText}>
+            Get o profesoionol businirss oddreas for GST Regatrotion, Company
+            Registration, Maling Address and more. Choose from 100+ premium
+            locations and grow your business with confidence.
+          </p> */}
           <div className={classes.searchField}>
             <div className={classes.locationIcon}>
               <LocationOnIcon
                 sx={{
-                  color: "rgb(254, 173, 22)",
                   fontSize: { xs: 28, sm: 32, md: 34, lg: 36 },
                 }}
               />
@@ -194,17 +235,28 @@ function Banner() {
               />
             </div>
           </div>
-          <ViewAllModal trendingCities={trendingCities} statesData={statesData}>
-            <button className={classes.viewLocationsButton}>
-              View All Locations
-            </button>
-          </ViewAllModal>
+          <p className={classes.infoText}>Popular Searches</p>
+          <div className={classes.buttonContainer}>
+            {bannerButtonData.map((button, index) => (
+              <Link className={classes.button} key={index} href={button.url}>
+                {button.name}
+              </Link>
+            ))}
+            <ViewAllModal
+              trendingCities={trendingCities}
+              statesData={statesData}
+            >
+              <button className={classes.button}>
+                View All Locations
+                <ArrowForwardIcon sx={{ fontSize: 18 }} />
+              </button>
+            </ViewAllModal>
+          </div>
         </div>
-        <div className={classes.contactContainer}>
+        {/* <div className={classes.contactContainer}>
           <span>
             <CallIcon
               sx={{
-                color: "rgb(254, 173, 22);",
                 marginRight: "6px",
                 fontSize: { xs: 16, sm: 18, md: 20, lg: 20 },
               }}
@@ -215,15 +267,14 @@ function Banner() {
           <span>
             <EmailIcon
               sx={{
-                color: "rgb(254, 173, 22);",
                 marginRight: "6px",
                 fontSize: { xs: 16, sm: 18, md: 20, lg: 20 },
               }}
             />
             sales@virtualxcel.in
           </span>
-        </div>
-      </div>
+        </div> */}
+      </section>
     </div>
   );
 }

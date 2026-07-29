@@ -27,6 +27,13 @@ const counterData = [
     suffix: "/7",
     text: "Customer Support",
   },
+  {
+    start: 0,
+    end: 8,
+    prefix: "4.",
+    suffix: "⭐",
+    text: "Rated Service",
+  },
 ];
 
 function CountContainer() {
@@ -41,6 +48,7 @@ function CountContainer() {
             suffix={item.suffix}
             text={item.text}
             delay={1}
+            prefix={item?.prefix}
           />
         ))}
       </div>

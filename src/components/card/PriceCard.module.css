@@ -43,13 +43,15 @@
 
 @keyframes glow {
   0% {
-    box-shadow: 0 0 10px var(--primary-color);
+    box-shadow: 0 0 10px #fcab14;
   }
   50% {
-    box-shadow: 0 0 14px var(--primary-color), 0 0 16px var(--primary-color);
+    box-shadow:
+      0 0 14px #fcab14,
+      0 0 16px #fcab14;
   }
   100% {
-    box-shadow: 0 0 10px var(--primary-color);
+    box-shadow: 0 0 10px #fcab14;
   }
 }
 

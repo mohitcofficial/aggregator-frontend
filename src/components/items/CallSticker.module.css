@@ -1,0 +1,75 @@
+.call {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 64px;
+  max-height: 64px;
+  min-width: 50px;
+  min-height: 50px;
+  padding: 12px;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px gray;
+  z-index: 5;
+  cursor: pointer;
+  background-color: #005dc7;
+  background-color: var(--primary-color);
+}
+
+.call:hover {
+  box-shadow: 0 0 10px gray;
+}
+
+.icon {
+  color: white;
+  animation: ring 1.5s infinite;
+}
+
+@media (max-width: 1275px) and (min-width: 1001px) {
+}
+
+@media (max-width: 1000px) and (min-width: 601px) {
+}
+
+@media (max-width: 600px) {
+  .whatsapp {
+    padding: 10px;
+  }
+}
+@keyframes ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(15deg);
+  }
+  20% {
+    transform: rotate(-12deg);
+  }
+  30% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(12deg);
+  }
+  60% {
+    transform: rotate(-8deg);
+  }
+  70% {
+    transform: rotate(6deg);
+  }
+  80% {
+    transform: rotate(-4deg);
+  }
+  90% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

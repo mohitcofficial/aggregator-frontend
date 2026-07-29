@@ -6,9 +6,9 @@
 
 .count {
   color: var(--primary-color);
-  color: #ec7754;
-  /* color: #e4656b; */
-  font-size: 48px;
+  /* color: #ec7754; */
+  color: #e7632b;
+  font-size: 40px;
   font-weight: 700;
 }
 

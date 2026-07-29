@@ -3,7 +3,7 @@ import React from "react";
 import CountUp from "react-countup";
 import classes from "./CounterCard.module.css";
 
-function CounterCard({ start = 0, end = 100, text, suffix }) {
+function CounterCard({ start = 0, end = 100, text, suffix, prefix }) {
   return (
     <CountUp
       start={start}
@@ -11,6 +11,7 @@ function CounterCard({ start = 0, end = 100, text, suffix }) {
       duration={2}
       separator=" "
       suffix={suffix}
+      prefix={prefix}
       delay={0}
     >
       {({ countUpRef }) => (

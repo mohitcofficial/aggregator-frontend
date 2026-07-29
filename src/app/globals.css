@@ -13,8 +13,10 @@ a {
 }
 
 :root {
-  --primary-color: #fcab14;
-  --primary-color-dark: #0e4053;
+  /* --primary-color: #fcab14;
+  --primary-color-dark: #0e4053; */
+  --primary-color: #0c1c3e;
+  --primary-color-dark: #040d20;
   --primary-color-light: #1f6f8ccc;
   --secondary-color: #1e90ff;
   --accent-color: #ff6347;

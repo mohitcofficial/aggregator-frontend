@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   padding: 12px 0 24px 0;
-  background-color: #191c20;
+  background-color: var(--primary-color-dark);
 }
 
 .container1 {

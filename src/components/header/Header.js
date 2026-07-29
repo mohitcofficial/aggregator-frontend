@@ -10,10 +10,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import TransparentLogo from "../../../public/images/NewTransparentLogo4.png";
+import TransparentLogo from "../../../public/images/LPTransparentLogo2.png";
 import classes from "./Header.module.css";
 import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from "@mui/icons-material/Email";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
 import SearchModal from "../modal/SearchModal";
 import { phoneNumber1, phoneNumber2 } from "@/app/data/ContactInformation";
 
@@ -33,7 +34,7 @@ function Header() {
       setIsVisible(false);
     } else {
       setBoxShadow(
-        window.scrollY === 0 ? "none" : "0px 4px 10px rgba(0, 0, 0, 0.1)"
+        window.scrollY === 0 ? "none" : "0px 4px 10px rgba(0, 0, 0, 0.1)",
       );
       setIsVisible(true);
     }
@@ -58,28 +59,40 @@ function Header() {
         }`}
       >
         <div className={classes.topNavContent}>
-          <span>
-            <CallIcon
+          <span className={classes.topNavContentText}>
+            <LocationOnIcon
               sx={{
-                color: "#000",
+                color: "#fff",
                 marginRight: "6px",
                 fontSize: { xs: 14, sm: 16, md: 18, lg: 18 },
               }}
             />
-            <span>+91 {phoneNumber1}</span>
-            <span className={classes.phoneNumber2}>, +91 {phoneNumber2}</span>
+            100+ Premium Locations Across India
           </span>
-          |
-          <span>
-            <EmailIcon
-              sx={{
-                color: "#000",
-                marginRight: "6px",
-                fontSize: { xs: 14, sm: 16, md: 18, lg: 18 },
-              }}
-            />
-            sales@virtualxcel.in
-          </span>
+          <div className={classes.contactContainer}>
+            <span className={classes.topNavContentText}>
+              <CallIcon
+                sx={{
+                  color: "#fff",
+                  marginRight: "6px",
+                  fontSize: { xs: 14, sm: 16, md: 18, lg: 18 },
+                }}
+              />
+              <span>+91 {phoneNumber1}</span>
+              <span className={classes.phoneNumber2}>, +91 {phoneNumber2}</span>
+            </span>
+            |
+            <span className={classes.topNavContentText}>
+              <EmailIcon
+                sx={{
+                  color: "#fff",
+                  marginRight: "6px",
+                  fontSize: { xs: 14, sm: 16, md: 18, lg: 18 },
+                }}
+              />
+              sales@virtualxcel.in
+            </span>
+          </div>
         </div>
       </div>
       <nav

@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   height: auto;
-  height: 500px;
+  height: 550px;
 }
 
 .banner {
@@ -14,7 +14,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 500px;
+  height: 550px;
 }
 
 .backgroundImage {
@@ -32,7 +32,7 @@
   max-height: 100%;
   object-fit: cover;
   object-position: center;
-  filter: brightness(52%);
+  filter: brightness(40%);
 }
 
 .textContent {
@@ -50,11 +50,20 @@
 }
 
 .heading1 {
-  font-size: 36px;
+  font-size: 44px;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 12px;
   margin-bottom: 12px;
   font-weight: 600;
+}
+
+.subText {
+  width: 90%;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 400;
 }
 
 .searchField {
@@ -132,6 +141,7 @@
   justify-content: center;
   height: 90%;
   width: 5%;
+  color: var(--primary-color);
 }
 
 .searchButton {
@@ -142,14 +152,44 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  color: orange;
+  color: var(--primary-color);
 }
 
 .searchButton:hover {
-  color: rgb(203, 133, 5);
+  color: var(--primary-color-dark);
 }
 
-.viewLocationsButton {
+.infoText {
+  width: 90%;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.buttonContainer {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  font: inherit;
+  border-radius: 4px;
+  color: var(--white-color);
+  font-size: 13px;
+  padding: 4px 16px;
+  border: 1px solid var(--white-color);
+  cursor: pointer;
+  gap: 6px;
+  background-color: transparent;
+  font-weight: 400;
+}
+
+/* .viewLocationsButton {
   border: none;
   color: white;
   background-color: var(--primary-color);
@@ -163,9 +203,9 @@
 }
 
 .viewLocationsButton:hover {
-  box-shadow: 0 0 20px rgb(147, 147, 147);
-  background-color: #765b44;
-}
+  box-shadow: 0 0 5px rgb(147, 147, 147);
+  background-color: var(--primary-color-dark);
+} */
 
 .contactContainer {
   position: absolute;
@@ -189,14 +229,14 @@
   letter-spacing: 1px;
   font-size: 14px;
   font-weight: 600;
+  color: var(--primary-color);
 }
 
 .gradientText {
   background: linear-gradient(
     90deg,
-    rgba(131, 58, 180, 1) 0%,
-    rgba(253, 29, 29, 1) 50%,
-    rgba(252, 176, 69, 1) 100%
+    rgba(253, 29, 29, 1) 0%,
+    rgb(255, 173, 58) 100%
   );
   -webkit-background-clip: text;
   color: transparent;
