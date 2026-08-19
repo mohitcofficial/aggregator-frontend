@@ -8,12 +8,14 @@ import XIcon from "@mui/icons-material/X";
 import Link from "next/link";
 import classes from "./Footer.module.css";
 import Image from "next/image";
-import TransparentLogo from "../../../public/images/FooterTransparentLogo.png";
+import TransparentLogo from "../../../public/images/LPTransparentLogo2.png";
 import { WebsiteURLs } from "@/app/data/Links";
+import { allStatesMap, topCitiesMap } from "@/app/data/FooterData";
+import CircleIcon from "@mui/icons-material/Circle";
 
 function Footer() {
   return (
-    <div className={classes.container}>
+    <footer className={classes.container}>
       <div className={classes.container1}>
         <div className={`${classes.box1} ${classes.box3}`}>
           <div className={classes.logo}>
@@ -193,25 +195,22 @@ function Footer() {
 
           <div className={classes.option}>
             <a className={classes.aTag} href={WebsiteURLs.tel}>
-              <CallIcon
-                sx={{ color: "rgb(254, 173, 22);", marginRight: "8px" }}
-              />
+              <CallIcon sx={{ color: "#FDA52F", marginRight: "8px" }} />
               <p className={classes.text}>+91 9871001079</p>
             </a>
           </div>
           <div className={classes.option}>
             <a href={WebsiteURLs.mailTo} className={classes.aTag}>
-              <EmailIcon
-                sx={{ color: "rgb(254, 173, 22);", marginRight: "8px" }}
-              />
+              <EmailIcon sx={{ color: "#FDA52F", marginRight: "8px" }} />
               <p className={classes.text}>sales@virtualxcel.in</p>
             </a>
           </div>
-          <div className={classes.option2}>
+          <Link
+            href={"https://share.google/mBH2JCbm6YyVlICX0"}
+            className={classes.option2}
+          >
             <div className={classes.text2} style={{ alignItems: "center" }}>
-              <LocationOnIcon
-                sx={{ color: "rgb(254, 173, 22);", marginRight: "8px" }}
-              />
+              <LocationOnIcon sx={{ color: "#FDA52F", marginRight: "8px" }} />
               <p>293, Lane-2, Westend Marg,</p>
             </div>
             <p className={classes.text2} style={{ margin: "0 0 4px 32px" }}>
@@ -220,16 +219,40 @@ function Footer() {
             <p className={classes.text2} style={{ margin: "0 0 4px 32px" }}>
               Saket, New Delhi, Delhi 110030
             </p>
-          </div>
+          </Link>
         </div>
       </div>
       <div className={classes.container2}>
+        <h2 className={classes.linkHeading}>Virtual Offices in India</h2>
+        <ul className={classes.locationLinks}>
+          {allStatesMap.map((state, index) => (
+            <Link className={classes.link} key={index} href={state.link}>
+              <CircleIcon sx={{ fontSize: 6 }} />
+              <span>{state.text}</span>
+            </Link>
+          ))}
+        </ul>
+        <br />
+        <h2 className={classes.linkHeading}>Top Virtual Offices Cities</h2>
+        <ul className={classes.locationLinks}>
+          {topCitiesMap.map((city, index) => (
+            <Link className={classes.link} key={index} href={city.link}>
+              <CircleIcon sx={{ fontSize: 6 }} />
+              <span>{city.text}</span>
+            </Link>
+          ))}
+        </ul>
+        <br />
+      </div>
+      <div className={classes.container3}>
         <div className={classes.bottomLeft}>
           Copyright © 2024, Virtualxcel. All Rights Reserved
         </div>
-        <div className={classes.bottomRight}>Virtualxcel Solutions Pvt Ltd</div>
+        <div className={classes.bottomRight}>
+          Virtualxcel Solutions Pvt. Ltd.
+        </div>
       </div>
-    </div>
+    </footer>
   );
 }
 
