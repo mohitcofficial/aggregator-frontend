@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  width: 80%;
+  width: 100%;
   flex-direction: column;
   margin: 6px 0;
 }
@@ -15,19 +15,19 @@
 
 .question {
   font-weight: 500;
-  font-size: 17px;
+  font-size: 15px;
   color: var(--text-color);
   margin: 12px 0;
 }
 .answer {
   width: 100%;
-  font-size: 15px;
+  font-size: 13px;
   color: var(--text-color-light);
   margin: 4px 0;
 }
 .line {
   color: #eeeeee;
-  margin-top: 18px;
+  margin-top: 8px;
   border-top: 1px solid #eeeeee;
 }
 

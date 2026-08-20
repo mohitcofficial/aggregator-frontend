@@ -10,6 +10,8 @@ import VirtualOfficeBenefits from "@/components/content/VirtualOfficeBenefits";
 import TrendingCitiesSlider from "@/components/slider/TrendingCitiesSlider";
 import TrendingStatesSlider from "@/components/slider/TrendingStates";
 import SimilarStateSlider from "@/components/slider/SimilarStateSlider";
+import { virtualOfficeContent } from "../data/content";
+import SEOContent from "@/components/content/SEOContent";
 
 export const metadata = {
   title: "Virtual Offices & Business Addresses Across India",
@@ -42,6 +44,7 @@ export default function page() {
         <WhyUs />
         <VirtualOfficeBenefits />
         <FrequentQuestions />
+        <SEOContent content={virtualOfficeContent.india} />
       </div>
     </CustomLayout>
   );

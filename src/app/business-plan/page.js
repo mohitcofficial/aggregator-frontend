@@ -12,11 +12,13 @@ import dynamic from "next/dynamic";
 import { BoxData2 } from "../data/PriceCardData";
 import CoworkingImage from "../../../public/images/Coworking.png";
 import Image from "next/image";
+import SEOContent from "@/components/content/SEOContent";
+import { virtualOfficeContent } from "../data/content";
 const ReviewSlider = dynamic(
   () => import("../../components/slider/ReviewSlider"),
   {
     ssr: false,
-  }
+  },
 );
 
 export const metadata = {
@@ -63,6 +65,7 @@ function page() {
         <VirtualOfficeBenefits id={1} />
         <ReviewSlider />
         <FrequentQuestions />
+        <SEOContent content={virtualOfficeContent.india} />
       </div>
     </CustomLayout>
   );

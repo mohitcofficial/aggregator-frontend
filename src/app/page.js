@@ -8,8 +8,8 @@ import PremiumCities from "@/components/premiumLocations/PremiumCities";
 import dynamic from "next/dynamic";
 import classes from "./page.module.css";
 import FrequentQuestions from "@/components/frequent-questions/FrequentQuestions";
-import NewYearOffer from "@/components/discount/NewYearOffer";
-import IndependenceDayOffer from "@/components/discount/IndependenceDayOffer";
+import SEOContent from "@/components/content/SEOContent";
+import { virtualOfficeContent } from "./data/content";
 
 const ReviewSlider = dynamic(
   () => import("../components/slider/ReviewSlider"),
@@ -20,7 +20,7 @@ const ReviewSlider = dynamic(
 
 export const metadata = {
   title:
-    "Virtual Office & GST Registration Across India | 100+ Locations | Virtualxcel",
+    "Virtual Office in India - GST & Company Registration | 100+ Locations | Virtualxcel",
 
   description:
     "Get affordable Virtual Office addresses for GST Registration, Company Registration, Business Registration, and Professional Mailing Address across India. 100+ premium locations, fast documentation, compliance support, and instant assistance. Trusted by startups, freelancers, and growing businesses.",
@@ -75,42 +75,6 @@ export const metadata = {
     canonical: "/",
   },
 
-  // openGraph: {
-  //   title:
-  //     "Virtual Office & GST Registration Across India | Virtualxcel",
-
-  //   description:
-  //     "Affordable Virtual Offices across India for GST Registration, Company Registration, and Professional Business Addresses. Trusted by startups and businesses nationwide.",
-
-  //   url: "https://virtualxcel.in",
-
-  //   siteName: "Virtualxcel",
-
-  //   locale: "en_IN",
-
-  //   type: "website",
-
-  //   images: [
-  //     {
-  //       url: "/og-image.jpg",
-  //       width: 1200,
-  //       height: 630,
-  //       alt: "Virtualxcel - Virtual Office India",
-  //     },
-  //   ],
-  // },
-
-  // twitter: {
-  //   card: "summary_large_image",
-  //   title:
-  //     "Virtual Office & GST Registration Across India | Virtualxcel",
-
-  //   description:
-  //     "Affordable Virtual Office solutions with GST & Company Registration support across India.",
-
-  //   images: ["/og-image.jpg"],
-  // },
-
   robots: {
     index: true,
     follow: true,
@@ -130,9 +94,8 @@ export const metadata = {
 export default function Home() {
   return (
     <CustomLayout>
-      <div className={classes.container}>
+      <main className={classes.container}>
         <Banner />
-        {/* <IndependenceDayOffer />  */}
         <CountContainer />
         <PriceItem />
         <PremiumCities />
@@ -140,7 +103,8 @@ export default function Home() {
         <NeedExpertPoster />
         <ReviewSlider />
         <FrequentQuestions />
-      </div>
+        <SEOContent content={virtualOfficeContent.india} />
+      </main>
     </CustomLayout>
   );
 }

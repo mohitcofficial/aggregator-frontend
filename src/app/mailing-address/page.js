@@ -12,11 +12,13 @@ import WavyBackground3 from "@/components/background/WavyBackground3";
 import PriceCard from "@/components/card/PriceCard";
 import CoworkingImage from "../../../public/images/Coworking.png";
 import Image from "next/image";
+import { virtualOfficeContent } from "../data/content";
+import SEOContent from "@/components/content/SEOContent";
 const ReviewSlider = dynamic(
   () => import("../../components/slider/ReviewSlider"),
   {
     ssr: false,
-  }
+  },
 );
 
 export const metadata = {
@@ -63,6 +65,7 @@ function page() {
         <VirtualOfficeBenefits />
         <ReviewSlider />
         <FrequentQuestions />
+        <SEOContent content={virtualOfficeContent.india} />
       </div>
     </CustomLayout>
   );
