@@ -341,6 +341,9 @@
   }
 }
 @media (max-width: 768px) {
+  .contactContainer {
+    display: none;
+  }
 }
 
 @media (max-width: 576px) {
