@@ -12,7 +12,7 @@ export const allStatesMap = [
     link: "https://virtualxcel.in/virtual-office/assam",
   },
   {
-    text: "Virtual Office in Assam",
+    text: "Virtual Office in Bihar",
     link: "https://virtualxcel.in/virtual-office/bihar",
   },
   {
@@ -84,7 +84,7 @@ export const allStatesMap = [
     link: "https://virtualxcel.in/virtual-office/odisha",
   },
   {
-    text: "Virtual Office in Assam",
+    text: "Virtual Office in Punjab",
     link: "https://virtualxcel.in/virtual-office/punjab",
   },
   {
