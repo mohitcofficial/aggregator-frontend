@@ -3,7 +3,7 @@ import "./globals.css";
 import NextTopLoader from "nextjs-toploader";
 import { Toaster } from "react-hot-toast";
 import Script from "next/script";
-import TawkToChat from "@/components/TalkToChat";
+// import TawkToChat from "@/components/TalkToChat";
 
 const inter = Inter({ subsets: ["latin"] });
 

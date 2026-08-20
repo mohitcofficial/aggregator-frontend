@@ -147,10 +147,13 @@ function Banner() {
           <Image
             className={classes.image}
             src={Background2}
-            alt="Virtual Office for GST Registration and Company Registration across India"
+            alt="Virtual Office for GST and Company Registration across India"
             fill
             priority
+            sizes="100vw"
             quality={85}
+            placeholder="blur"
+            fetchPriority="high"
           />
         </div>
         <div className={classes.textContent}>
