@@ -10,30 +10,30 @@ import FilterContainer from "@/components/items/FilterContainer";
 import StateSeoContent from "@/components/content/StateSEOContent";
 import { stateSeoContent } from "@/app/data/content";
 
-// async function fetchPageData(slug) {
-//   try {
-//     const data = await UserApiServices.getStateInfoFromSlug(slug);
-//     if (!data.success) {
-//       throw new Error("Failed to fetch data");
-//     }
-//     return data;
-//   } catch (error) {
-//     console.error("Error fetching data:", error.message);
-//     return null;
-//   }
-// }
+async function fetchPageData(slug) {
+  try {
+    const data = await UserApiServices.getStateInfoFromSlug(slug);
+    if (!data.success) {
+      throw new Error("Failed to fetch data");
+    }
+    return data;
+  } catch (error) {
+    console.error("Error fetching data:", error.message);
+    return null;
+  }
+}
 
 export default async function CityPage({ params }) {
   const { slug } = params;
 
   try {
-    // const data = await fetchPageData(slug);
-    // if (!data) notFound();
+    const data = await fetchPageData(slug);
+    if (!data) notFound();
 
     return (
       <CustomLayout>
         <div className={classes.container}>
-          {/* <StateBanner
+          <StateBanner
             state={data?.state?.name}
             image={data?.state?.bannerImage[0]?.url}
           />
@@ -42,7 +42,7 @@ export default async function CityPage({ params }) {
             type="city"
             name={data?.state?.name}
           />
-          <SimilarStateSlider id={data?.state?._id} /> */}
+          <SimilarStateSlider id={data?.state?._id} />
           <FrequentQuestions />
           <StateSeoContent content={stateSeoContent[slug]} />
         </div>
@@ -53,13 +53,13 @@ export default async function CityPage({ params }) {
   }
 }
 
-// export async function generateMetadata({ params }) {
-//   const { slug } = params;
-//   const pageData = await fetchPageData(slug);
+export async function generateMetadata({ params }) {
+  const { slug } = params;
+  const pageData = await fetchPageData(slug);
 
-//   return {
-//     title: pageData?.state?.metaData?.metaTitle || "Virtualxcel",
-//     description: pageData?.state?.metaData.metaDescription || "Virtualxcel",
-//     keywords: pageData?.state?.metaData.metaKeyword || "Virtualxcel",
-//   };
-// }
+  return {
+    title: pageData?.state?.metaData?.metaTitle || "Virtualxcel",
+    description: pageData?.state?.metaData.metaDescription || "Virtualxcel",
+    keywords: pageData?.state?.metaData.metaKeyword || "Virtualxcel",
+  };
+}

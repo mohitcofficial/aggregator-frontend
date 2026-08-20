@@ -1,12 +1,13 @@
-import CustomLayout from "@/components/CustomLayout";
-import UserApiServices from "@/services/User.api.services";
-import classes from "./page.module.css";
-import { notFound } from "next/navigation";
 import CityBanner from "@/components/banner/CityBanner";
-import Footer from "@/components/footer/Footer";
+import CustomLayout from "@/components/CustomLayout";
 import FrequentQuestions from "@/components/frequent-questions/FrequentQuestions";
 import FilterContainer from "@/components/items/FilterContainer";
 import SimilarCitySlider from "@/components/slider/SimilarCitySlider";
+import UserApiServices from "@/services/User.api.services";
+import { notFound } from "next/navigation";
+import classes from "./page.module.css";
+import CitySEOContent from "@/components/content/CitySEOContent";
+import { getCitySeoContent } from "@/utils/seoContent";
 
 async function fetchPageData(stateSlug, citySlug) {
   try {
@@ -28,6 +29,10 @@ export default async function CityPage({ params }) {
     const data = await fetchPageData(slug, citySlug);
     if (!data.success) notFound();
 
+    const cityName = data?.city?.name;
+
+    const seoContent = getCitySeoContent(cityName, citySlug);
+
     return (
       <CustomLayout>
         <div className={classes.container}>
@@ -46,6 +51,7 @@ export default async function CityPage({ params }) {
             cityId={data?.city?._id}
           />
           <FrequentQuestions />
+          <CitySEOContent content={seoContent} />
         </div>
       </CustomLayout>
     );

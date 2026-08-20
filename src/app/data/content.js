@@ -3869,3 +3869,85 @@ export const stateSeoContent = {
     whyVirtualxcel: `Virtualxcel provides virtual office solutions designed to help businesses establish a professional presence in West Bengal without the cost of maintaining a traditional office. Our services can help businesses identify suitable business addresses, understand documentation requirements, manage mail and courier handling, and support address-related business needs. Whether you are a startup, freelancer, e-commerce seller, consultant, service provider, or an established company entering the Eastern Indian market, Virtualxcel can help you choose a suitable virtual office solution based on your requirements.`,
   },
 };
+
+export const defaultCitySeoContent = {
+  title: "Virtual Office Space in {city}",
+
+  intro: `A virtual office in {city} gives businesses a professional business address without the cost of renting and maintaining a traditional office. It is a practical solution for startups, e-commerce businesses, freelancers, consultants, agencies, and companies looking to establish a presence in {city}. Virtualxcel provides virtual office solutions for business registration, GST registration, professional mailing addresses, and other business requirements.`,
+
+  benefitsTitle: "Benefits of a Virtual Office in {city}",
+
+  benefits: [
+    {
+      title: "Professional Business Address",
+      content: `Get a professional commercial address in {city} that can be used for business correspondence, websites, visiting cards, invoices, and other permitted business purposes.`,
+    },
+    {
+      title: "Cost-Effective Business Setup",
+      content: `A physical office in {city} can involve rent, security deposits, furniture, electricity, maintenance, and staffing costs. A virtual office provides a more affordable way to establish a business presence without maintaining a full-time office.`,
+    },
+    {
+      title: "GST and Business Registration Support",
+      content: `Businesses requiring a local address for GST registration or company-related requirements can choose a suitable virtual office plan with the required supporting documentation.`,
+    },
+    {
+      title: "Business Expansion",
+      content: `A virtual office allows companies operating from another city or state to establish a presence in {city} without immediately investing in a permanent physical office.`,
+    },
+    {
+      title: "Mail and Courier Handling",
+      content: `Depending on the selected plan and location, business letters, courier packages, and other correspondence can be received at the virtual office address.`,
+    },
+  ],
+
+  servicesTitle: "Virtual Office Services in {city}",
+
+  services: [
+    {
+      title: "Virtual Office for GST Registration",
+      content: `Businesses requiring GST registration in {city} can choose a suitable virtual office address with the required supporting documentation.`,
+    },
+    {
+      title: "Virtual Office for Company Registration",
+      content: `A virtual office can provide a suitable address for eligible company registration and registered-office requirements.`,
+    },
+    {
+      title: "Professional Mailing Address",
+      content: `A virtual business address in {city} can be used for receiving business correspondence and displaying your business location on permitted business materials.`,
+    },
+    {
+      title: "Meeting Room Access",
+      content: `Depending on the selected location and plan, businesses may get access to meeting rooms or workspace facilities when they need to meet clients, partners, investors, or team members.`,
+    },
+    {
+      title: "Business Support Services",
+      content: `Virtualxcel can assist businesses with documentation, address verification, mail handling, courier management, and other business support requirements depending on the selected plan and location.`,
+    },
+  ],
+
+  useCasesTitle: "How Can You Use a Virtual Office in {city}?",
+
+  useCases: [
+    "For eligible GST registration and business-related address requirements.",
+    "For company or LLP registration where a suitable registered office address is required.",
+    "For displaying a professional business address on your website, invoices, and visiting cards.",
+    "For receiving business mail, courier packages, and official correspondence.",
+    "For establishing a business presence in {city} without renting a full-time office.",
+    "For expanding an existing business from another city or state into the {city} market.",
+    "For supporting remote teams, freelancers, consultants, agencies, and online businesses.",
+  ],
+
+  documentsNeededTitle: "Documents Required for a Virtual Office in {city}",
+
+  documents: [
+    "PAN Card",
+    "Aadhaar Card or valid identity proof",
+    "Business or company registration documents, if applicable",
+    "Proof of business address, where applicable",
+    "GST-related documents, if applicable",
+  ],
+
+  whyVirtualxcelTitle: "Why Choose Virtualxcel for a Virtual Office in {city}?",
+
+  whyVirtualxcel: `Virtualxcel provides practical virtual office solutions for businesses that need a professional address without the expense of maintaining a traditional office. Our services are designed to support GST registration, business registration, mailing requirements, documentation, and business expansion. Whether you are a startup, freelancer, e-commerce seller, consultant, or an established company, Virtualxcel can help you choose a virtual office solution based on your business requirements in {city}.`,
+};
