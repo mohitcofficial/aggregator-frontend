@@ -1,136 +1,219 @@
 .container {
-  display: flex;
-  width: 100%;
-  justify-content: center;
+  padding: 90px 20px;
+  /* background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%); */
 }
-.contentContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 90%;
-  max-width: 1000px;
-  margin: 24px auto;
-  padding: 24px 0;
+
+.badge {
+  width: fit-content;
+  margin: auto;
+  padding: 10px 22px;
+  background: #eef4ff;
+  color: #0c1a3c;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .heading {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  margin-top: 24px;
+  text-align: center;
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 700;
+  /* color: #111827; */
   font-size: 32px;
-  font-weight: 400;
-  gap: 8px;
-  margin-bottom: 24px;
-  position: relative;
 }
 
-.round {
-  position: absolute;
-  top: 50%;
-  left: -20px;
-  width: 60px;
-  height: 60px;
-  background-color: var(--primary-color);
-  border-radius: 50%;
-  z-index: -1;
-  transform: translate(0, -50%);
+.heading span {
+  color: #0c1a3c;
 }
 
 .progressBar {
-  position: relative;
-  width: 80%;
-  height: 8px;
-  background-color: #bcbfc5;
-  border-radius: 9999px;
+  margin: 60px auto 0;
+  width: min(900px, 90%);
+  height: 6px;
+  background: #e7ebf2;
+  border-radius: 999px;
   overflow: hidden;
-  margin: 12px 0;
 }
 
 .progress {
-  position: absolute;
-  left: 0;
-  top: 0;
   height: 100%;
-  background-color: #fcab14;
-  background-color: #000dc6;
-  border-radius: 9999px;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #ffb11a, #ff8a00);
 }
 
-.stepContainer {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin-top: 10px;
+.cards {
+  max-width: 1300px;
+  margin: 70px auto 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
 }
 
-.step {
-  width: 25%;
-  max-width: 25%;
+.card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid #edf2f7;
+  border-radius: 24px;
+  padding: 70px 30px 35px;
   text-align: center;
+  box-shadow: 0 15px 45px rgba(15, 23, 42, 0.06);
+  transition: 0.35s;
 }
 
-.stepCircle {
-  width: 38px;
-  height: 38px;
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 70px rgba(15, 23, 42, 0.12);
+}
+
+.activeCard {
+  border-color: #ffb11a;
+  box-shadow: 0 20px 60px rgba(255, 177, 26, 0.25);
+}
+
+.stepNumber {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #eef2f7;
+  color: #64748b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+
+.activeNumber {
+  background: #ffb11a;
+  color: white;
+}
+
+.iconWrapper {
+  width: 88px;
+  height: 88px;
+  border-radius: 20px;
+  background: #0c1a3c;
+  color: white;
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  font-size: 15px;
-  font-weight: bold;
+  box-shadow: 0 12px 30px rgba(12, 26, 60, 0.2);
+}
+
+.card h3 {
+  margin-top: 28px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1.35;
+}
+
+.card p {
+  margin-top: 14px;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.features {
+  max-width: 1300px;
+  margin: 70px auto 0;
+  padding: 35px;
+  border-radius: 24px;
+  background: white;
+  background: var(--primary-color);
+  box-shadow: 0 12px 40px rgba(15, 23, 42, 0.05);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 18px;
+  border-radius: 18px;
+  transition: 0.3s;
+}
+
+/* .feature:hover {
+  background: #f8fafc;
+} */
+
+.feature svg {
+  color: #ffb11a;
+  flex-shrink: 0;
+}
+
+.feature h4 {
+  font-size: 18px;
+  margin: 0;
   color: white;
-  transition: background-color 0.8s ease-in-out;
 }
 
-.activeStep {
-  background-color: #fcab14;
-  background-color: #000dc6;
+.feature p {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #c9caca;
 }
 
-.inactiveStep {
-  background-color: #bcbfc5;
-}
-
-.stepLabel {
-  font-size: 15px;
-  margin-top: 10px;
-}
-
-@media (max-width: 1000px) {
-  .heading {
-    font-size: 28px;
+@media (max-width: 1100px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
   }
-  .stepLabel {
-    font-size: 14px;
+
+  .features {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 800px) {
+
+@media (max-width: 768px) {
   .container {
-    margin: 32px 0;
+    padding: 70px 18px;
   }
-  .stepLabel {
-    font-size: 13px;
+
+  .heading {
+    font-size: 34px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+    padding: 25px;
+  }
+
+  .card {
+    padding: 65px 24px 30px;
+  }
+
+  .iconWrapper {
+    width: 78px;
+    height: 78px;
   }
 }
-@media (max-width: 600px) {
-  .stepCircle {
-    width: 28px;
-    height: 28px;
+
+@media (max-width: 480px) {
+  .badge {
     font-size: 13px;
   }
-  .stepLabel {
-    font-size: 12px;
+
+  .heading {
+    font-size: 30px;
   }
-  .round {
-    top: 50%;
-    left: -20px;
+
+  .card h3 {
+    font-size: 18px;
   }
-}
-@media (max-width: 520px) {
-  .round {
-    top: 25%;
-    left: 35px;
+
+  .card p {
+    font-size: 13px;
   }
 }

@@ -31,7 +31,7 @@ function WhyUs() {
               <div className={classes.content}>
                 <p className={classes.heading2}>Lowest Price Assurance</p>
                 <p className={classes.text}>
-                  Get an extra 10 off if you discover a lower rate at the same
+                  Get an extra 10% off if you discover a lower rate at the same
                   partner space.
                 </p>
               </div>

@@ -21,6 +21,13 @@ const ReviewSlider = dynamic(
   },
 );
 
+const ProcessFlowBar = dynamic(
+  () => import("../../components/items/ProcessFlowBar"),
+  {
+    ssr: false,
+  },
+);
+
 export const metadata = {
   title: "Quick and Easy GST Certification | Virtualxcel",
   description:
@@ -62,6 +69,7 @@ function page() {
         </div>
         <PremiumCities />
         <WhyUs />
+        <ProcessFlowBar />
         <VirtualOfficeBenefits id={2} />
         <ReviewSlider />
         <FrequentQuestions />

@@ -17,6 +17,12 @@ const ReviewSlider = dynamic(
     ssr: false,
   },
 );
+const ProcessFlowBar = dynamic(
+  () => import("../components/items/ProcessFlowBar"),
+  {
+    ssr: false,
+  },
+);
 
 export const metadata = {
   title:
@@ -99,6 +105,7 @@ export default function Home() {
         <CountContainer />
         <PriceItem />
         <PremiumCities />
+        <ProcessFlowBar />
         <BlogSection />
         <NeedExpertPoster />
         <ReviewSlider />

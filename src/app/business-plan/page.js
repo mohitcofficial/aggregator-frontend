@@ -21,6 +21,13 @@ const ReviewSlider = dynamic(
   },
 );
 
+const ProcessFlowBar = dynamic(
+  () => import("../../components/items/ProcessFlowBar"),
+  {
+    ssr: false,
+  },
+);
+
 export const metadata = {
   title: "Best Business Plans for Your Company",
   description:
@@ -62,6 +69,7 @@ function page() {
         </div>
         <PremiumCities />
         <WhyUs />
+        <ProcessFlowBar />
         <VirtualOfficeBenefits id={1} />
         <ReviewSlider />
         <FrequentQuestions />
