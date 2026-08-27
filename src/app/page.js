@@ -10,6 +10,7 @@ import classes from "./page.module.css";
 import FrequentQuestions from "@/components/frequent-questions/FrequentQuestions";
 import SEOContent from "@/components/content/SEOContent";
 import { virtualOfficeContent } from "./data/content";
+import Documentation from "@/components/items/Documentation";
 
 const ReviewSlider = dynamic(
   () => import("../components/slider/ReviewSlider"),
@@ -106,6 +107,7 @@ export default function Home() {
         <PriceItem />
         <PremiumCities />
         <ProcessFlowBar />
+        <Documentation />
         <BlogSection />
         <NeedExpertPoster />
         <ReviewSlider />
