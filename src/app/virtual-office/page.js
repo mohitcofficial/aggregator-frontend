@@ -12,6 +12,14 @@ import TrendingStatesSlider from "@/components/slider/TrendingStates";
 import SimilarStateSlider from "@/components/slider/SimilarStateSlider";
 import { virtualOfficeContent } from "../data/content";
 import SEOContent from "@/components/content/SEOContent";
+import dynamic from "next/dynamic";
+
+const ProcessFlowBar = dynamic(
+  () => import("../../components/items/ProcessFlowBar"),
+  {
+    ssr: false,
+  },
+);
 
 export const metadata = {
   title: "Virtual Offices & Business Addresses Across India",
@@ -42,6 +50,7 @@ export default function page() {
         <TrendingCitiesSlider />
         <Documentation />
         <WhyUs />
+        <ProcessFlowBar />
         <VirtualOfficeBenefits />
         <FrequentQuestions />
         <SEOContent content={virtualOfficeContent.india} />

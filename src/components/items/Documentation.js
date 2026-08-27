@@ -1,127 +1,170 @@
-"use client";
-import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import PersonIcon from "@mui/icons-material/Person";
+import PeopleIcon from "@mui/icons-material/People";
+import BusinessIcon from "@mui/icons-material/Business";
 import classes from "./Documentation.module.css";
-import Image from "next/image";
-import SoleProprietorShip from "../../../public/images/SoleProprietorShip.png";
-import Partnership from "../../../public/images/Partnership.png";
-import Company from "../../../public/images/Company.png";
-import DoneAllIcon from "@mui/icons-material/DoneAll";
+import CallIcon from "@mui/icons-material/Call";
 
 function Documentation() {
-  const [index, setIndex] = useState(0);
+  const documentTypes = [
+    {
+      heading: "Sole Proprietorship",
+      subheading: "Individual / Proprietor",
+      icon: PersonIcon,
+      description:
+        "For individuals, freelancers and businesses operating as a sole proprietorship.",
+      points: [
+        "Aadhaar Card Copy / Passport Copy",
+        "PAN Card Copy",
+        "One Recent Passport Size Photograph",
+        "Cancelled Cheque / Passbook Front Page Copy",
+      ],
+      note: "Requirements may vary based on the business type, location and selected service",
+    },
 
-  const content = [
-    [
-      "Aadhar Card Copy/ Passport Copy",
-      "PAN Card Copy",
-      "One Photo/ Passport Size Photo",
-      "Cancelled cheque/ Passbook front page copy.",
-    ],
-    [
-      "Aadhar Card Copy/ Passport Copy (All Partners)",
-      "PAN Card Copy (All Partners)",
-      "One Photo/ Passport Size Photo (All Partners)",
-      "Cancelled cheque/ Passbook front page copy.",
-      "PAN Card Copy of the Business",
-      "GST Certificate (if applicable)",
-      "COI (Certificate of Incorporation) (if applicable)",
-    ],
-    [
-      "Aadhar Card Copy/ Passport Copy (All Partners)",
-      "PAN Card Copy (All Partners)",
-      "One Photo/ Passport Size Photo (All Partners)",
-      "Cancelled cheque/ Passbook front page copy.",
-      "PAN Card Copy of the Business",
-      "GST Certificate (if applicable)",
-      "COI (Certificate of Incorporation) (if applicable)",
-    ],
+    {
+      heading: "LLP & Partnership",
+      subheading: "Partnership Firms",
+      icon: PeopleIcon,
+      description:
+        "For LLPs and partnership firms applying for virtual office services.",
+      points: [
+        "Aadhaar Card / Passport Copy of All Partners",
+        "PAN Card Copy of All Partners",
+        "Passport Size Photograph of All Partners",
+        "Cancelled Cheque / Passbook Front Page Copy",
+        "PAN Card Copy of the Business",
+        "GST Certificate, if applicable",
+        "Certificate of Incorporation, if applicable",
+      ],
+      note: "Additional documents may be required depending on the business structure and service.",
+    },
+
+    {
+      heading: "Public & Private Company",
+      subheading: "Company / Corporate Entity",
+      icon: BusinessIcon,
+      description:
+        "For Private Limited, Public Limited and other eligible registered companies.",
+      points: [
+        "Aadhaar Card / Passport Copy of Directors",
+        "PAN Card Copy of Directors",
+        "Passport Size Photograph of Directors",
+        "Cancelled Cheque / Passbook Front Page Copy",
+        "PAN Card Copy of the Company",
+        "GST Certificate, if applicable",
+        "Certificate of Incorporation, if applicable",
+      ],
+      note: "Requirements may vary depending on the company type, location and selected service.",
+    },
   ];
 
-  const images = [SoleProprietorShip, Partnership, Company];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prevIndex) => (prevIndex + 1) % content.length);
-    }, 4000);
-
-    return () => clearInterval(interval);
-  }, []);
-
   return (
-    <div className={classes.container}>
+    <section className={classes.container}>
       <div className={classes.container2}>
-        <div className={classes.heading}>
-          <span className={classes.heading1}>KYC Documents</span>
-          <span className={classes.heading2}>Required</span>
-        </div>
-        <div className={classes.option}>
-          <div
-            onClick={() => setIndex(0)}
-            className={`${classes.options} ${
-              index === 0 ? classes.active : ""
-            }`}
-          >
-            Sole Proprietor / Individual
-          </div>
-          <div
-            onClick={() => setIndex(1)}
-            className={`${classes.options} ${
-              index === 1 ? classes.active : ""
-            }`}
-          >
-            LLP & Partnership Firms
-          </div>
-          <div
-            onClick={() => setIndex(2)}
-            className={`${classes.options} ${
-              index === 2 ? classes.active : ""
-            }`}
-          >
-            Company (Public & Private)
-          </div>
-        </div>
-        <div className={classes.contentContainer}>
-          {/* Image with animation (no key) */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.9 }}
-            transition={{ duration: 0.5 }}
-            className={classes.imageContainer}
-          >
-            <Image
-              className={classes.image}
-              src={images[index]}
-              alt="Image"
-              fill={true}
-            />
-          </motion.div>
+        {/* Section Heading */}
+        <div className={classes.headingWrapper}>
+          <span className={classes.eyebrow}>KYC DOCUMENTATION</span>
 
-          {/* List with animation (key on ul only) */}
-          <motion.ul
-            key={index}
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: 20 }}
-            transition={{ duration: 0.5 }}
-            className={classes.list}
+          <h2 className={classes.heading}>
+            <span>KYC Documents</span> required for Virtual Office
+          </h2>
+
+          <p className={classes.intro}>
+            The documents required for a virtual office depend on the type of
+            business. Find the applicable document checklist below and keep the
+            required documents ready for verification.
+          </p>
+        </div>
+
+        {/* Document Cards */}
+        <div className={classes.documentsGrid}>
+          {documentTypes.map((item) => {
+            const Icon = item.icon;
+
+            return (
+              <article className={classes.documentCard} key={item.heading}>
+                {/* Card Header */}
+                <div className={classes.cardHeader}>
+                  <div className={classes.iconWrapper}>
+                    <Icon />
+                  </div>
+
+                  <div className={classes.cardTitleWrapper}>
+                    <h3 className={classes.cardTitle}>{item.heading}</h3>
+
+                    <span className={classes.cardSubheading}>
+                      {item.subheading}
+                    </span>
+                  </div>
+                </div>
+
+                {/* Description */}
+                <p className={classes.cardDescription}>{item.description}</p>
+
+                <div className={classes.divider} />
+
+                {/* Documents Heading */}
+                <div className={classes.documentsHeading}>
+                  <span>Required Documents</span>
+
+                  <span className={classes.documentCount}>
+                    {String(item.points.length).padStart(2, "0")}
+                  </span>
+                </div>
+
+                {/* Document List */}
+                <ul className={classes.documentList}>
+                  {item.points.map((point, index) => (
+                    <li className={classes.documentItem} key={point}>
+                      <span className={classes.number}>
+                        {String(index + 1).padStart(2, "0")}
+                      </span>
+
+                      <span className={classes.check}>✓</span>
+
+                      <span className={classes.documentText}>{point}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                {/* Important Note */}
+                <div className={classes.note}>
+                  <span className={classes.noteIcon}>i</span>
+
+                  <p>{item.note}</p>
+                </div>
+              </article>
+            );
+          })}
+        </div>
+
+        {/* Bottom Information */}
+        <div className={classes.bottomContainer}>
+          <div className={classes.bottomInfo}>
+            <div className={classes.bottomIcon}>✓</div>
+
+            <div>
+              <strong>Not sure which documents are required?</strong>
+
+              <p>
+                Document requirements can vary based on the business structure,
+                location and selected virtual office service. Our team can
+                assist with the applicable documentation requirements.
+              </p>
+            </div>
+          </div>
+          <a
+            href="tel:09871001079"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={classes.callExpertButton}
           >
-            {content[index].map((item, idx) => (
-              <li key={idx} className={classes.listItem}>
-                <DoneAllIcon
-                  sx={{
-                    color: "#4BB543",
-                    fontSize: { xs: 16, sm: 18, md: 20, lg: 20 },
-                  }}
-                />
-                {item}
-              </li>
-            ))}
-          </motion.ul>
+            <CallIcon sx={{ fontSize: { lg: 20, sm: 18, xs: 18 } }} />
+            <span>Talk to Expert</span>
+          </a>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
