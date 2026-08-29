@@ -1,16 +1,9 @@
 import WavyBackground2 from "@/components/background/WavyBackground2";
 import classes from "./page.module.css";
-
 import CustomLayout from "@/components/CustomLayout";
 import CommonBanner from "@/components/banner/CommonBanner";
 import CoworkingPriceCard from "@/components/card/CoworkingPriceCard";
-import dynamic from "next/dynamic";
-const ReviewSlider = dynamic(
-  () => import("../../components/slider/ReviewSlider"),
-  {
-    ssr: false,
-  }
-);
+import Reviews from "@/components/items/Reviews";
 
 export const metadata = {
   title: "Your Personal Desk Awaits | VirtualXcel",
@@ -30,7 +23,7 @@ function page() {
           <WavyBackground2 />
           <CoworkingPriceCard id={4} />
         </div>
-        <ReviewSlider />
+        <Reviews />
       </div>
     </CustomLayout>
   );

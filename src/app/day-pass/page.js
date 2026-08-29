@@ -3,14 +3,8 @@ import classes from "./page.module.css";
 
 import CommonBanner from "@/components/banner/CommonBanner";
 import CustomLayout from "@/components/CustomLayout";
-import dynamic from "next/dynamic";
 import CoworkingPriceCard from "@/components/card/CoworkingPriceCard";
-const ReviewSlider = dynamic(
-  () => import("../../components/slider/ReviewSlider"),
-  {
-    ssr: false,
-  }
-);
+import Reviews from "@/components/items/Reviews";
 
 export const metadata = {
   title: "Experience Flexibility with Our Day Passes | Virtualxcel",
@@ -33,7 +27,7 @@ function page() {
           <WavyBackground2 />
           <CoworkingPriceCard id={1} />
         </div>
-        <ReviewSlider />
+        <Reviews />
       </div>
     </CustomLayout>
   );

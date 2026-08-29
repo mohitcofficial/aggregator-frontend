@@ -4,13 +4,7 @@ import { WebsiteURLs } from "../data/Links";
 import classes from "./page.module.css";
 
 import CustomLayout from "@/components/CustomLayout";
-import dynamic from "next/dynamic";
-const ReviewSlider = dynamic(
-  () => import("../../components/slider/ReviewSlider"),
-  {
-    ssr: false,
-  }
-);
+import Reviews from "@/components/items/Reviews";
 
 function page() {
   return (
@@ -323,7 +317,7 @@ function page() {
               </ul>
             </div>
           </div>
-          <ReviewSlider />
+          <Reviews />
         </div>
       </div>
     </CustomLayout>

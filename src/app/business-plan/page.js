@@ -1,5 +1,4 @@
 import classes from "./page.module.css";
-
 import CustomLayout from "@/components/CustomLayout";
 import WavyBackground3 from "@/components/background/WavyBackground3";
 import CommonBanner from "@/components/banner/CommonBanner";
@@ -14,12 +13,7 @@ import CoworkingImage from "../../../public/images/Coworking.png";
 import Image from "next/image";
 import SEOContent from "@/components/content/SEOContent";
 import { virtualOfficeContent } from "../data/content";
-const ReviewSlider = dynamic(
-  () => import("../../components/slider/ReviewSlider"),
-  {
-    ssr: false,
-  },
-);
+import Reviews from "@/components/items/Reviews";
 
 const ProcessFlowBar = dynamic(
   () => import("../../components/items/ProcessFlowBar"),
@@ -71,7 +65,7 @@ function page() {
         <WhyUs />
         <ProcessFlowBar />
         <VirtualOfficeBenefits id={1} />
-        <ReviewSlider />
+        <Reviews />
         <FrequentQuestions />
         <SEOContent content={virtualOfficeContent.india} />
       </div>

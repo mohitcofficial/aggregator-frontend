@@ -9,19 +9,13 @@ import dynamic from "next/dynamic";
 import LPBanner from "@/components/lpItems/LPBanner";
 import LPSlider from "@/components/lpItems/LPSlider";
 import OnDemandServices from "@/components/items/OnDemandServices";
-
-const ReviewSlider = dynamic(
-  () => import("../../components/slider/ReviewSlider"),
-  {
-    ssr: false,
-  }
-);
+import Reviews from "@/components/items/Reviews";
 
 const ProcessFlowBar = dynamic(
   () => import("../../components/items/ProcessFlowBar"),
   {
     ssr: false,
-  }
+  },
 );
 
 export const metadata = {
@@ -71,7 +65,7 @@ function page() {
         <OnDemandServices />
         <WhyUs />
         <VirtualOfficeBenefits />
-        <ReviewSlider />
+        <Reviews />
       </div>
       <LPFooter />
     </>

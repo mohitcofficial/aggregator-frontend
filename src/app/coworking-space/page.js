@@ -4,13 +4,7 @@ import classes from "./page.module.css";
 import CoworkingBanner from "@/components/banner/CoworkingBanner";
 import CoworkingCard from "@/components/card/CoworkingCard";
 import CustomLayout from "@/components/CustomLayout";
-import dynamic from "next/dynamic";
-const ReviewSlider = dynamic(
-  () => import("../../components/slider/ReviewSlider"),
-  {
-    ssr: false,
-  }
-);
+import { Reviews } from "@mui/icons-material";
 
 export const metadata = {
   title: "Coworking Spaces",
@@ -44,7 +38,7 @@ function page() {
           </div>
           {/* <WhyCoworking /> */}
           {/* <Facilities data={coworkingFacilities} /> */}
-          <ReviewSlider />
+          <Reviews />
         </div>
       </div>
     </CustomLayout>

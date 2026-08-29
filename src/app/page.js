@@ -11,13 +11,8 @@ import FrequentQuestions from "@/components/frequent-questions/FrequentQuestions
 import SEOContent from "@/components/content/SEOContent";
 import { virtualOfficeContent } from "./data/content";
 import Documentation from "@/components/items/Documentation";
+import Reviews from "@/components/items/Reviews";
 
-const ReviewSlider = dynamic(
-  () => import("../components/slider/ReviewSlider"),
-  {
-    ssr: false,
-  },
-);
 const ProcessFlowBar = dynamic(
   () => import("../components/items/ProcessFlowBar"),
   {
@@ -110,7 +105,7 @@ export default function Home() {
         <Documentation />
         <BlogSection />
         <NeedExpertPoster />
-        <ReviewSlider />
+        <Reviews />
         <FrequentQuestions />
         <SEOContent content={virtualOfficeContent.india} />
       </main>

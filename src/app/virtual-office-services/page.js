@@ -15,23 +15,18 @@ import NewYearOffer from "@/components/discount/NewYearOffer";
 import Disclaimer from "@/components/lpItems/Disclaimer";
 import FrequentQuestions from "@/components/frequent-questions/FrequentQuestions";
 import OnDemandServices from "@/components/items/OnDemandServices";
+import Reviews from "@/components/items/Reviews";
 const LPCitiesSlider = dynamic(
   () => import("../../components/lpItems/LPCitiesSlider"),
   {
     ssr: false,
-  }
-);
-const ReviewSlider = dynamic(
-  () => import("../../components/slider/ReviewSlider"),
-  {
-    ssr: false,
-  }
+  },
 );
 const ProcessFlowBar = dynamic(
   () => import("../../components/items/ProcessFlowBar"),
   {
     ssr: false,
-  }
+  },
 );
 
 export const metadata = {
@@ -101,7 +96,7 @@ function page() {
         </div>
         <WhyUs />
         <VirtualOfficeBenefits />
-        <ReviewSlider />
+        <Reviews />
         <FrequentQuestions />
       </div>
       <LPFooter />

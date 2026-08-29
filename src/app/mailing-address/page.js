@@ -14,12 +14,7 @@ import CoworkingImage from "../../../public/images/Coworking.png";
 import Image from "next/image";
 import { virtualOfficeContent } from "../data/content";
 import SEOContent from "@/components/content/SEOContent";
-const ReviewSlider = dynamic(
-  () => import("../../components/slider/ReviewSlider"),
-  {
-    ssr: false,
-  },
-);
+import Reviews from "@/components/items/Reviews";
 
 const ProcessFlowBar = dynamic(
   () => import("../../components/items/ProcessFlowBar"),
@@ -71,7 +66,7 @@ function page() {
         <WhyUs />
         <ProcessFlowBar />
         <VirtualOfficeBenefits />
-        <ReviewSlider />
+        <Reviews />
         <FrequentQuestions />
         <SEOContent content={virtualOfficeContent.india} />
       </div>
