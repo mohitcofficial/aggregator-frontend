@@ -117,7 +117,7 @@ export default function ProcessFlowBar() {
               </div>
 
               <div className={styles.iconWrapper}>
-                <Icon size={48} weight="duotone" />
+                <Icon size={44} weight="duotone" />
               </div>
 
               <h3>{item.title}</h3>
