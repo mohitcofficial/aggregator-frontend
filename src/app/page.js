@@ -12,6 +12,7 @@ import SEOContent from "@/components/content/SEOContent";
 import { virtualOfficeContent } from "./data/content";
 import Documentation from "@/components/items/Documentation";
 import Reviews from "@/components/items/Reviews";
+import ServicesDocuments from "@/components/items/ServicesDocuments";
 
 const ProcessFlowBar = dynamic(
   () => import("../components/items/ProcessFlowBar"),
@@ -103,6 +104,7 @@ export default function Home() {
         <PremiumCities />
         <ProcessFlowBar />
         <Documentation />
+        <ServicesDocuments />
         <BlogSection />
         <NeedExpertPoster />
         <Reviews />

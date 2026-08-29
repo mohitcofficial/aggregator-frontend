@@ -8,6 +8,8 @@ import { notFound } from "next/navigation";
 import classes from "./page.module.css";
 import CitySEOContent from "@/components/content/CitySEOContent";
 import { getCitySeoContent } from "@/utils/seoContent";
+import Documentation from "@/components/items/Documentation";
+import ServicesDocuments from "@/components/items/ServicesDocuments";
 
 async function fetchPageData(stateSlug, citySlug) {
   try {
@@ -50,6 +52,8 @@ export default async function CityPage({ params }) {
             stateId={data?.city?.stateId?._id}
             cityId={data?.city?._id}
           />
+          <Documentation location={cityName} />
+          <ServicesDocuments location={cityName} />
           <FrequentQuestions />
           <CitySEOContent content={seoContent} />
         </div>

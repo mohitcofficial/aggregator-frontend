@@ -4,7 +4,7 @@ import BusinessIcon from "@mui/icons-material/Business";
 import classes from "./Documentation.module.css";
 import CallIcon from "@mui/icons-material/Call";
 
-function Documentation() {
+function Documentation({ location = "" }) {
   const documentTypes = [
     {
       heading: "Sole Proprietorship",
@@ -66,7 +66,8 @@ function Documentation() {
           <span className={classes.eyebrow}>KYC DOCUMENTATION</span>
 
           <h2 className={classes.heading}>
-            <span>KYC Documents</span> required for Virtual Office
+            <span>KYC Documents</span> required for Virtual Office{" "}
+            {location.length !== 0 && `in ${location}`}
           </h2>
 
           <p className={classes.intro}>
