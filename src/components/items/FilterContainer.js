@@ -9,6 +9,8 @@ import PersonIcon from "@mui/icons-material/Person";
 import Link from "next/link";
 import Image from "next/image";
 import OfferImage from "../../../public/images/Offer.jpeg";
+import StrugglingGST from "../../../public/images/StrugglingGST.png";
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
 function FilterContainer({ id, type = "city", name }) {
   const [selectedLocations, setSelectedLocations] = useState([]);
@@ -121,17 +123,62 @@ function FilterContainer({ id, type = "city", name }) {
               <p>Terms & Conditions Applied</p>
             </div>
           </div>
+          <div className={classes.contactContainer2}>
+            <div className={classes.box1}>
+              <div className={classes.headingContainer}>
+                <p className={classes.heading}>Still Struggling for GST ?</p>
+                <p className={classes.subHeading}>We got you !</p>
+              </div>
+              <ul className={classes.list}>
+                <li className={classes.listItem}>
+                  <CheckCircleIcon
+                    sx={{ fontSize: { lg: 20, md: 20, sm: 18, xs: 16 } }}
+                    className={classes.icon}
+                  />
+                  <span>Expert Guidance</span>
+                </li>
+                <li className={classes.listItem}>
+                  <CheckCircleIcon
+                    sx={{ fontSize: { lg: 20, md: 20, sm: 18, xs: 16 } }}
+                    className={classes.icon}
+                  />
+                  <span>End-to-End Support</span>
+                  <span></span>
+                </li>
+                <li className={classes.listItem}>
+                  <CheckCircleIcon
+                    sx={{ fontSize: { lg: 20, md: 20, sm: 18, xs: 16 } }}
+                    className={classes.icon}
+                  />
+                  <span>Quick & Hassle-Free Process</span>
+                </li>
+              </ul>
+            </div>
+            <div className={classes.box2}>
+              <Image
+                src={StrugglingGST}
+                alt="Image"
+                className={classes.image2}
+                fill={true}
+              />
+            </div>
+          </div>
           <div className={classes.contactContainer}>
-            <div className={classes.headingContainer}>
-              <p className={classes.heading}>Still Struggling for GST ?</p>
-              <p className={classes.subHeading}>We got you !</p>
+            <div className={classes.headingContainer2}>
+              <p className={classes.heading}>
+                Need Help Choosing the Right Plan ?
+              </p>
+              <p className={classes.subHeading}>
+                Our experts are here to help you find the perfect business
+                address.
+              </p>
             </div>
             <div className={classes.personContainer}>
               <PersonIcon
                 sx={{ fontSize: fontSize }}
                 className={classes.personIcon}
               />
-              <div className={classes.infoContainer}>
+              <div className={classes.infoContainer2}>
                 <p className={classes.personName}>Mohit Chandra</p>
                 <p className={classes.personEmail}>sales@virtualxcel.in</p>
               </div>
